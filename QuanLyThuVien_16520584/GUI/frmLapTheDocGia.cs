@@ -29,5 +29,40 @@ namespace GUI
             cboLoaiDocGia.DisplayMember = "Ten_LoaiDocGia";
             cboLoaiDocGia.ValueMember = "ID_LoaiDocGia";
         }
+
+        private void CboLoaiDocGia_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtDiaChi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtNgayLapThe_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtHoVaTen_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

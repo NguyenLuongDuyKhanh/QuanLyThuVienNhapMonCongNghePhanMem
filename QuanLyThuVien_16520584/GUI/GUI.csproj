@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,16 +47,79 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmPhieuPhat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuPhat.Designer.cs">
+      <DependentUpon>frmPhieuPhat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhieuMuonSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuMuonSach.Designer.cs">
+      <DependentUpon>frmPhieuMuonSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhieuNhanTraSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuNhanTraSach.Designer.cs">
+      <DependentUpon>frmPhieuNhanTraSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThongKeMuonSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongKeMuonSach.Designer.cs">
+      <DependentUpon>frmThongKeMuonSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThongKeTraSachTre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongKeTraSachTre.Designer.cs">
+      <DependentUpon>frmThongKeTraSachTre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTiepNhanSachMoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTiepNhanSachMoi.Designer.cs">
+      <DependentUpon>frmTiepNhanSachMoi.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLapTheDocGia.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLapTheDocGia.Designer.cs">
       <DependentUpon>frmLapTheDocGia.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTraCuuSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTraCuuSach.Designer.cs">
+      <DependentUpon>frmTraCuuSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmLapTheDocGia.resx">
       <DependentUpon>frmLapTheDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhieuMuonSach.resx">
+      <DependentUpon>frmPhieuMuonSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhieuNhanTraSach.resx">
+      <DependentUpon>frmPhieuNhanTraSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhieuPhat.resx">
+      <DependentUpon>frmPhieuPhat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongKeMuonSach.resx">
+      <DependentUpon>frmThongKeMuonSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongKeTraSachTre.resx">
+      <DependentUpon>frmThongKeTraSachTre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTiepNhanSachMoi.resx">
+      <DependentUpon>frmTiepNhanSachMoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTraCuuSach.resx">
+      <DependentUpon>frmTraCuuSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -88,6 +152,9 @@
       <Project>{77f9fa09-485a-470f-93ab-2a9dc997f9bc}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

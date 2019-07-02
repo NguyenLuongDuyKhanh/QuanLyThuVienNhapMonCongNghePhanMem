@@ -4,7 +4,7 @@ Go
 USE DoAnNhapMonCongNghePhanMemQuanLyThuVien
 Go
 
-drop database DoAnNhapMonCongNghePhanMemQuanLyThuVien
+--drop database DoAnNhapMonCongNghePhanMemQuanLyThuVien
 
 create table TheLoaiSach
 (
@@ -112,6 +112,8 @@ create table PhieuPhat
 --Quy định về loại độc giả
 Insert into LoaiDocGia Values ('X',N'','')
 Insert into LoaiDocGia Values ('Y',N'','')
+Insert into LoaiDocGia Values ('Z',N'','')
+Insert into LoaiDocGia Values ('TamBay',N'','')
 select * from  LoaiDocGia
 
 --Quy định về các tác giả
