@@ -247,7 +247,7 @@
             this.pnRibbon.Location = new System.Drawing.Point(0, 0);
             this.pnRibbon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnRibbon.Name = "pnRibbon";
-            this.pnRibbon.Size = new System.Drawing.Size(638, 18);
+            this.pnRibbon.Size = new System.Drawing.Size(1164, 18);
             this.pnRibbon.TabIndex = 67;
             // 
             // pnBangDieuKhien_Show
@@ -360,7 +360,7 @@
             this.lbNgay.Dock = System.Windows.Forms.DockStyle.Right;
             this.lbNgay.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNgay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbNgay.Location = new System.Drawing.Point(638, 0);
+            this.lbNgay.Location = new System.Drawing.Point(1164, 0);
             this.lbNgay.Name = "lbNgay";
             this.lbNgay.Size = new System.Drawing.Size(41, 17);
             this.lbNgay.TabIndex = 62;
@@ -397,9 +397,9 @@
             // 
             // ucLapTheDocGia1
             // 
-            this.ucLapTheDocGia1.Location = new System.Drawing.Point(202, 149);
+            this.ucLapTheDocGia1.Location = new System.Drawing.Point(207, 63);
             this.ucLapTheDocGia1.Name = "ucLapTheDocGia1";
-            this.ucLapTheDocGia1.Size = new System.Drawing.Size(457, 344);
+            this.ucLapTheDocGia1.Size = new System.Drawing.Size(976, 597);
             this.ucLapTheDocGia1.TabIndex = 68;
             this.ucLapTheDocGia1.Load += new System.EventHandler(this.UcLapTheDocGia1_Load);
             // 
@@ -407,7 +407,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(679, 696);
+            this.ClientSize = new System.Drawing.Size(1205, 696);
             this.Controls.Add(this.ucLapTheDocGia1);
             this.Controls.Add(this.pnBangDieuKhien_Show);
             this.Controls.Add(this.pnRibbon);

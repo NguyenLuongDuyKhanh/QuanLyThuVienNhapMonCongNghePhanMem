@@ -41,6 +41,19 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtHoVaTen = new System.Windows.Forms.TextBox();
+            this.txtNgayHetHan = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dtgTheDocGia = new System.Windows.Forms.DataGridView();
+            this.ID_TheDocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ten_LoaiDocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoTen_DocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgaySinh_DocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi_DocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email_DocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayLapThe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayHetHan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TrangThai_TheDocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgTheDocGia)).BeginInit();
             this.SuspendLayout();
             // 
             // dtpNgayLapThe
@@ -50,6 +63,7 @@
             this.dtpNgayLapThe.Name = "dtpNgayLapThe";
             this.dtpNgayLapThe.Size = new System.Drawing.Size(275, 29);
             this.dtpNgayLapThe.TabIndex = 28;
+            this.dtpNgayLapThe.ValueChanged += new System.EventHandler(this.DtpNgayLapThe_ValueChanged);
             // 
             // txtDiaChi
             // 
@@ -64,12 +78,13 @@
             this.btLuu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
             this.btLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLuu.Location = new System.Drawing.Point(138, 241);
+            this.btLuu.Location = new System.Drawing.Point(470, 10);
             this.btLuu.Name = "btLuu";
             this.btLuu.Size = new System.Drawing.Size(86, 34);
             this.btLuu.TabIndex = 27;
             this.btLuu.Text = "Lưu";
             this.btLuu.UseVisualStyleBackColor = true;
+            this.btLuu.Click += new System.EventHandler(this.BtLuu_Click);
             // 
             // dtpNgaySinhDocGia
             // 
@@ -165,10 +180,122 @@
             this.txtHoVaTen.Size = new System.Drawing.Size(275, 29);
             this.txtHoVaTen.TabIndex = 16;
             // 
+            // txtNgayHetHan
+            // 
+            this.txtNgayHetHan.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNgayHetHan.Location = new System.Drawing.Point(157, 208);
+            this.txtNgayHetHan.Name = "txtNgayHetHan";
+            this.txtNgayHetHan.ReadOnly = true;
+            this.txtNgayHetHan.Size = new System.Drawing.Size(275, 29);
+            this.txtNgayHetHan.TabIndex = 29;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(16, 213);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(122, 24);
+            this.label7.TabIndex = 30;
+            this.label7.Text = "Ngày hết hạn";
+            // 
+            // dtgTheDocGia
+            // 
+            this.dtgTheDocGia.AllowUserToAddRows = false;
+            this.dtgTheDocGia.AllowUserToDeleteRows = false;
+            this.dtgTheDocGia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgTheDocGia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgTheDocGia.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID_TheDocGia,
+            this.Ten_LoaiDocGia,
+            this.HoTen_DocGia,
+            this.NgaySinh_DocGia,
+            this.DiaChi_DocGia,
+            this.Email_DocGia,
+            this.NgayLapThe,
+            this.NgayHetHan,
+            this.TrangThai_TheDocGia});
+            this.dtgTheDocGia.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dtgTheDocGia.Location = new System.Drawing.Point(0, 264);
+            this.dtgTheDocGia.MultiSelect = false;
+            this.dtgTheDocGia.Name = "dtgTheDocGia";
+            this.dtgTheDocGia.ReadOnly = true;
+            this.dtgTheDocGia.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgTheDocGia.Size = new System.Drawing.Size(894, 308);
+            this.dtgTheDocGia.TabIndex = 31;
+            // 
+            // ID_TheDocGia
+            // 
+            this.ID_TheDocGia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.ID_TheDocGia.DataPropertyName = "ID_TheDocGia";
+            this.ID_TheDocGia.HeaderText = "ID_TheDocGia";
+            this.ID_TheDocGia.Name = "ID_TheDocGia";
+            this.ID_TheDocGia.ReadOnly = true;
+            this.ID_TheDocGia.Width = 50;
+            // 
+            // Ten_LoaiDocGia
+            // 
+            this.Ten_LoaiDocGia.DataPropertyName = "Ten_LoaiDocGia";
+            this.Ten_LoaiDocGia.HeaderText = "Ten_LoaiDocGia";
+            this.Ten_LoaiDocGia.Name = "Ten_LoaiDocGia";
+            this.Ten_LoaiDocGia.ReadOnly = true;
+            // 
+            // HoTen_DocGia
+            // 
+            this.HoTen_DocGia.DataPropertyName = "HoTen_DocGia";
+            this.HoTen_DocGia.HeaderText = "HoTen_DocGia";
+            this.HoTen_DocGia.Name = "HoTen_DocGia";
+            this.HoTen_DocGia.ReadOnly = true;
+            // 
+            // NgaySinh_DocGia
+            // 
+            this.NgaySinh_DocGia.DataPropertyName = "NgaySinh_DocGia";
+            this.NgaySinh_DocGia.HeaderText = "NgaySinh_DocGia";
+            this.NgaySinh_DocGia.Name = "NgaySinh_DocGia";
+            this.NgaySinh_DocGia.ReadOnly = true;
+            // 
+            // DiaChi_DocGia
+            // 
+            this.DiaChi_DocGia.DataPropertyName = "DiaChi_DocGia";
+            this.DiaChi_DocGia.HeaderText = "DiaChi_DocGia";
+            this.DiaChi_DocGia.Name = "DiaChi_DocGia";
+            this.DiaChi_DocGia.ReadOnly = true;
+            // 
+            // Email_DocGia
+            // 
+            this.Email_DocGia.DataPropertyName = "Email_DocGia";
+            this.Email_DocGia.HeaderText = "Email_DocGia";
+            this.Email_DocGia.Name = "Email_DocGia";
+            this.Email_DocGia.ReadOnly = true;
+            // 
+            // NgayLapThe
+            // 
+            this.NgayLapThe.DataPropertyName = "NgayLapThe";
+            this.NgayLapThe.HeaderText = "NgayLapThe";
+            this.NgayLapThe.Name = "NgayLapThe";
+            this.NgayLapThe.ReadOnly = true;
+            // 
+            // NgayHetHan
+            // 
+            this.NgayHetHan.DataPropertyName = "NgayHetHan";
+            this.NgayHetHan.HeaderText = "NgayHetHan";
+            this.NgayHetHan.Name = "NgayHetHan";
+            this.NgayHetHan.ReadOnly = true;
+            // 
+            // TrangThai_TheDocGia
+            // 
+            this.TrangThai_TheDocGia.DataPropertyName = "TrangThai_TheDocGia";
+            this.TrangThai_TheDocGia.HeaderText = "TrangThai_TheDocGia";
+            this.TrangThai_TheDocGia.Name = "TrangThai_TheDocGia";
+            this.TrangThai_TheDocGia.ReadOnly = true;
+            // 
             // ucLapTheDocGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.dtgTheDocGia);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtNgayHetHan);
             this.Controls.Add(this.dtpNgayLapThe);
             this.Controls.Add(this.txtDiaChi);
             this.Controls.Add(this.btLuu);
@@ -183,7 +310,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtHoVaTen);
             this.Name = "ucLapTheDocGia";
-            this.Size = new System.Drawing.Size(458, 319);
+            this.Size = new System.Drawing.Size(894, 572);
+            this.Load += new System.EventHandler(this.UcLapTheDocGia_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgTheDocGia)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,5 +333,17 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtHoVaTen;
+        private System.Windows.Forms.TextBox txtNgayHetHan;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DataGridView dtgTheDocGia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID_TheDocGia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ten_LoaiDocGia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HoTen_DocGia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgaySinh_DocGia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi_DocGia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email_DocGia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayLapThe;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayHetHan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai_TheDocGia;
     }
 }

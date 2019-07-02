@@ -109,6 +109,12 @@
     <Compile Include="ucLapTheDocGia.Designer.cs">
       <DependentUpon>ucLapTheDocGia.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucTiepNhanSachMoi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTiepNhanSachMoi.Designer.cs">
+      <DependentUpon>ucTiepNhanSachMoi.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmHeThong.resx">
       <DependentUpon>frmHeThong.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +154,9 @@
     </Compile>
     <EmbeddedResource Include="ucLapTheDocGia.resx">
       <DependentUpon>ucLapTheDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTiepNhanSachMoi.resx">
+      <DependentUpon>ucTiepNhanSachMoi.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

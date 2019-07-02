@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -97,6 +98,7 @@ namespace GUI
         private void FrmHeThong_Load(object sender, EventArgs e)
         {
             ucLapTheDocGia1.Hide();
+            lbNgay.Text = DateTime.Now.ToString("dddd,dd/MM/yyyy", new CultureInfo("vi-VN"));
         }
 
         private void UcLapTheDocGia1_Load(object sender, EventArgs e)
