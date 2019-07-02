@@ -13,6 +13,7 @@ namespace BUS
     {
         DAO_KetNoi xl = new DAO_KetNoi();
         DTO_TheDocGia dl = new DTO_TheDocGia();
+
         public DataTable ChonLoaiDocGia_Select(DTO_TheDocGia dl)
         {
             return xl.table_Select("select ID_LoaiDocGia,Ten_LoaiDocGia from LoaiDocGia where  TrangThai_LoaiDocGia=N''");

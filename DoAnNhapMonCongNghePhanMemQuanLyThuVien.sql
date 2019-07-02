@@ -302,3 +302,22 @@ Insert into TheDocGia Values (1,N'Khánh','02/11/1997','22/4//2','a@cdd','01/07/
 select ID_LoaiDocGia,Ten_LoaiDocGia from LoaiDocGia where  TrangThai_LoaiDocGia=N''
 
 select * from TheDocGia
+
+set dateformat dmy
+SELECT  DATEADD(month,1,'02/07/2019') as NgayHetHan
+
+ SELECT CONVERT(varchar(20),DATEADD(month,6,'02/07/2019'),103) as NgayHetHan
+
+
+ ID_TheDocGia			int identity(1,1) primary key,
+	ID_LoaiDocGia			int,
+	HoTen_DocGia			nvarchar(100),
+	NgaySinh_DocGia			datetime,
+	DiaChi_DocGia			nvarchar(100),
+	Email_DocGia			nvarchar(100),
+	NgayLapThe				datetime,
+	NgayHetHan				datetime,
+	TrangThai_TheDocGia		nvarchar(100),
+
+ select ID_TheDocGia,Ten_LoaiDocGia,HoTen_DocGia,NgaySinh_DocGia,DiaChi_DocGia,Email_DocGia,NgayLapThe,NgayHetHan,TrangThai_TheDocGia from TheDocGia, LoaiDocGia
+ where TheDocGia.ID_LoaiDocGia = LoaiDocGia.ID_LoaiDocGia order by ID_TheDocGia desc

@@ -52,6 +52,13 @@
             this.pnBangDieuKhien_Hide = new System.Windows.Forms.Panel();
             this.btMenu = new System.Windows.Forms.Button();
             this.ucLapTheDocGia1 = new GUI.ucLapTheDocGia();
+            this.ucTiepNhanSachMoi1 = new GUI.ucTiepNhanSachMoi();
+            this.ucPhieuMuonSach1 = new GUI.ucPhieuMuonSach();
+            this.ucPhieuTraSach1 = new GUI.ucPhieuTraSach();
+            this.ucPhieuPhat1 = new GUI.ucPhieuPhat();
+            this.ucThongKeMuonSach1 = new GUI.ucThongKeMuonSach();
+            this.ucTraCuuSach1 = new GUI.ucTraCuuSach();
+            this.ucThongKeTraSachTre1 = new GUI.ucThongKeTraSachTre();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnBangDieuKhien_Show.SuspendLayout();
@@ -247,7 +254,7 @@
             this.pnRibbon.Location = new System.Drawing.Point(0, 0);
             this.pnRibbon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnRibbon.Name = "pnRibbon";
-            this.pnRibbon.Size = new System.Drawing.Size(1164, 18);
+            this.pnRibbon.Size = new System.Drawing.Size(1189, 18);
             this.pnRibbon.TabIndex = 67;
             // 
             // pnBangDieuKhien_Show
@@ -272,7 +279,7 @@
             this.pnBangDieuKhien_Show.Location = new System.Drawing.Point(-19, 16);
             this.pnBangDieuKhien_Show.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnBangDieuKhien_Show.Name = "pnBangDieuKhien_Show";
-            this.pnBangDieuKhien_Show.Size = new System.Drawing.Size(194, 686);
+            this.pnBangDieuKhien_Show.Size = new System.Drawing.Size(194, 721);
             this.pnBangDieuKhien_Show.TabIndex = 66;
             // 
             // btThongKeSachMuon
@@ -360,7 +367,7 @@
             this.lbNgay.Dock = System.Windows.Forms.DockStyle.Right;
             this.lbNgay.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNgay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbNgay.Location = new System.Drawing.Point(1164, 0);
+            this.lbNgay.Location = new System.Drawing.Point(1189, 0);
             this.lbNgay.Name = "lbNgay";
             this.lbNgay.Size = new System.Drawing.Size(41, 17);
             this.lbNgay.TabIndex = 62;
@@ -397,17 +404,77 @@
             // 
             // ucLapTheDocGia1
             // 
-            this.ucLapTheDocGia1.Location = new System.Drawing.Point(207, 63);
+            this.ucLapTheDocGia1.Location = new System.Drawing.Point(176, 16);
             this.ucLapTheDocGia1.Name = "ucLapTheDocGia1";
-            this.ucLapTheDocGia1.Size = new System.Drawing.Size(976, 597);
+            this.ucLapTheDocGia1.Size = new System.Drawing.Size(1142, 612);
             this.ucLapTheDocGia1.TabIndex = 68;
             this.ucLapTheDocGia1.Load += new System.EventHandler(this.UcLapTheDocGia1_Load);
+            // 
+            // ucTiepNhanSachMoi1
+            // 
+            this.ucTiepNhanSachMoi1.Location = new System.Drawing.Point(176, 16);
+            this.ucTiepNhanSachMoi1.Name = "ucTiepNhanSachMoi1";
+            this.ucTiepNhanSachMoi1.Size = new System.Drawing.Size(988, 556);
+            this.ucTiepNhanSachMoi1.TabIndex = 69;
+            this.ucTiepNhanSachMoi1.Load += new System.EventHandler(this.UcTiepNhanSachMoi1_Load);
+            // 
+            // ucPhieuMuonSach1
+            // 
+            this.ucPhieuMuonSach1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ucPhieuMuonSach1.Location = new System.Drawing.Point(173, 15);
+            this.ucPhieuMuonSach1.Margin = new System.Windows.Forms.Padding(6);
+            this.ucPhieuMuonSach1.Name = "ucPhieuMuonSach1";
+            this.ucPhieuMuonSach1.Size = new System.Drawing.Size(1068, 689);
+            this.ucPhieuMuonSach1.TabIndex = 70;
+            // 
+            // ucPhieuTraSach1
+            // 
+            this.ucPhieuTraSach1.Location = new System.Drawing.Point(176, 18);
+            this.ucPhieuTraSach1.Name = "ucPhieuTraSach1";
+            this.ucPhieuTraSach1.Size = new System.Drawing.Size(832, 446);
+            this.ucPhieuTraSach1.TabIndex = 71;
+            // 
+            // ucPhieuPhat1
+            // 
+            this.ucPhieuPhat1.Location = new System.Drawing.Point(173, 15);
+            this.ucPhieuPhat1.Name = "ucPhieuPhat1";
+            this.ucPhieuPhat1.Size = new System.Drawing.Size(517, 426);
+            this.ucPhieuPhat1.TabIndex = 72;
+            // 
+            // ucThongKeMuonSach1
+            // 
+            this.ucThongKeMuonSach1.Location = new System.Drawing.Point(173, 15);
+            this.ucThongKeMuonSach1.Name = "ucThongKeMuonSach1";
+            this.ucThongKeMuonSach1.Size = new System.Drawing.Size(761, 651);
+            this.ucThongKeMuonSach1.TabIndex = 73;
+            this.ucThongKeMuonSach1.Load += new System.EventHandler(this.UcThongKeMuonSach1_Load);
+            // 
+            // ucTraCuuSach1
+            // 
+            this.ucTraCuuSach1.Location = new System.Drawing.Point(177, 18);
+            this.ucTraCuuSach1.Name = "ucTraCuuSach1";
+            this.ucTraCuuSach1.Size = new System.Drawing.Size(757, 594);
+            this.ucTraCuuSach1.TabIndex = 74;
+            // 
+            // ucThongKeTraSachTre1
+            // 
+            this.ucThongKeTraSachTre1.Location = new System.Drawing.Point(176, 16);
+            this.ucThongKeTraSachTre1.Name = "ucThongKeTraSachTre1";
+            this.ucThongKeTraSachTre1.Size = new System.Drawing.Size(781, 532);
+            this.ucThongKeTraSachTre1.TabIndex = 75;
             // 
             // frmHeThong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1205, 696);
+            this.ClientSize = new System.Drawing.Size(1230, 732);
+            this.Controls.Add(this.ucThongKeTraSachTre1);
+            this.Controls.Add(this.ucTraCuuSach1);
+            this.Controls.Add(this.ucThongKeMuonSach1);
+            this.Controls.Add(this.ucPhieuPhat1);
+            this.Controls.Add(this.ucPhieuTraSach1);
+            this.Controls.Add(this.ucPhieuMuonSach1);
+            this.Controls.Add(this.ucTiepNhanSachMoi1);
             this.Controls.Add(this.ucLapTheDocGia1);
             this.Controls.Add(this.pnBangDieuKhien_Show);
             this.Controls.Add(this.pnRibbon);
@@ -452,5 +519,12 @@
         private System.Windows.Forms.Button btThongKeSachTre;
         private System.Windows.Forms.Button btMenu;
         private ucLapTheDocGia ucLapTheDocGia1;
+        private ucTiepNhanSachMoi ucTiepNhanSachMoi1;
+        private ucPhieuMuonSach ucPhieuMuonSach1;
+        private ucPhieuTraSach ucPhieuTraSach1;
+        private ucPhieuPhat ucPhieuPhat1;
+        private ucThongKeMuonSach ucThongKeMuonSach1;
+        private ucTraCuuSach ucTraCuuSach1;
+        private ucThongKeTraSachTre ucThongKeTraSachTre1;
     }
 }

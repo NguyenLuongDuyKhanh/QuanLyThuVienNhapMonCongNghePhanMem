@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class ucTiepNhanSachMoi : UserControl
+    public partial class ucPhieuPhat : UserControl
     {
-        public ucTiepNhanSachMoi()
+        public ucPhieuPhat()
         {
             InitializeComponent();
-        }
-
-        private void TextBox2_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

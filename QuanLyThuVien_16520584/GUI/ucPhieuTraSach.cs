@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class ucTiepNhanSachMoi : UserControl
+    public partial class ucPhieuTraSach : UserControl
     {
-        public ucTiepNhanSachMoi()
+        public ucPhieuTraSach()
         {
             InitializeComponent();
         }
 
-        private void TextBox2_TextChanged(object sender, EventArgs e)
+        private void Label4_Click(object sender, EventArgs e)
         {
 
         }

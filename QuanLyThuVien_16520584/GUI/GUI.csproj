@@ -109,11 +109,47 @@
     <Compile Include="ucLapTheDocGia.Designer.cs">
       <DependentUpon>ucLapTheDocGia.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucPhieuMuonSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPhieuMuonSach.Designer.cs">
+      <DependentUpon>ucPhieuMuonSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPhieuPhat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPhieuPhat.Designer.cs">
+      <DependentUpon>ucPhieuPhat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPhieuTraSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPhieuTraSach.Designer.cs">
+      <DependentUpon>ucPhieuTraSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucThongKeMuonSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucThongKeMuonSach.Designer.cs">
+      <DependentUpon>ucThongKeMuonSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucThongKeTraSachTre.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucThongKeTraSachTre.Designer.cs">
+      <DependentUpon>ucThongKeTraSachTre.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucTiepNhanSachMoi.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ucTiepNhanSachMoi.Designer.cs">
       <DependentUpon>ucTiepNhanSachMoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucTraCuuSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTraCuuSach.Designer.cs">
+      <DependentUpon>ucTraCuuSach.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="frmHeThong.resx">
       <DependentUpon>frmHeThong.cs</DependentUpon>
@@ -155,8 +191,26 @@
     <EmbeddedResource Include="ucLapTheDocGia.resx">
       <DependentUpon>ucLapTheDocGia.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ucPhieuMuonSach.resx">
+      <DependentUpon>ucPhieuMuonSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPhieuPhat.resx">
+      <DependentUpon>ucPhieuPhat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPhieuTraSach.resx">
+      <DependentUpon>ucPhieuTraSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucThongKeMuonSach.resx">
+      <DependentUpon>ucThongKeMuonSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucThongKeTraSachTre.resx">
+      <DependentUpon>ucThongKeTraSachTre.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucTiepNhanSachMoi.resx">
       <DependentUpon>ucTiepNhanSachMoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTraCuuSach.resx">
+      <DependentUpon>ucTraCuuSach.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
