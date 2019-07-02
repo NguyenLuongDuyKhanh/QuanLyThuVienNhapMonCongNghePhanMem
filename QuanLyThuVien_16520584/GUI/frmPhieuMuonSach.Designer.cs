@@ -30,11 +30,11 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dpkNgayMuon = new System.Windows.Forms.DateTimePicker();
+            this.cboMaDocGia = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cboMaSachMuon = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -59,21 +59,21 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Mã độc giả";
             // 
-            // dateTimePicker1
+            // dpkNgayMuon
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(120, 112);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 2;
+            this.dpkNgayMuon.Location = new System.Drawing.Point(120, 112);
+            this.dpkNgayMuon.Name = "dpkNgayMuon";
+            this.dpkNgayMuon.Size = new System.Drawing.Size(200, 20);
+            this.dpkNgayMuon.TabIndex = 2;
             // 
-            // comboBox1
+            // cboMaDocGia
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(120, 31);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 3;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
+            this.cboMaDocGia.FormattingEnabled = true;
+            this.cboMaDocGia.Location = new System.Drawing.Point(120, 31);
+            this.cboMaDocGia.Name = "cboMaDocGia";
+            this.cboMaDocGia.Size = new System.Drawing.Size(121, 21);
+            this.cboMaDocGia.TabIndex = 3;
+            this.cboMaDocGia.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
             // dataGridView1
             // 
@@ -92,13 +92,14 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Mã sách mượn";
             // 
-            // comboBox2
+            // cboMaSachMuon
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(120, 79);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 6;
+            this.cboMaSachMuon.FormattingEnabled = true;
+            this.cboMaSachMuon.Location = new System.Drawing.Point(120, 79);
+            this.cboMaSachMuon.Name = "cboMaSachMuon";
+            this.cboMaSachMuon.Size = new System.Drawing.Size(121, 21);
+            this.cboMaSachMuon.TabIndex = 6;
+            this.cboMaSachMuon.SelectedIndexChanged += new System.EventHandler(this.CboMaSachMuon_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -124,15 +125,16 @@
             this.ClientSize = new System.Drawing.Size(380, 450);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cboMaSachMuon);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.cboMaDocGia);
+            this.Controls.Add(this.dpkNgayMuon);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmPhieuMuonSach";
             this.Text = "Phiếu cho mượn sách";
+            this.Load += new System.EventHandler(this.FrmPhieuMuonSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -143,11 +145,11 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DateTimePicker dpkNgayMuon;
+        private System.Windows.Forms.ComboBox cboMaDocGia;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cboMaSachMuon;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }

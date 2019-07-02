@@ -11,14 +11,14 @@ create table TheLoaiSach
 	ID_TheLoaiSach			int identity(1,1) primary key,
 	Ten_TheLoaiSach			nvarchar(10),
 	TrangThai_TheLoaiSach	nvarchar(100)
-)
+)--QD
 
 create table NhaXuatBan
 (
 	ID_NXB					int identity(1,1) primary key,
 	Ten_NXB					nvarchar(100),
 	TrangThai_NXB			nvarchar(100),
-)
+) --Testcase
 
 create table TacGia
 (
@@ -27,7 +27,7 @@ create table TacGia
 	DiaChi_TacGia			nvarchar(100),
 	SDT_TacGia				nvarchar(11),
 	TrangThai_TacGia		nvarchar(100),
-)
+)--QD
 
 create table Sach
 (
@@ -46,7 +46,8 @@ create table Sach
 	foreign key (ID_TheLoaiSach) references TheLoaiSach(ID_TheLoaiSach) on update cascade,
 	foreign key (ID_TacGia) references TacGia(ID_TacGia) on update cascade,
 	foreign key (ID_NXB) references NhaXuatBan(ID_NXB) on update cascade
-)
+)--testcase
+
 
 create table LoaiDocGia
 (
@@ -54,7 +55,7 @@ create table LoaiDocGia
 	Ten_LoaiDocGia			nvarchar(100),
 	GhiChu_LoaiDocGia		nvarchar(100),
 	TrangThai_LoaiDocGia	nvarchar(100),
-)
+)--QD
 
 create table TheDocGia
 (
@@ -68,7 +69,9 @@ create table TheDocGia
 	NgayHetHan				datetime,
 	TrangThai_TheDocGia		nvarchar(100),
 	foreign key (ID_LoaiDocGia) references LoaiDocGia(ID_LoaiDocGia) on update cascade
-)
+)--testcase
+
+
 
 create table PhieuMuonSach
 (
@@ -112,8 +115,6 @@ create table PhieuPhat
 --Quy định về loại độc giả
 Insert into LoaiDocGia Values ('X',N'','')
 Insert into LoaiDocGia Values ('Y',N'','')
-Insert into LoaiDocGia Values ('Z',N'','')
-Insert into LoaiDocGia Values ('TamBay',N'','')
 select * from  LoaiDocGia
 
 --Quy định về các tác giả
@@ -233,6 +234,57 @@ Insert into TheLoaiSach Values ('A','')
 Insert into TheLoaiSach Values ('B','')
 Insert into TheLoaiSach Values ('C','')
 select * from  TheLoaiSach
+
+--Testcase Nhà xuất bản
+Insert into NhaXuatBan Values (N'NXB Kim Đồng','')
+Insert into NhaXuatBan Values (N'NXB Trẻ','')
+Insert into NhaXuatBan Values (N'NXB Văn Hóa','')
+Insert into NhaXuatBan Values (N'NXB Tổng hợp','')
+Insert into NhaXuatBan Values (N'NXB Phụ nữ','')
+Insert into NhaXuatBan Values (N'NXB Đại học Quốc gia','')
+Insert into NhaXuatBan Values (N'NXB Văn Học','')
+Insert into NhaXuatBan Values (N'NXB Quân đội Nhân Dân','')
+select * from NhaXuatBan
+
+--Testcase Sách
+Insert into Sach Values (1,1,1,N'Rừng xà nu',1000,10,N'Đây là sách nhập ban đầu','2015','','','')
+Insert into Sach Values (2,2,2,N'Trăm Năm Cô Đơn',1000,10,N'Đây là sách nhập ban đầu','2016','','','')
+Insert into Sach Values (3,3,3,N'Harry Potter',1000,10,N'Đây là sách nhập ban đầu','2017','','','')
+Insert into Sach Values (1,4,4,N'Tiếng Chim hót trong bụi Mận gai',1000,10,N'Đây là sách nhập ban đầu','2018','','','')
+Insert into Sach Values (2,5,5,N'Quân Vương',1000,10,N'Đây là sách nhập ban đầu','2019','','','')
+Insert into Sach Values (3,6,6,N'Bàn về Khế Ước xã hội',1000,10,N'Đây là sách nhập ban đầu','2019','','','')
+Insert into Sach Values (1,7,7,N'Thế giới phăng',1000,10,N'Đây là sách nhập ban đầu','2018','','','')
+Insert into Sach Values (2,8,8,N'Sách giáo khoa',1000,10,N'Đây là sách nhập ban đầu','2017','','','')
+Insert into Sach Values (3,9,1,N'Sách tầm bậy',1000,10,N'Đây là sách nhập ban đầu','2016','','','')
+Insert into Sach Values (1,10,2,N'Sách tào lao',1000,10,N'Đây là sách nhập ban đầu','2015','','','')
+Insert into Sach Values (2,20,3,N'Sách để test',1000,10,N'Đây là sách nhập ban đầu','2014','','','')
+Insert into Sach Values (3,30,4,N'Nghìn lẻ một đêm',1000,10,N'Đây là sách nhập ban đầu','2013','','','')
+Insert into Sach Values (1,40,5,N'Không có sách này',1000,10,N'Đây là sách nhập ban đầu','2012','','','')
+Insert into Sach Values (2,50,6,N'Sách để test thêm',1000,10,N'Đây là sách nhập ban đầu','2012','','','')
+Insert into Sach Values (3,60,7,N'Tuổi trẻ đáng giá bao nhiêu',1000,10,N'Đây là sách nhập ban đầu','2013','','','')
+Insert into Sach Values (1,70,8,N'Sách nhập môn công nghệ phần mềm',1000,10,N'Đây là sách nhập ban đầu','2014','','','')
+Insert into Sach Values (2,80,1,N'Đánh nhao với cối xay gió',1000,10,N'Đây là sách nhập ban đầu','2015','','','')
+Insert into Sach Values (3,90,2,N'Sách tham khảo',1000,10,N'Đây là sách nhập ban đầu','2016','','','')
+Insert into Sach Values (1,45,3,N'Sách giải trí',1000,10,N'Đây là sách nhập ban đầu','2017','','','')
+Insert into Sach Values (2,50,4,N'Sách tâm lý',1000,10,N'Đây là sách nhập ban đầu','2018','','','')
+Insert into Sach Values (3,56,5,N'Sách mua vui',1000,10,N'Đây là sách nhập ban đầu','2019','','','')
+Insert into Sach Values (1,21,6,N'Sách cuối list',1000,10,N'Đây là sách nhập ban đầu','2013','','','')
+select * from Sach
+
+Insert into TheDocGia Values (1,N'Nguyễn Văn A','23/10/1998',N'123/abc đường xyz',N'abc@xyz.com','','','')
+Insert into TheDocGia Values (2,N'Nguyễn Văn B','23/10/1998',N'123/abc đường xyz',N'abc@xyz.com','','','')
+Insert into TheDocGia Values (1,N'Trần Thị C','23/10/1998',N'123/abc đường xyz',N'abc@xyz.com','','','')
+Insert into TheDocGia Values (2,N'Trần Thị D','23/10/1998',N'123/abc đường xyz',N'abc@xyz.com','','','')
+Insert into TheDocGia Values (1,N'Nguyễn Văn E','23/10/1998',N'123/abc đường xyz',N'abc@xyz.com','','','')
+Insert into TheDocGia Values (2,N'Nguyễn Văn F','23/10/1998',N'123/abc đường xyz',N'abc@xyz.com','','','')
+Insert into TheDocGia Values (1,N'Trần Thị G','23/10/1998',N'123/abc đường xyz',N'abc@xyz.com','','','')
+Insert into TheDocGia Values (2,N'Trần Thị H','23/10/1998',N'123/abc đường xyz',N'abc@xyz.com','','','')
+Insert into TheDocGia Values (1,N'Nguyễn Văn I','23/10/1998',N'123/abc đường xyz',N'abc@xyz.com','','','')
+Insert into TheDocGia Values (2,N'Nguyễn Văn J','23/10/1998',N'123/abc đường xyz',N'abc@xyz.com','','','')
+Insert into TheDocGia Values (1,N'Trần Thị K','23/10/1998',N'123/abc đường xyz',N'abc@xyz.com','','','')
+Insert into TheDocGia Values (2,N'Trần Thị L','23/10/1998',N'123/abc đường xyz',N'abc@xyz.com','','','')
+select * from TheDocGia
+
 
 set dateformat dmy
 Insert into TheDocGia Values (1,N'Khánh','02/11/1997','22/4//2','a@cdd','01/07/2019','1/11/2019','')

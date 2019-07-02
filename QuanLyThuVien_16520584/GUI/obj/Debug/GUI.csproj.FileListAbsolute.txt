@@ -56,3 +56,5 @@ C:\Users\khanh\OneDrive\Máy tính\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThu
 C:\Users\khanh\OneDrive\Máy tính\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.frmPhieuPhat.resources
 C:\Users\khanh\OneDrive\Máy tính\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.frmThongKeMuonSach.resources
 C:\Users\khanh\OneDrive\Máy tính\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.frmThongKeTraSachTre.resources
+C:\Users\khanh\OneDrive\Máy tính\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.frmHeThong.resources
+C:\Users\khanh\OneDrive\Máy tính\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.ucLapTheDocGia.resources
