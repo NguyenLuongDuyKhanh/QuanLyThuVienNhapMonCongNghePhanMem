@@ -1,0 +1,22 @@
+C:\Users\khanh\OneDrive\Máy tính\DoAnNhapMonCongNghePhanMem\QuanLyThuVien_16520584\BUS\bin\Debug\BUS.dll
+C:\Users\khanh\OneDrive\Máy tính\DoAnNhapMonCongNghePhanMem\QuanLyThuVien_16520584\BUS\bin\Debug\BUS.pdb
+C:\Users\khanh\OneDrive\Máy tính\DoAnNhapMonCongNghePhanMem\QuanLyThuVien_16520584\BUS\bin\Debug\DAO.dll
+C:\Users\khanh\OneDrive\Máy tính\DoAnNhapMonCongNghePhanMem\QuanLyThuVien_16520584\BUS\bin\Debug\DTO.dll
+C:\Users\khanh\OneDrive\Máy tính\DoAnNhapMonCongNghePhanMem\QuanLyThuVien_16520584\BUS\bin\Debug\DAO.pdb
+C:\Users\khanh\OneDrive\Máy tính\DoAnNhapMonCongNghePhanMem\QuanLyThuVien_16520584\BUS\bin\Debug\DTO.pdb
+C:\Users\khanh\OneDrive\Máy tính\DoAnNhapMonCongNghePhanMem\QuanLyThuVien_16520584\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+C:\Users\khanh\OneDrive\Máy tính\DoAnNhapMonCongNghePhanMem\QuanLyThuVien_16520584\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\khanh\OneDrive\Máy tính\DoAnNhapMonCongNghePhanMem\QuanLyThuVien_16520584\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\khanh\OneDrive\Máy tính\DoAnNhapMonCongNghePhanMem\QuanLyThuVien_16520584\BUS\obj\Debug\BUS.dll
+C:\Users\khanh\OneDrive\Máy tính\DoAnNhapMonCongNghePhanMem\QuanLyThuVien_16520584\BUS\obj\Debug\BUS.pdb
+D:\WorkingZone\QuanLyThuVienNhapMonCongNghePhanMem-master\QuanLyThuVien_16520584\BUS\bin\Debug\BUS.dll
+D:\WorkingZone\QuanLyThuVienNhapMonCongNghePhanMem-master\QuanLyThuVien_16520584\BUS\bin\Debug\BUS.pdb
+D:\WorkingZone\QuanLyThuVienNhapMonCongNghePhanMem-master\QuanLyThuVien_16520584\BUS\bin\Debug\DAO.dll
+D:\WorkingZone\QuanLyThuVienNhapMonCongNghePhanMem-master\QuanLyThuVien_16520584\BUS\bin\Debug\DTO.dll
+D:\WorkingZone\QuanLyThuVienNhapMonCongNghePhanMem-master\QuanLyThuVien_16520584\BUS\bin\Debug\DAO.pdb
+D:\WorkingZone\QuanLyThuVienNhapMonCongNghePhanMem-master\QuanLyThuVien_16520584\BUS\bin\Debug\DTO.pdb
+D:\WorkingZone\QuanLyThuVienNhapMonCongNghePhanMem-master\QuanLyThuVien_16520584\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+D:\WorkingZone\QuanLyThuVienNhapMonCongNghePhanMem-master\QuanLyThuVien_16520584\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\WorkingZone\QuanLyThuVienNhapMonCongNghePhanMem-master\QuanLyThuVien_16520584\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\WorkingZone\QuanLyThuVienNhapMonCongNghePhanMem-master\QuanLyThuVien_16520584\BUS\obj\Debug\BUS.dll
+D:\WorkingZone\QuanLyThuVienNhapMonCongNghePhanMem-master\QuanLyThuVien_16520584\BUS\obj\Debug\BUS.pdb

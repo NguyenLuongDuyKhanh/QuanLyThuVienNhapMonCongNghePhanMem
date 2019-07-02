@@ -1,0 +1,6 @@
+C:\Users\khanh\OneDrive\Máy tính\DoAnNhapMonCongNghePhanMem\QuanLyThuVien_16520584\DAO\bin\Release\DAO.dll
+C:\Users\khanh\OneDrive\Máy tính\DoAnNhapMonCongNghePhanMem\QuanLyThuVien_16520584\DAO\bin\Release\DAO.pdb
+C:\Users\khanh\OneDrive\Máy tính\DoAnNhapMonCongNghePhanMem\QuanLyThuVien_16520584\DAO\obj\Release\DAO.csprojAssemblyReference.cache
+C:\Users\khanh\OneDrive\Máy tính\DoAnNhapMonCongNghePhanMem\QuanLyThuVien_16520584\DAO\obj\Release\DAO.csproj.CoreCompileInputs.cache
+C:\Users\khanh\OneDrive\Máy tính\DoAnNhapMonCongNghePhanMem\QuanLyThuVien_16520584\DAO\obj\Release\DAO.dll
+C:\Users\khanh\OneDrive\Máy tính\DoAnNhapMonCongNghePhanMem\QuanLyThuVien_16520584\DAO\obj\Release\DAO.pdb
