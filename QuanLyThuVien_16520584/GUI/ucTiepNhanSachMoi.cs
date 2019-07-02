@@ -25,6 +25,11 @@ namespace GUI
 
         private void TextBox2_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void ucTiepNhanSachMoi_Load(object sender, EventArgs e)
+        {
             cboTheLoaiSach.DataSource = xldl.ChonTheLoaiSach_Select(dl);
             cboTheLoaiSach.DisplayMember = "Ten_TheLoaiSach";
             cboTheLoaiSach.ValueMember = "ID_TheLoaiSach";
@@ -33,6 +38,12 @@ namespace GUI
             cboTacGia.DisplayMember = "Ten_TacGia";
             cboTacGia.ValueMember = "ID_TacGia";
 
+            dtgSach.DataSource = xldl.Sach_Select(dl);
+        }
+
+        private void BtHoanTat_Click(object sender, EventArgs e)
+        {
+            //dl.ID_Sach = Convert.ToInt32(cboLoaiDocGia.SelectedValue.ToString());
         }
     }
 }

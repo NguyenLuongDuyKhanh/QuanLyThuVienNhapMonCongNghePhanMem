@@ -48,6 +48,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.dtgSach = new System.Windows.Forms.DataGridView();
+            this.ID_Sach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ten_TheLoaiSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ten_TacGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ten_NXB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ten_Sach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sl_Nhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NamXuatBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgSach)).BeginInit();
             this.SuspendLayout();
             // 
             // btHoanTat
@@ -59,6 +69,7 @@
             this.btHoanTat.TabIndex = 37;
             this.btHoanTat.Text = "Hoàn Tất";
             this.btHoanTat.UseVisualStyleBackColor = true;
+            this.btHoanTat.Click += new System.EventHandler(this.BtHoanTat_Click);
             // 
             // label9
             // 
@@ -235,10 +246,76 @@
             this.label10.TabIndex = 38;
             this.label10.Text = "Tiếp nhận sách";
             // 
+            // dtgSach
+            // 
+            this.dtgSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID_Sach,
+            this.Ten_TheLoaiSach,
+            this.Ten_TacGia,
+            this.Ten_NXB,
+            this.Ten_Sach,
+            this.Gia,
+            this.Sl_Nhap,
+            this.NamXuatBan});
+            this.dtgSach.Location = new System.Drawing.Point(3, 511);
+            this.dtgSach.Name = "dtgSach";
+            this.dtgSach.Size = new System.Drawing.Size(819, 86);
+            this.dtgSach.TabIndex = 39;
+            // 
+            // ID_Sach
+            // 
+            this.ID_Sach.DataPropertyName = "ID_Sach";
+            this.ID_Sach.HeaderText = "ID_Sach";
+            this.ID_Sach.Name = "ID_Sach";
+            // 
+            // Ten_TheLoaiSach
+            // 
+            this.Ten_TheLoaiSach.DataPropertyName = "Ten_TheLoaiSach";
+            this.Ten_TheLoaiSach.HeaderText = "Ten_TheLoaiSach";
+            this.Ten_TheLoaiSach.Name = "Ten_TheLoaiSach";
+            // 
+            // Ten_TacGia
+            // 
+            this.Ten_TacGia.DataPropertyName = "Ten_TacGia";
+            this.Ten_TacGia.HeaderText = "Ten_TacGia";
+            this.Ten_TacGia.Name = "Ten_TacGia";
+            // 
+            // Ten_NXB
+            // 
+            this.Ten_NXB.DataPropertyName = "Ten_NXB";
+            this.Ten_NXB.HeaderText = "Ten_NXB";
+            this.Ten_NXB.Name = "Ten_NXB";
+            // 
+            // Ten_Sach
+            // 
+            this.Ten_Sach.DataPropertyName = "Ten_Sach";
+            this.Ten_Sach.HeaderText = "Ten_Sach";
+            this.Ten_Sach.Name = "Ten_Sach";
+            // 
+            // Gia
+            // 
+            this.Gia.DataPropertyName = "Gia";
+            this.Gia.HeaderText = "Gia";
+            this.Gia.Name = "Gia";
+            // 
+            // Sl_Nhap
+            // 
+            this.Sl_Nhap.DataPropertyName = "Sl_Nhap";
+            this.Sl_Nhap.HeaderText = "Sl_Nhap";
+            this.Sl_Nhap.Name = "Sl_Nhap";
+            // 
+            // NamXuatBan
+            // 
+            this.NamXuatBan.DataPropertyName = "NamXuatBan";
+            this.NamXuatBan.HeaderText = "NamXuatBan";
+            this.NamXuatBan.Name = "NamXuatBan";
+            // 
             // ucTiepNhanSachMoi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.dtgSach);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.btHoanTat);
             this.Controls.Add(this.label9);
@@ -260,8 +337,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ucTiepNhanSachMoi";
-            this.Size = new System.Drawing.Size(822, 541);
-            this.Load += new System.EventHandler(this.TextBox2_TextChanged);
+            this.Size = new System.Drawing.Size(822, 750);
+            this.Load += new System.EventHandler(this.ucTiepNhanSachMoi_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgSach)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,5 +367,14 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DataGridView dtgSach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID_Sach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ten_TheLoaiSach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ten_TacGia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ten_NXB;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ten_Sach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Gia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Sl_Nhap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NamXuatBan;
     }
 }

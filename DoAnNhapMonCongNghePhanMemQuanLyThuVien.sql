@@ -321,3 +321,14 @@ SELECT  DATEADD(month,1,'02/07/2019') as NgayHetHan
 
  select ID_TheDocGia,Ten_LoaiDocGia,HoTen_DocGia,NgaySinh_DocGia,DiaChi_DocGia,Email_DocGia,NgayLapThe,NgayHetHan,TrangThai_TheDocGia from TheDocGia, LoaiDocGia
  where TheDocGia.ID_LoaiDocGia = LoaiDocGia.ID_LoaiDocGia order by ID_TheDocGia desc
+
+ Select * from PhieuMuonSach
+ Select * from PhieuTraSach
+ Select * from PhieuPhat
+
+Select * from TheLoaiSach
+
+select ID_TheLoaiSach,Ten_TheLoaiSach from TheLoaiSach
+select ID_TacGia,Ten_TacGia from TacGia
+
+ select ID_Sach,Ten_TheLoaiSach,Ten_TacGia,Ten_NXB,Ten_Sach,Gia,Sl_Nhap,MoTa,NamXuatBan from Sach,TacGia,TheLoaiSach,NhaXuatBan where Sach.ID_TacGia = TacGia.ID_TacGia and Sach.ID_TheLoaiSach=TheLoaiSach.ID_TheLoaiSach and Sach.ID_NXB = NhaXuatBan.ID_NXB order by ID_Sach desc
