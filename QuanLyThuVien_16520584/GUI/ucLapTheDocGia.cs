@@ -27,6 +27,7 @@ namespace GUI
             cboLoaiDocGia.DataSource = xldl.ChonLoaiDocGia_Select(dl);
             cboLoaiDocGia.DisplayMember = "Ten_LoaiDocGia";
             cboLoaiDocGia.ValueMember = "ID_LoaiDocGia";
+
             dtgTheDocGia.DataSource = xldl.TheDocGia_Select(dl);
         }
 
@@ -51,8 +52,7 @@ namespace GUI
             txtNgayHetHan.DataBindings.Clear();
             dl.NgayLapThe = Convert.ToDateTime(dtpNgayLapThe.Text);
             txtNgayHetHan.DataBindings.Add("Text", xldl.NgayHetHan_Select(dl), "NgayHetHan");
-            
-
+     
         }
     }
 }

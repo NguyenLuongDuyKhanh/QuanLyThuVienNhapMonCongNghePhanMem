@@ -261,6 +261,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ucTiepNhanSachMoi";
             this.Size = new System.Drawing.Size(822, 541);
+            this.Load += new System.EventHandler(this.TextBox2_TextChanged);
             this.ResumeLayout(false);
             this.PerformLayout();
 
