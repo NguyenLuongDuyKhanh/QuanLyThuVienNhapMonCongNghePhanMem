@@ -33,16 +33,25 @@ namespace GUI
 
         private void BtLuu_Click(object sender, EventArgs e)
         {
-            dl.ID_LoaiDocGia = Convert.ToInt32(cboLoaiDocGia.SelectedValue.ToString());
-            dl.HoTen_DocGia = txtHoVaTen.Text;
-            dl.NgaySinh_DocGia = Convert.ToDateTime(dtpNgaySinhDocGia.Text);
-            dl.DiaChi_DocGia = txtDiaChi.Text;
-            dl.Email_DocGia = txtEmail.Text;
-            dl.NgayLapThe = Convert.ToDateTime(dtpNgayLapThe.Text);
-            dl.NgayHetHan = Convert.ToDateTime(txtNgayHetHan.Text);
-            dl.TrangThai_TheDocGia = "";
-            xldl.LapTheDocGia_INSERT(dl);
-            dtgTheDocGia.DataSource = xldl.TheDocGia_Select(dl);
+            if (txtHoVaTen.Text == "" || txtDiaChi.Text == "" || txtEmail.Text == "" || txtNgayHetHan.Text == "")
+            {
+                MessageBox.Show("Chưa nhập đủ dữ liệu !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                dl.ID_LoaiDocGia = Convert.ToInt32(cboLoaiDocGia.SelectedValue.ToString());
+                dl.HoTen_DocGia = txtHoVaTen.Text;
+                dl.NgaySinh_DocGia = Convert.ToDateTime(dtpNgaySinhDocGia.Text);
+                dl.DiaChi_DocGia = txtDiaChi.Text;
+                dl.Email_DocGia = txtEmail.Text;
+                dl.NgayLapThe = Convert.ToDateTime(dtpNgayLapThe.Text);
+                dl.NgayHetHan = Convert.ToDateTime(txtNgayHetHan.Text);
+
+                dl.TrangThai_TheDocGia = "";
+                xldl.LapTheDocGia_INSERT(dl);
+                dtgTheDocGia.DataSource = xldl.TheDocGia_Select(dl);
+            }
+            
 
         }
 

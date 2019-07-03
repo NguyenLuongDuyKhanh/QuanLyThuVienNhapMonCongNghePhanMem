@@ -34,9 +34,30 @@ namespace BUS
         public void Sach_INSERT(DTO_Sach dl)
         {
             xl.table_Command("set dateformat dmy Insert into Sach Values ('" + dl.ID_TheLoaiSach + "',N'" + dl.ID_TacGia + "',1,'" + dl.Ten_Sach + "','" + dl.Gia + "','" + dl.Sl_Nhap + "','" + dl.MoTa + "','" + dl.NamXuatBan + "','" + dl.NgayNhap + "','" + dl.TrangThai_Sach + "','" + dl.TrangThai_MuonSach + "')");
-
-
         }
+        ////////////////// Luận
+        public DataTable AllSach_Select(DTO_Sach dl)
+        {
+            return xl.table_Select("select Ten_TheLoaiSach,Ten_TacGia,Ten_NXB,Ten_Sach,Gia,NamXuatBan,CONVERT(varchar(20),NgayNhap,103) as NgayNhap, TrangThai_MuonSach from TheLoaiSach, TacGia, NhaXuatBan, Sach  where TheLoaiSach.ID_TheLoaiSach = Sach.ID_TheLoaiSach and TacGia.ID_TacGia = Sach.ID_TacGia and NhaXuatBan.ID_NXB = Sach.ID_NXB and TrangThai_Sach = N''");
+        }
+        public DataTable Sach_TenTheLoai_Select(DTO_Sach dl)
+        {
+            return xl.table_Select("select Ten_TheLoaiSach,Ten_TacGia,Ten_NXB,Ten_Sach,Gia,NamXuatBan,CONVERT(varchar(20),NgayNhap,103) as NgayNhap, TrangThai_MuonSach from TheLoaiSach, TacGia, NhaXuatBan, Sach  where TheLoaiSach.ID_TheLoaiSach = Sach.ID_TheLoaiSach and TacGia.ID_TacGia = Sach.ID_TacGia and NhaXuatBan.ID_NXB = Sach.ID_NXB and TrangThai_Sach = N'' and Ten_TheLoaiSach like  N'%"+dl.TuKhoa+"%'");
+        }
+        public DataTable Sach_TenSach_Select(DTO_Sach dl)
+        {
+            return xl.table_Select("select Ten_TheLoaiSach,Ten_TacGia,Ten_NXB,Ten_Sach,Gia,NamXuatBan,CONVERT(varchar(20),NgayNhap,103) as NgayNhap, TrangThai_MuonSach from TheLoaiSach, TacGia, NhaXuatBan, Sach  where TheLoaiSach.ID_TheLoaiSach = Sach.ID_TheLoaiSach and TacGia.ID_TacGia = Sach.ID_TacGia and NhaXuatBan.ID_NXB = Sach.ID_NXB and TrangThai_Sach = N'' and Ten_Sach like  N'%" + dl.TuKhoa + "%'");
+        }
+        public DataTable Sach_TenTacGia_Select(DTO_Sach dl)
+        {
+            return xl.table_Select("select Ten_TheLoaiSach,Ten_TacGia,Ten_NXB,Ten_Sach,Gia,NamXuatBan,CONVERT(varchar(20),NgayNhap,103) as NgayNhap, TrangThai_MuonSach from TheLoaiSach, TacGia, NhaXuatBan, Sach  where TheLoaiSach.ID_TheLoaiSach = Sach.ID_TheLoaiSach and TacGia.ID_TacGia = Sach.ID_TacGia and NhaXuatBan.ID_NXB = Sach.ID_NXB and TrangThai_Sach = N'' and Ten_TacGia like  N'%" + dl.TuKhoa + "%'");
+        }
+        public DataTable Sach_TenNhaXuatBan_Select(DTO_Sach dl)
+        {
+            return xl.table_Select("select Ten_TheLoaiSach,Ten_TacGia,Ten_NXB,Ten_Sach,Gia,NamXuatBan,CONVERT(varchar(20),NgayNhap,103) as NgayNhap, TrangThai_MuonSach from TheLoaiSach, TacGia, NhaXuatBan, Sach  where TheLoaiSach.ID_TheLoaiSach = Sach.ID_TheLoaiSach and TacGia.ID_TacGia = Sach.ID_TacGia and NhaXuatBan.ID_NXB = Sach.ID_NXB and TrangThai_Sach = N'' and Ten_NXB like  N'%" + dl.TuKhoa + "%'");
+        }
+
+
 
     }
 }

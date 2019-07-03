@@ -60,6 +60,7 @@
             this.ucThongKeMuonSach1 = new GUI.ucThongKeMuonSach();
             this.ucTraCuuSach1 = new GUI.ucTraCuuSach();
             this.ucThongKeTraSachTre1 = new GUI.ucThongKeTraSachTre();
+            this.ucTimSach1 = new GUI.ucTimSach();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnBangDieuKhien_Show.SuspendLayout();
@@ -425,7 +426,7 @@
             // 
             this.ucLapTheDocGia1.Location = new System.Drawing.Point(176, 16);
             this.ucLapTheDocGia1.Name = "ucLapTheDocGia1";
-            this.ucLapTheDocGia1.Size = new System.Drawing.Size(1142, 612);
+            this.ucLapTheDocGia1.Size = new System.Drawing.Size(1042, 704);
             this.ucLapTheDocGia1.TabIndex = 68;
             this.ucLapTheDocGia1.Load += new System.EventHandler(this.UcLapTheDocGia1_Load);
             // 
@@ -434,7 +435,7 @@
             this.ucTiepNhanSachMoi1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ucTiepNhanSachMoi1.Location = new System.Drawing.Point(176, 16);
             this.ucTiepNhanSachMoi1.Name = "ucTiepNhanSachMoi1";
-            this.ucTiepNhanSachMoi1.Size = new System.Drawing.Size(988, 556);
+            this.ucTiepNhanSachMoi1.Size = new System.Drawing.Size(1065, 721);
             this.ucTiepNhanSachMoi1.TabIndex = 69;
             this.ucTiepNhanSachMoi1.Load += new System.EventHandler(this.UcTiepNhanSachMoi1_Load);
             // 
@@ -483,11 +484,19 @@
             this.ucThongKeTraSachTre1.Size = new System.Drawing.Size(781, 532);
             this.ucThongKeTraSachTre1.TabIndex = 75;
             // 
+            // ucTimSach1
+            // 
+            this.ucTimSach1.Location = new System.Drawing.Point(177, 18);
+            this.ucTimSach1.Name = "ucTimSach1";
+            this.ucTimSach1.Size = new System.Drawing.Size(1053, 719);
+            this.ucTimSach1.TabIndex = 76;
+            // 
             // frmHeThong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1230, 732);
+            this.Controls.Add(this.ucTimSach1);
             this.Controls.Add(this.ucThongKeTraSachTre1);
             this.Controls.Add(this.ucTraCuuSach1);
             this.Controls.Add(this.ucThongKeMuonSach1);
@@ -548,5 +557,6 @@
         private ucTraCuuSach ucTraCuuSach1;
         private ucThongKeTraSachTre ucThongKeTraSachTre1;
         private System.Windows.Forms.Button btChinhSua;
+        private ucTimSach ucTimSach1;
     }
 }

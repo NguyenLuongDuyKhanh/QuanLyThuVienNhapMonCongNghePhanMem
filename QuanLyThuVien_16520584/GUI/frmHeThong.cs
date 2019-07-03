@@ -141,6 +141,7 @@ namespace GUI
             ucTraCuuSach1.Hide();
             ucThongKeMuonSach1.Hide();
             ucThongKeTraSachTre1.Hide();
+            ucTimSach1.Hide();
         }
 
         private void BtTraCuuSach_Click(object sender, EventArgs e)
@@ -156,7 +157,9 @@ namespace GUI
             ucThongKeMuonSach1.Hide();
             ucThongKeTraSachTre1.Hide();
 
-            ucTraCuuSach1.Show();
+            //ucTraCuuSach1.Show();
+            ucTimSach1.Show();
+
         }
 
         private void BtChoMuonSach_Click(object sender, EventArgs e)
@@ -201,6 +204,7 @@ namespace GUI
             ucTraCuuSach1.Hide();
             ucThongKeMuonSach1.Hide();
             ucThongKeTraSachTre1.Hide();
+            ucTimSach1.Hide();
             btChinhSua.Visible = frmDangNhap.PQ_QuanLy;
            
 

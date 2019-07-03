@@ -5,6 +5,18 @@ USE DoAnNhapMonCongNghePhanMemQuanLyThuVien
 Go
 
 --drop database DoAnNhapMonCongNghePhanMemQuanLyThuVien
+create table PhanQuyen
+(
+	TaiKhoan		nvarchar(50) , -- chọn trong Combobox
+	MatKhau			char(50),-- 
+	Trang_QuanLy	 varchar(5),-- trang Quản Lý
+	Trang_NhanVien	 varchar(5)
+)
+------------------------------Tài Khoản, Mật Khẩu,QuanLy,NhanVien
+insert into PhanQuyen Values (N'Quản Lý', N'ql','true','true')
+insert into PhanQuyen Values (N'Nhân Viên',N'nv','false','true')
+
+
 
 create table TheLoaiSach
 (
@@ -335,4 +347,38 @@ select ID_TheLoaiSach,Ten_TheLoaiSach from TheLoaiSach
 select ID_TacGia,Ten_TacGia from TacGia
 
  select ID_Sach,Ten_TheLoaiSach,Ten_TacGia,Ten_NXB,Ten_Sach,Gia,Sl_Nhap,MoTa,NamXuatBan from Sach,TacGia,TheLoaiSach,NhaXuatBan where Sach.ID_TacGia = TacGia.ID_TacGia and Sach.ID_TheLoaiSach=TheLoaiSach.ID_TheLoaiSach and Sach.ID_NXB = NhaXuatBan.ID_NXB order by ID_Sach desc
+ 
  set dateformat dmy Insert into Sach Values ('" + dl.ID_TheLoaiSach + "',N'" + dl.ID_TacGia + "','','" + dl.Ten_Sach + "','" + dl.Gia + "','" + dl.Sl_Nhap + "','" + dl.MoTa + "','" + dl.NamXuatBan + "','" + dl.NgayNhap + "','" + dl.TrangThai_Sach + "','" + dl.TrangThai_MuonSach + "')
+
+ select * from PhanQuyen
+
+ select * from PhanQuyen where TaiKhoan=N'Quản lý' and MatKhau='ql'
+
+ select distinct TaiKhoan from PhanQuyen
+
+ select Ten_TheLoaiSach,Ten_TacGia,Ten_NXB,Ten_Sach,Gia,NamXuatBan,CONVERT(varchar(20),NgayNhap,103) as NgayNhap, TrangThai_MuonSach 
+ from   TheLoaiSach,TacGia,NhaXuatBan,Sach
+ where TheLoaiSach.ID_TheLoaiSach = Sach.ID_TheLoaiSach and TacGia.ID_TacGia = Sach.ID_TacGia and NhaXuatBan.ID_NXB = Sach.ID_NXB and TrangThai_Sach = N''
+
+---------------------------------------------
+select Ten_TheLoaiSach,Ten_TacGia,Ten_NXB,Ten_Sach,Gia,NamXuatBan,CONVERT(varchar(20),NgayNhap,103) as NgayNhap, TrangThai_MuonSach 
+ from   TheLoaiSach,TacGia,NhaXuatBan,Sach
+ where TheLoaiSach.ID_TheLoaiSach = Sach.ID_TheLoaiSach and TacGia.ID_TacGia = Sach.ID_TacGia and NhaXuatBan.ID_NXB = Sach.ID_NXB and TrangThai_Sach = N''
+ and Ten_TheLoaiSach like  N'%test%'
+ -----------------------------------------------
+ select Ten_TheLoaiSach,Ten_TacGia,Ten_NXB,Ten_Sach,Gia,NamXuatBan,CONVERT(varchar(20),NgayNhap,103) as NgayNhap, TrangThai_MuonSach 
+ from   TheLoaiSach,TacGia,NhaXuatBan,Sach
+ where TheLoaiSach.ID_TheLoaiSach = Sach.ID_TheLoaiSach and TacGia.ID_TacGia = Sach.ID_TacGia and NhaXuatBan.ID_NXB = Sach.ID_NXB and TrangThai_Sach = N''
+ and Ten_Sach like  N'%test%'
+  -----------------------------------------------
+select Ten_TheLoaiSach,Ten_TacGia,Ten_NXB,Ten_Sach,Gia,NamXuatBan,CONVERT(varchar(20),NgayNhap,103) as NgayNhap, TrangThai_MuonSach 
+ from   TheLoaiSach,TacGia,NhaXuatBan,Sach
+ where TheLoaiSach.ID_TheLoaiSach = Sach.ID_TheLoaiSach and TacGia.ID_TacGia = Sach.ID_TacGia and NhaXuatBan.ID_NXB = Sach.ID_NXB and TrangThai_Sach = N''
+ and Ten_TacGia like  N'%test%'
+ -----------------------------------------------
+select Ten_TheLoaiSach,Ten_TacGia,Ten_NXB,Ten_Sach,Gia,NamXuatBan,CONVERT(varchar(20),NgayNhap,103) as NgayNhap, TrangThai_MuonSach 
+ from   TheLoaiSach,TacGia,NhaXuatBan,Sach
+ where TheLoaiSach.ID_TheLoaiSach = Sach.ID_TheLoaiSach and TacGia.ID_TacGia = Sach.ID_TacGia and NhaXuatBan.ID_NXB = Sach.ID_NXB and TrangThai_Sach = N''
+ and Ten_NXB like  N'%test%'
+
+

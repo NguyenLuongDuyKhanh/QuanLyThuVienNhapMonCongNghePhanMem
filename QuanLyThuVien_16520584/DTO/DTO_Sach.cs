@@ -33,5 +33,7 @@ namespace DTO
         public DateTime NgayNhap { get; set; }
         public String TrangThai_Sach { get; set; }
         public String TrangThai_MuonSach { get; set; }
-}
+        public String TuKhoa { get; set; } // Dung de tim sach
+
+    }
 }

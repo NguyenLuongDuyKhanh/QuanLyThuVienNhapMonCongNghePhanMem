@@ -248,6 +248,7 @@
             // 
             // dtgSach
             // 
+            this.dtgSach.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID_Sach,
@@ -259,9 +260,9 @@
             this.Sl_Nhap,
             this.NamXuatBan});
             this.dtgSach.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dtgSach.Location = new System.Drawing.Point(0, 608);
+            this.dtgSach.Location = new System.Drawing.Point(0, 556);
             this.dtgSach.Name = "dtgSach";
-            this.dtgSach.Size = new System.Drawing.Size(1503, 67);
+            this.dtgSach.Size = new System.Drawing.Size(1503, 119);
             this.dtgSach.TabIndex = 39;
             this.dtgSach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtgSach_CellContentClick);
             // 

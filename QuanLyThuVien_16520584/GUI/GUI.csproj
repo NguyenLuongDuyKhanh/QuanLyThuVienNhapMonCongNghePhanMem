@@ -151,6 +151,12 @@
     <Compile Include="ucTiepNhanSachMoi.Designer.cs">
       <DependentUpon>ucTiepNhanSachMoi.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucTimSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTimSach.Designer.cs">
+      <DependentUpon>ucTimSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucTraCuuSach.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -217,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucTiepNhanSachMoi.resx">
       <DependentUpon>ucTiepNhanSachMoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTimSach.resx">
+      <DependentUpon>ucTimSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucTraCuuSach.resx">
       <DependentUpon>ucTraCuuSach.cs</DependentUpon>
