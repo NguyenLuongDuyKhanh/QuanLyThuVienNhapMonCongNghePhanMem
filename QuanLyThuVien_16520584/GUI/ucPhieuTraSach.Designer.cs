@@ -28,52 +28,70 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.BTHoanTat = new System.Windows.Forms.Button();
+            this.btKiemTra = new System.Windows.Forms.Button();
+            this.dtgPhieuTra = new System.Windows.Forms.DataGridView();
+            this.dtpNgayTra = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboSachtra = new System.Windows.Forms.ComboBox();
+            this.cboDocgia = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.ID_PhieuMuonSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID_TheDocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID_Sach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ten_NguoiMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sl_SachMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TrangThai_PhieuMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgPhieuTra)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // BTHoanTat
             // 
-            this.button2.Location = new System.Drawing.Point(327, 105);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Hoàn tất";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BTHoanTat.Location = new System.Drawing.Point(327, 105);
+            this.BTHoanTat.Name = "BTHoanTat";
+            this.BTHoanTat.Size = new System.Drawing.Size(75, 23);
+            this.BTHoanTat.TabIndex = 17;
+            this.BTHoanTat.Text = "Hoàn tất";
+            this.BTHoanTat.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btKiemTra
             // 
-            this.button1.Location = new System.Drawing.Point(327, 38);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Kiểm tra";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btKiemTra.Location = new System.Drawing.Point(327, 38);
+            this.btKiemTra.Name = "btKiemTra";
+            this.btKiemTra.Size = new System.Drawing.Size(75, 23);
+            this.btKiemTra.TabIndex = 16;
+            this.btKiemTra.Text = "Kiểm tra";
+            this.btKiemTra.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dtgPhieuTra
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 191);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(399, 237);
-            this.dataGridView1.TabIndex = 15;
+            this.dtgPhieuTra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgPhieuTra.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID_PhieuMuonSach,
+            this.ID_TheDocGia,
+            this.ID_Sach,
+            this.Ten_NguoiMuon,
+            this.NgayMuon,
+            this.Sl_SachMuon,
+            this.GhiChu,
+            this.TrangThai_PhieuMuon});
+            this.dtgPhieuTra.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dtgPhieuTra.Location = new System.Drawing.Point(0, 314);
+            this.dtgPhieuTra.Name = "dtgPhieuTra";
+            this.dtgPhieuTra.Size = new System.Drawing.Size(666, 133);
+            this.dtgPhieuTra.TabIndex = 15;
             // 
-            // dateTimePicker1
+            // dtpNgayTra
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(153, 156);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 29);
-            this.dateTimePicker1.TabIndex = 14;
+            this.dtpNgayTra.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayTra.Location = new System.Drawing.Point(153, 156);
+            this.dtpNgayTra.Name = "dtpNgayTra";
+            this.dtpNgayTra.Size = new System.Drawing.Size(200, 29);
+            this.dtpNgayTra.TabIndex = 14;
             // 
             // label3
             // 
@@ -85,23 +103,23 @@
             this.label3.TabIndex = 13;
             this.label3.Text = "Ngày trả";
             // 
-            // comboBox2
+            // cboSachtra
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(153, 105);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 32);
-            this.comboBox2.TabIndex = 12;
+            this.cboSachtra.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboSachtra.FormattingEnabled = true;
+            this.cboSachtra.Location = new System.Drawing.Point(153, 105);
+            this.cboSachtra.Name = "cboSachtra";
+            this.cboSachtra.Size = new System.Drawing.Size(121, 32);
+            this.cboSachtra.TabIndex = 12;
             // 
-            // comboBox1
+            // cboDocgia
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(153, 53);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 32);
-            this.comboBox1.TabIndex = 11;
+            this.cboDocgia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboDocgia.FormattingEnabled = true;
+            this.cboDocgia.Location = new System.Drawing.Point(153, 53);
+            this.cboDocgia.Name = "cboDocgia";
+            this.cboDocgia.Size = new System.Drawing.Size(121, 32);
+            this.cboDocgia.TabIndex = 11;
             // 
             // label2
             // 
@@ -132,25 +150,73 @@
             this.label4.Size = new System.Drawing.Size(215, 33);
             this.label4.TabIndex = 18;
             this.label4.Text = "Phiếu trả sách";
-            this.label4.Click += new System.EventHandler(this.Label4_Click);
+            // 
+            // ID_PhieuMuonSach
+            // 
+            this.ID_PhieuMuonSach.DataPropertyName = "ID_PhieuMuonSach";
+            this.ID_PhieuMuonSach.HeaderText = "ID_PhieuMuonSach";
+            this.ID_PhieuMuonSach.Name = "ID_PhieuMuonSach";
+            // 
+            // ID_TheDocGia
+            // 
+            this.ID_TheDocGia.DataPropertyName = "ID_TheDocGia";
+            this.ID_TheDocGia.HeaderText = "ID_TheDocGia";
+            this.ID_TheDocGia.Name = "ID_TheDocGia";
+            // 
+            // ID_Sach
+            // 
+            this.ID_Sach.DataPropertyName = "ID_Sach";
+            this.ID_Sach.HeaderText = "ID_Sach";
+            this.ID_Sach.Name = "ID_Sach";
+            // 
+            // Ten_NguoiMuon
+            // 
+            this.Ten_NguoiMuon.DataPropertyName = "Ten_NguoiMuon";
+            this.Ten_NguoiMuon.HeaderText = "Ten_NguoiMuon";
+            this.Ten_NguoiMuon.Name = "Ten_NguoiMuon";
+            // 
+            // NgayMuon
+            // 
+            this.NgayMuon.DataPropertyName = "NgayMuon";
+            this.NgayMuon.HeaderText = "NgayMuon";
+            this.NgayMuon.Name = "NgayMuon";
+            // 
+            // Sl_SachMuon
+            // 
+            this.Sl_SachMuon.DataPropertyName = "Sl_SachMuon";
+            this.Sl_SachMuon.HeaderText = "Sl_SachMuon";
+            this.Sl_SachMuon.Name = "Sl_SachMuon";
+            // 
+            // GhiChu
+            // 
+            this.GhiChu.DataPropertyName = "GhiChu";
+            this.GhiChu.HeaderText = "GhiChu";
+            this.GhiChu.Name = "GhiChu";
+            // 
+            // TrangThai_PhieuMuon
+            // 
+            this.TrangThai_PhieuMuon.DataPropertyName = "TrangThai_PhieuMuon";
+            this.TrangThai_PhieuMuon.HeaderText = "TrangThai_PhieuMuon";
+            this.TrangThai_PhieuMuon.Name = "TrangThai_PhieuMuon";
             // 
             // ucPhieuTraSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.BTHoanTat);
+            this.Controls.Add(this.btKiemTra);
+            this.Controls.Add(this.dtgPhieuTra);
+            this.Controls.Add(this.dtpNgayTra);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cboSachtra);
+            this.Controls.Add(this.cboDocgia);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ucPhieuTraSach";
-            this.Size = new System.Drawing.Size(666, 431);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Size = new System.Drawing.Size(666, 447);
+            this.Load += new System.EventHandler(this.UcPhieuTraSach_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgPhieuTra)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,15 +224,23 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button BTHoanTat;
+        private System.Windows.Forms.Button btKiemTra;
+        private System.Windows.Forms.DataGridView dtgPhieuTra;
+        private System.Windows.Forms.DateTimePicker dtpNgayTra;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboSachtra;
+        private System.Windows.Forms.ComboBox cboDocgia;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID_PhieuMuonSach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID_TheDocGia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID_Sach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ten_NguoiMuon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayMuon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Sl_SachMuon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai_PhieuMuon;
     }
 }

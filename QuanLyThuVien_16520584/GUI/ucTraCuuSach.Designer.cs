@@ -44,13 +44,13 @@
             this.cboTheLoai = new System.Windows.Forms.ComboBox();
             this.dontcare = new System.Windows.Forms.Label();
             this.ckbGiaTri = new System.Windows.Forms.CheckBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgTraCuu = new System.Windows.Forms.DataGridView();
             this.ckbTinhTrang = new System.Windows.Forms.CheckBox();
             this.ckbNhaXuatBan = new System.Windows.Forms.CheckBox();
             this.ckbTacGia = new System.Windows.Forms.CheckBox();
             this.ckbTheLoai = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgTraCuu)).BeginInit();
             this.SuspendLayout();
             // 
             // cboMaSach
@@ -191,13 +191,13 @@
             this.ckbGiaTri.Text = "Lọc theo khoảng giá";
             this.ckbGiaTri.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dtgTraCuu
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(9, 416);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(365, 260);
-            this.dataGridView1.TabIndex = 25;
+            this.dtgTraCuu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgTraCuu.Location = new System.Drawing.Point(9, 416);
+            this.dtgTraCuu.Name = "dtgTraCuu";
+            this.dtgTraCuu.Size = new System.Drawing.Size(365, 260);
+            this.dtgTraCuu.TabIndex = 25;
             // 
             // ckbTinhTrang
             // 
@@ -275,14 +275,14 @@
             this.Controls.Add(this.cboTheLoai);
             this.Controls.Add(this.dontcare);
             this.Controls.Add(this.ckbGiaTri);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgTraCuu);
             this.Controls.Add(this.ckbTinhTrang);
             this.Controls.Add(this.ckbNhaXuatBan);
             this.Controls.Add(this.ckbTacGia);
             this.Controls.Add(this.ckbTheLoai);
             this.Name = "ucTraCuuSach";
             this.Size = new System.Drawing.Size(591, 679);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgTraCuu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -306,7 +306,7 @@
         private System.Windows.Forms.ComboBox cboTheLoai;
         private System.Windows.Forms.Label dontcare;
         private System.Windows.Forms.CheckBox ckbGiaTri;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgTraCuu;
         private System.Windows.Forms.CheckBox ckbTinhTrang;
         private System.Windows.Forms.CheckBox ckbNhaXuatBan;
         private System.Windows.Forms.CheckBox ckbTacGia;

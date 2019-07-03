@@ -322,8 +322,13 @@ SELECT  DATEADD(month,1,'02/07/2019') as NgayHetHan
  select ID_TheDocGia,Ten_LoaiDocGia,HoTen_DocGia,NgaySinh_DocGia,DiaChi_DocGia,Email_DocGia,NgayLapThe,NgayHetHan,TrangThai_TheDocGia from TheDocGia, LoaiDocGia
  where TheDocGia.ID_LoaiDocGia = LoaiDocGia.ID_LoaiDocGia order by ID_TheDocGia desc
 
+insert into PhieuMuonSach values (1,1,N'Nguyen Luong Duy Khanh','02/07/2019','03/07/2019',1,'','')
 
- Select * from PhieuMuonSach
+Select 	ID_PhieuMuonSach,ID_TheDocGia,ID_Sach,Ten_NguoiMuon,NgayMuon,NgayHenTra,Sl_SachMuon,GhiChu,TrangThai_PhieuMuon from PhieuMuonSach
+Select * from PhieuMuonSach
+
+Select 1
+
  Select * from PhieuTraSach
  Select * from PhieuPhat
 
