@@ -259,9 +259,9 @@
             this.Sl_Nhap,
             this.NamXuatBan});
             this.dtgSach.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dtgSach.Location = new System.Drawing.Point(0, 910);
+            this.dtgSach.Location = new System.Drawing.Point(0, 608);
             this.dtgSach.Name = "dtgSach";
-            this.dtgSach.Size = new System.Drawing.Size(1053, 67);
+            this.dtgSach.Size = new System.Drawing.Size(1503, 67);
             this.dtgSach.TabIndex = 39;
             this.dtgSach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtgSach_CellContentClick);
             // 
@@ -340,7 +340,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ucTiepNhanSachMoi";
-            this.Size = new System.Drawing.Size(1053, 977);
+            this.Size = new System.Drawing.Size(1503, 675);
             this.Load += new System.EventHandler(this.ucTiepNhanSachMoi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgSach)).EndInit();
             this.ResumeLayout(false);

@@ -48,7 +48,6 @@ create table Sach
 	foreign key (ID_NXB) references NhaXuatBan(ID_NXB) on update cascade
 )--testcase
 
-
 create table LoaiDocGia
 (
 	ID_LoaiDocGia			int identity(1,1) primary key,
@@ -70,8 +69,6 @@ create table TheDocGia
 	TrangThai_TheDocGia		nvarchar(100),
 	foreign key (ID_LoaiDocGia) references LoaiDocGia(ID_LoaiDocGia) on update cascade
 )--testcase
-
-
 
 create table PhieuMuonSach
 (

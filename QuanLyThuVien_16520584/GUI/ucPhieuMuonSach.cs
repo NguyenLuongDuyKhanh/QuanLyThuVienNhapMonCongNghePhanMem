@@ -44,7 +44,7 @@ namespace GUI
         {
             dl.ID_TheDocGia = Convert.ToInt32(cboMaDocGia.SelectedValue.ToString());
             dl.ID_Sach = Convert.ToInt32(cboMaSachMuon.SelectedValue.ToString());
-            dl.Ten_NguoiMuon = Convert.ToString(xldl.NguoiMuon_Select(dl));
+            dl.Ten_NguoiMuon = Convert.ToString(xldl.NguoiMuon_Select(dl)); //Sao chưa đúng?!
             dl.NgayMuon = Convert.ToDateTime(dpkNgayMuon.Text);
             dl.NgayHenTra = Convert.ToDateTime("23/2/2020");
             dl.Sl_SachMuon = Convert.ToInt32("1");

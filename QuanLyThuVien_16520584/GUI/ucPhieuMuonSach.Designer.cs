@@ -33,11 +33,6 @@
             this.cboMaSachMuon = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dtgPhieuMuonSach = new System.Windows.Forms.DataGridView();
-            this.cboMaDocGia = new System.Windows.Forms.ComboBox();
-            this.dpkNgayMuon = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.ID_PhieuMuonSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID_TheDocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID_Sach = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,6 +41,11 @@
             this.NgayHenTra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TrangThai_PhieuMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cboMaDocGia = new System.Windows.Forms.ComboBox();
+            this.dpkNgayMuon = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtgPhieuMuonSach)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,11 +103,60 @@
             this.NgayHenTra,
             this.GhiChu,
             this.TrangThai_PhieuMuon});
-            this.dtgPhieuMuonSach.Location = new System.Drawing.Point(0, 243);
+            this.dtgPhieuMuonSach.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dtgPhieuMuonSach.Location = new System.Drawing.Point(0, 454);
             this.dtgPhieuMuonSach.Margin = new System.Windows.Forms.Padding(6);
             this.dtgPhieuMuonSach.Name = "dtgPhieuMuonSach";
-            this.dtgPhieuMuonSach.Size = new System.Drawing.Size(883, 441);
+            this.dtgPhieuMuonSach.Size = new System.Drawing.Size(850, 233);
             this.dtgPhieuMuonSach.TabIndex = 13;
+            // 
+            // ID_PhieuMuonSach
+            // 
+            this.ID_PhieuMuonSach.DataPropertyName = "ID_PhieuMuonSach";
+            this.ID_PhieuMuonSach.HeaderText = "ID_PhieuMuonSach";
+            this.ID_PhieuMuonSach.Name = "ID_PhieuMuonSach";
+            // 
+            // ID_TheDocGia
+            // 
+            this.ID_TheDocGia.DataPropertyName = "ID_TheDocGia";
+            this.ID_TheDocGia.HeaderText = "ID_TheDocGia";
+            this.ID_TheDocGia.Name = "ID_TheDocGia";
+            // 
+            // ID_Sach
+            // 
+            this.ID_Sach.DataPropertyName = "ID_Sach";
+            this.ID_Sach.HeaderText = "ID_Sach";
+            this.ID_Sach.Name = "ID_Sach";
+            // 
+            // Ten_NguoiMuon
+            // 
+            this.Ten_NguoiMuon.DataPropertyName = "Ten_NguoiMuon";
+            this.Ten_NguoiMuon.HeaderText = "Ten_NguoiMuon";
+            this.Ten_NguoiMuon.Name = "Ten_NguoiMuon";
+            // 
+            // NgayMuon
+            // 
+            this.NgayMuon.DataPropertyName = "NgayMuon";
+            this.NgayMuon.HeaderText = "NgayMuon";
+            this.NgayMuon.Name = "NgayMuon";
+            // 
+            // NgayHenTra
+            // 
+            this.NgayHenTra.DataPropertyName = "NgayHenTra";
+            this.NgayHenTra.HeaderText = "NgayHenTra";
+            this.NgayHenTra.Name = "NgayHenTra";
+            // 
+            // GhiChu
+            // 
+            this.GhiChu.DataPropertyName = "GhiChu";
+            this.GhiChu.HeaderText = "GhiChu";
+            this.GhiChu.Name = "GhiChu";
+            // 
+            // TrangThai_PhieuMuon
+            // 
+            this.TrangThai_PhieuMuon.DataPropertyName = "TrangThai_PhieuMuon";
+            this.TrangThai_PhieuMuon.HeaderText = "TrangThai_PhieuMuon";
+            this.TrangThai_PhieuMuon.Name = "TrangThai_PhieuMuon";
             // 
             // cboMaDocGia
             // 
@@ -161,54 +210,6 @@
             this.label4.TabIndex = 18;
             this.label4.Text = "Phiếu mượn sách";
             // 
-            // ID_PhieuMuonSach
-            // 
-            this.ID_PhieuMuonSach.DataPropertyName = "ID_PhieuMuonSach";
-            this.ID_PhieuMuonSach.HeaderText = "ID_PhieuMuonSach";
-            this.ID_PhieuMuonSach.Name = "ID_PhieuMuonSach";
-            // 
-            // ID_TheDocGia
-            // 
-            this.ID_TheDocGia.DataPropertyName = "ID_TheDocGia";
-            this.ID_TheDocGia.HeaderText = "ID_TheDocGia";
-            this.ID_TheDocGia.Name = "ID_TheDocGia";
-            // 
-            // ID_Sach
-            // 
-            this.ID_Sach.DataPropertyName = "ID_Sach";
-            this.ID_Sach.HeaderText = "ID_Sach";
-            this.ID_Sach.Name = "ID_Sach";
-            // 
-            // Ten_NguoiMuon
-            // 
-            this.Ten_NguoiMuon.DataPropertyName = "Ten_NguoiMuon";
-            this.Ten_NguoiMuon.HeaderText = "Ten_NguoiMuon";
-            this.Ten_NguoiMuon.Name = "Ten_NguoiMuon";
-            // 
-            // NgayMuon
-            // 
-            this.NgayMuon.DataPropertyName = "NgayMuon";
-            this.NgayMuon.HeaderText = "NgayMuon";
-            this.NgayMuon.Name = "NgayMuon";
-            // 
-            // NgayHenTra
-            // 
-            this.NgayHenTra.DataPropertyName = "NgayHenTra";
-            this.NgayHenTra.HeaderText = "NgayHenTra";
-            this.NgayHenTra.Name = "NgayHenTra";
-            // 
-            // GhiChu
-            // 
-            this.GhiChu.DataPropertyName = "GhiChu";
-            this.GhiChu.HeaderText = "GhiChu";
-            this.GhiChu.Name = "GhiChu";
-            // 
-            // TrangThai_PhieuMuon
-            // 
-            this.TrangThai_PhieuMuon.DataPropertyName = "TrangThai_PhieuMuon";
-            this.TrangThai_PhieuMuon.HeaderText = "TrangThai_PhieuMuon";
-            this.TrangThai_PhieuMuon.Name = "TrangThai_PhieuMuon";
-            // 
             // ucPhieuMuonSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -226,7 +227,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "ucPhieuMuonSach";
-            this.Size = new System.Drawing.Size(1654, 687);
+            this.Size = new System.Drawing.Size(850, 687);
             this.Load += new System.EventHandler(this.ucPhieuMuonSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgPhieuMuonSach)).EndInit();
             this.ResumeLayout(false);

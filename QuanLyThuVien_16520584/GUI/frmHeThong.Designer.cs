@@ -43,6 +43,7 @@
             this.pnSlide_L = new System.Windows.Forms.Panel();
             this.pnRibbon = new System.Windows.Forms.Panel();
             this.pnBangDieuKhien_Show = new System.Windows.Forms.Panel();
+            this.btChinhSua = new System.Windows.Forms.Button();
             this.btThongKeSachMuon = new System.Windows.Forms.Button();
             this.btThongKeSachTre = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -260,6 +261,7 @@
             // pnBangDieuKhien_Show
             // 
             this.pnBangDieuKhien_Show.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.pnBangDieuKhien_Show.Controls.Add(this.btChinhSua);
             this.pnBangDieuKhien_Show.Controls.Add(this.btThongKeSachMuon);
             this.pnBangDieuKhien_Show.Controls.Add(this.btThongKeSachTre);
             this.pnBangDieuKhien_Show.Controls.Add(this.panel1);
@@ -281,6 +283,23 @@
             this.pnBangDieuKhien_Show.Name = "pnBangDieuKhien_Show";
             this.pnBangDieuKhien_Show.Size = new System.Drawing.Size(194, 721);
             this.pnBangDieuKhien_Show.TabIndex = 66;
+            // 
+            // btChinhSua
+            // 
+            this.btChinhSua.BackColor = System.Drawing.Color.Transparent;
+            this.btChinhSua.FlatAppearance.BorderSize = 0;
+            this.btChinhSua.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
+            this.btChinhSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btChinhSua.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btChinhSua.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btChinhSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btChinhSua.Location = new System.Drawing.Point(29, 553);
+            this.btChinhSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btChinhSua.Name = "btChinhSua";
+            this.btChinhSua.Size = new System.Drawing.Size(154, 42);
+            this.btChinhSua.TabIndex = 69;
+            this.btChinhSua.Text = "Chỉnh sửa";
+            this.btChinhSua.UseVisualStyleBackColor = false;
             // 
             // btThongKeSachMuon
             // 
@@ -485,6 +504,7 @@
             this.Name = "frmHeThong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmHeThong";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmHeThong_FormClosing);
             this.Load += new System.EventHandler(this.FrmHeThong_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -527,5 +547,6 @@
         private ucThongKeMuonSach ucThongKeMuonSach1;
         private ucTraCuuSach ucTraCuuSach1;
         private ucThongKeTraSachTre ucThongKeTraSachTre1;
+        private System.Windows.Forms.Button btChinhSua;
     }
 }

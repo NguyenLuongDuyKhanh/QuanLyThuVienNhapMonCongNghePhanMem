@@ -196,7 +196,7 @@
             this.dtgTraCuu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgTraCuu.Location = new System.Drawing.Point(9, 416);
             this.dtgTraCuu.Name = "dtgTraCuu";
-            this.dtgTraCuu.Size = new System.Drawing.Size(365, 260);
+            this.dtgTraCuu.Size = new System.Drawing.Size(989, 260);
             this.dtgTraCuu.TabIndex = 25;
             // 
             // ckbTinhTrang
@@ -281,7 +281,7 @@
             this.Controls.Add(this.ckbTacGia);
             this.Controls.Add(this.ckbTheLoai);
             this.Name = "ucTraCuuSach";
-            this.Size = new System.Drawing.Size(591, 679);
+            this.Size = new System.Drawing.Size(1001, 679);
             ((System.ComponentModel.ISupportInitialize)(this.dtgTraCuu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

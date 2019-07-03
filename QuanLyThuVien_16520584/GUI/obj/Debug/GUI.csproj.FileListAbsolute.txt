@@ -65,3 +65,4 @@ C:\Users\khanh\OneDrive\Máy tính\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThu
 C:\Users\khanh\OneDrive\Máy tính\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.ucThongKeMuonSach.resources
 C:\Users\khanh\OneDrive\Máy tính\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.ucTraCuuSach.resources
 C:\Users\khanh\OneDrive\Máy tính\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.ucThongKeTraSachTre.resources
+C:\Users\khanh\OneDrive\Máy tính\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.frmDangNhap.resources

@@ -201,6 +201,8 @@ namespace GUI
             ucTraCuuSach1.Hide();
             ucThongKeMuonSach1.Hide();
             ucThongKeTraSachTre1.Hide();
+            btChinhSua.Visible = frmDangNhap.PQ_QuanLy;
+           
 
             lbNgay.Text = DateTime.Now.ToString("dddd,dd/MM/yyyy", new CultureInfo("vi-VN"));
         }
@@ -218,6 +220,13 @@ namespace GUI
         private void UcThongKeMuonSach1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void FrmHeThong_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frmDangNhap dangnhap = new frmDangNhap();
+            dangnhap.Show();
+            this.Hide();
         }
     }
 }
