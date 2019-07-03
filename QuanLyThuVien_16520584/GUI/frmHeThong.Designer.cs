@@ -412,6 +412,7 @@
             // 
             // ucTiepNhanSachMoi1
             // 
+            this.ucTiepNhanSachMoi1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ucTiepNhanSachMoi1.Location = new System.Drawing.Point(176, 16);
             this.ucTiepNhanSachMoi1.Name = "ucTiepNhanSachMoi1";
             this.ucTiepNhanSachMoi1.Size = new System.Drawing.Size(988, 556);

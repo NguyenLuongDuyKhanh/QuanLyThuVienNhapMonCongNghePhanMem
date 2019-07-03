@@ -28,34 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
+            this.BTHoanTat = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.cboMaSachMuon = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgPhieuMuonSach = new System.Windows.Forms.DataGridView();
             this.cboMaDocGia = new System.Windows.Forms.ComboBox();
             this.dpkNgayMuon = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.ID_PhieuMuonSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID_TheDocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID_Sach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ten_NguoiMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayHenTra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TrangThai_PhieuMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgPhieuMuonSach)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // BTHoanTat
             // 
-            this.button2.Location = new System.Drawing.Point(498, 63);
-            this.button2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(114, 38);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Hoàn tất";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.BTHoanTat.Location = new System.Drawing.Point(498, 63);
+            this.BTHoanTat.Margin = new System.Windows.Forms.Padding(6);
+            this.BTHoanTat.Name = "BTHoanTat";
+            this.BTHoanTat.Size = new System.Drawing.Size(114, 38);
+            this.BTHoanTat.TabIndex = 17;
+            this.BTHoanTat.Text = "Hoàn tất";
+            this.BTHoanTat.UseVisualStyleBackColor = true;
+            this.BTHoanTat.Click += new System.EventHandler(this.BTHoanTat_Click);
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(34, -75);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(138, 42);
             this.button1.TabIndex = 16;
@@ -67,7 +75,7 @@
             this.cboMaSachMuon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMaSachMuon.FormattingEnabled = true;
             this.cboMaSachMuon.Location = new System.Drawing.Point(164, 114);
-            this.cboMaSachMuon.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.cboMaSachMuon.Margin = new System.Windows.Forms.Padding(6);
             this.cboMaSachMuon.Name = "cboMaSachMuon";
             this.cboMaSachMuon.Size = new System.Drawing.Size(219, 32);
             this.cboMaSachMuon.TabIndex = 15;
@@ -83,21 +91,30 @@
             this.label3.TabIndex = 14;
             this.label3.Text = "Mã sách mượn";
             // 
-            // dataGridView1
+            // dtgPhieuMuonSach
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(5, 297);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(631, 441);
-            this.dataGridView1.TabIndex = 13;
+            this.dtgPhieuMuonSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgPhieuMuonSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID_PhieuMuonSach,
+            this.ID_TheDocGia,
+            this.ID_Sach,
+            this.Ten_NguoiMuon,
+            this.NgayMuon,
+            this.NgayHenTra,
+            this.GhiChu,
+            this.TrangThai_PhieuMuon});
+            this.dtgPhieuMuonSach.Location = new System.Drawing.Point(0, 243);
+            this.dtgPhieuMuonSach.Margin = new System.Windows.Forms.Padding(6);
+            this.dtgPhieuMuonSach.Name = "dtgPhieuMuonSach";
+            this.dtgPhieuMuonSach.Size = new System.Drawing.Size(883, 441);
+            this.dtgPhieuMuonSach.TabIndex = 13;
             // 
             // cboMaDocGia
             // 
             this.cboMaDocGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMaDocGia.FormattingEnabled = true;
             this.cboMaDocGia.Location = new System.Drawing.Point(164, 69);
-            this.cboMaDocGia.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.cboMaDocGia.Margin = new System.Windows.Forms.Padding(6);
             this.cboMaDocGia.Name = "cboMaDocGia";
             this.cboMaDocGia.Size = new System.Drawing.Size(219, 32);
             this.cboMaDocGia.TabIndex = 12;
@@ -106,7 +123,7 @@
             // 
             this.dpkNgayMuon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dpkNgayMuon.Location = new System.Drawing.Point(157, 158);
-            this.dpkNgayMuon.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dpkNgayMuon.Margin = new System.Windows.Forms.Padding(6);
             this.dpkNgayMuon.Name = "dpkNgayMuon";
             this.dpkNgayMuon.Size = new System.Drawing.Size(363, 29);
             this.dpkNgayMuon.TabIndex = 11;
@@ -126,7 +143,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(37, 151);
+            this.label1.Location = new System.Drawing.Point(37, 158);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 24);
@@ -144,25 +161,74 @@
             this.label4.TabIndex = 18;
             this.label4.Text = "Phiếu mượn sách";
             // 
+            // ID_PhieuMuonSach
+            // 
+            this.ID_PhieuMuonSach.DataPropertyName = "ID_PhieuMuonSach";
+            this.ID_PhieuMuonSach.HeaderText = "ID_PhieuMuonSach";
+            this.ID_PhieuMuonSach.Name = "ID_PhieuMuonSach";
+            // 
+            // ID_TheDocGia
+            // 
+            this.ID_TheDocGia.DataPropertyName = "ID_TheDocGia";
+            this.ID_TheDocGia.HeaderText = "ID_TheDocGia";
+            this.ID_TheDocGia.Name = "ID_TheDocGia";
+            // 
+            // ID_Sach
+            // 
+            this.ID_Sach.DataPropertyName = "ID_Sach";
+            this.ID_Sach.HeaderText = "ID_Sach";
+            this.ID_Sach.Name = "ID_Sach";
+            // 
+            // Ten_NguoiMuon
+            // 
+            this.Ten_NguoiMuon.DataPropertyName = "Ten_NguoiMuon";
+            this.Ten_NguoiMuon.HeaderText = "Ten_NguoiMuon";
+            this.Ten_NguoiMuon.Name = "Ten_NguoiMuon";
+            // 
+            // NgayMuon
+            // 
+            this.NgayMuon.DataPropertyName = "NgayMuon";
+            this.NgayMuon.HeaderText = "NgayMuon";
+            this.NgayMuon.Name = "NgayMuon";
+            // 
+            // NgayHenTra
+            // 
+            this.NgayHenTra.DataPropertyName = "NgayHenTra";
+            this.NgayHenTra.HeaderText = "NgayHenTra";
+            this.NgayHenTra.Name = "NgayHenTra";
+            // 
+            // GhiChu
+            // 
+            this.GhiChu.DataPropertyName = "GhiChu";
+            this.GhiChu.HeaderText = "GhiChu";
+            this.GhiChu.Name = "GhiChu";
+            // 
+            // TrangThai_PhieuMuon
+            // 
+            this.TrangThai_PhieuMuon.DataPropertyName = "TrangThai_PhieuMuon";
+            this.TrangThai_PhieuMuon.HeaderText = "TrangThai_PhieuMuon";
+            this.TrangThai_PhieuMuon.Name = "TrangThai_PhieuMuon";
+            // 
             // ucPhieuMuonSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.BTHoanTat);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cboMaSachMuon);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgPhieuMuonSach);
             this.Controls.Add(this.cboMaDocGia);
             this.Controls.Add(this.dpkNgayMuon);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "ucPhieuMuonSach";
-            this.Size = new System.Drawing.Size(1654, 1244);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Size = new System.Drawing.Size(1654, 687);
+            this.Load += new System.EventHandler(this.ucPhieuMuonSach_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgPhieuMuonSach)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,15 +236,23 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BTHoanTat;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox cboMaSachMuon;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgPhieuMuonSach;
         private System.Windows.Forms.ComboBox cboMaDocGia;
         private System.Windows.Forms.DateTimePicker dpkNgayMuon;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID_PhieuMuonSach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID_TheDocGia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID_Sach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ten_NguoiMuon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayMuon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayHenTra;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai_PhieuMuon;
     }
 }

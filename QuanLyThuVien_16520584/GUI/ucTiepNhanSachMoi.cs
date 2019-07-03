@@ -57,5 +57,10 @@ namespace GUI
             xldl.Sach_INSERT(dl);
             dtgSach.DataSource = xldl.Sach_Select(dl);
         }
+
+        private void DtgSach_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
