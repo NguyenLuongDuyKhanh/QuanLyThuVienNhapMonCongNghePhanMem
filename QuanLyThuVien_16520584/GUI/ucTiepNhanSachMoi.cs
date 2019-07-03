@@ -43,7 +43,19 @@ namespace GUI
 
         private void BtHoanTat_Click(object sender, EventArgs e)
         {
-            //dl.ID_Sach = Convert.ToInt32(cboLoaiDocGia.SelectedValue.ToString());
+            dl.ID_TheLoaiSach = Convert.ToInt32(cboTheLoaiSach.SelectedValue.ToString());
+            dl.ID_TacGia= Convert.ToInt32(cboTacGia.SelectedValue.ToString());
+            //dl.ID_NXB = txtNhaXuatBan;
+            dl.Ten_Sach = txtTenSach.Text;
+            dl.Gia = Convert.ToInt32(txtTriGia.Text);
+            dl.Sl_Nhap = Convert.ToInt32(txtSoLuong.Text);
+            dl.MoTa = txtMoTa.Text;
+            dl.NamXuatBan = Convert.ToInt32(txtNamXuatBan.Text);
+            dl.NgayNhap = Convert.ToDateTime(dtpNgayNhap.Text);
+            dl.TrangThai_Sach = "";
+            dl.TrangThai_MuonSach = "";
+            xldl.Sach_INSERT(dl);
+            dtgSach.DataSource = xldl.Sach_Select(dl);
         }
     }
 }

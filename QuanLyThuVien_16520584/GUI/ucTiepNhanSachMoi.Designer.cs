@@ -30,8 +30,8 @@
         {
             this.btHoanTat = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMoTa = new System.Windows.Forms.TextBox();
+            this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtTriGia = new System.Windows.Forms.TextBox();
             this.dtpNgayNhap = new System.Windows.Forms.DateTimePicker();
@@ -81,22 +81,22 @@
             this.label9.TabIndex = 36;
             this.label9.Text = "Mô tả";
             // 
-            // textBox2
+            // txtMoTa
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(195, 212);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(263, 29);
-            this.textBox2.TabIndex = 35;
-            this.textBox2.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
+            this.txtMoTa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMoTa.Location = new System.Drawing.Point(195, 212);
+            this.txtMoTa.Name = "txtMoTa";
+            this.txtMoTa.Size = new System.Drawing.Size(263, 29);
+            this.txtMoTa.TabIndex = 35;
+            this.txtMoTa.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
-            // textBox1
+            // txtSoLuong
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(195, 403);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(263, 29);
-            this.textBox1.TabIndex = 34;
+            this.txtSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoLuong.Location = new System.Drawing.Point(195, 403);
+            this.txtSoLuong.Name = "txtSoLuong";
+            this.txtSoLuong.Size = new System.Drawing.Size(263, 29);
+            this.txtSoLuong.TabIndex = 34;
             // 
             // label8
             // 
@@ -258,9 +258,10 @@
             this.Gia,
             this.Sl_Nhap,
             this.NamXuatBan});
-            this.dtgSach.Location = new System.Drawing.Point(3, 511);
+            this.dtgSach.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dtgSach.Location = new System.Drawing.Point(0, 884);
             this.dtgSach.Name = "dtgSach";
-            this.dtgSach.Size = new System.Drawing.Size(819, 86);
+            this.dtgSach.Size = new System.Drawing.Size(1053, 89);
             this.dtgSach.TabIndex = 39;
             // 
             // ID_Sach
@@ -315,12 +316,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Controls.Add(this.dtgSach);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.btHoanTat);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtMoTa);
+            this.Controls.Add(this.txtSoLuong);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtTriGia);
             this.Controls.Add(this.dtpNgayNhap);
@@ -337,7 +339,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ucTiepNhanSachMoi";
-            this.Size = new System.Drawing.Size(822, 750);
+            this.Size = new System.Drawing.Size(1053, 973);
             this.Load += new System.EventHandler(this.ucTiepNhanSachMoi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgSach)).EndInit();
             this.ResumeLayout(false);
@@ -349,8 +351,8 @@
 
         private System.Windows.Forms.Button btHoanTat;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMoTa;
+        private System.Windows.Forms.TextBox txtSoLuong;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtTriGia;
         private System.Windows.Forms.DateTimePicker dtpNgayNhap;
