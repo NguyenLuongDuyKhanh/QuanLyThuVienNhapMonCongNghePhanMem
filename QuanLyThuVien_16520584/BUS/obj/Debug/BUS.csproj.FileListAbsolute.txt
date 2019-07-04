@@ -31,3 +31,14 @@ C:\Users\khanh\OneDrive\Máy tính\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThu
 C:\Users\khanh\OneDrive\Máy tính\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\khanh\OneDrive\Máy tính\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\BUS\obj\Debug\BUS.dll
 C:\Users\khanh\OneDrive\Máy tính\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\BUS\obj\Debug\BUS.pdb
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\BUS\bin\Debug\BUS.dll
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\BUS\bin\Debug\BUS.pdb
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\BUS\bin\Debug\DAO.dll
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\BUS\bin\Debug\DTO.dll
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\BUS\bin\Debug\DAO.pdb
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\BUS\bin\Debug\DTO.pdb
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\BUS\obj\Debug\BUS.dll
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\BUS\obj\Debug\BUS.pdb

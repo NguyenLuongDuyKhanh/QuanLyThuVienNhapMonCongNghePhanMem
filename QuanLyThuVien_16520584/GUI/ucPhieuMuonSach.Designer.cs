@@ -104,10 +104,10 @@
             this.GhiChu,
             this.TrangThai_PhieuMuon});
             this.dtgPhieuMuonSach.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dtgPhieuMuonSach.Location = new System.Drawing.Point(0, 454);
+            this.dtgPhieuMuonSach.Location = new System.Drawing.Point(0, 332);
             this.dtgPhieuMuonSach.Margin = new System.Windows.Forms.Padding(6);
             this.dtgPhieuMuonSach.Name = "dtgPhieuMuonSach";
-            this.dtgPhieuMuonSach.Size = new System.Drawing.Size(850, 233);
+            this.dtgPhieuMuonSach.Size = new System.Drawing.Size(850, 355);
             this.dtgPhieuMuonSach.TabIndex = 13;
             // 
             // ID_PhieuMuonSach

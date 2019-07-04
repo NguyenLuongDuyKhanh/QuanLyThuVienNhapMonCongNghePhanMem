@@ -67,3 +67,38 @@ C:\Users\khanh\OneDrive\Máy tính\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThu
 C:\Users\khanh\OneDrive\Máy tính\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.ucThongKeTraSachTre.resources
 C:\Users\khanh\OneDrive\Máy tính\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.frmDangNhap.resources
 C:\Users\khanh\OneDrive\Máy tính\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.ucTimSach.resources
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\bin\Debug\GUI.exe.config
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\bin\Debug\GUI.exe
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\bin\Debug\GUI.pdb
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\bin\Debug\BUS.dll
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\bin\Debug\DTO.dll
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\bin\Debug\DAO.dll
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\bin\Debug\BUS.pdb
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\bin\Debug\DTO.pdb
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\bin\Debug\DAO.pdb
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.frmDangNhap.resources
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.frmHeThong.resources
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.frmLapTheDocGia.resources
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.frmPhieuMuonSach.resources
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.frmPhieuNhanTraSach.resources
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.frmPhieuPhat.resources
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.frmThongKeMuonSach.resources
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.frmThongKeTraSachTre.resources
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.frmTiepNhanSachMoi.resources
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.frmTraCuuSach.resources
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.ucLapTheDocGia.resources
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.ucPhieuMuonSach.resources
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.ucPhieuPhat.resources
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.ucPhieuTraSach.resources
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.ucThongKeMuonSach.resources
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.ucThongKeTraSachTre.resources
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.ucTiepNhanSachMoi.resources
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.ucTimSach.resources
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.ucTraCuuSach.resources
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.exe
+C:\Users\khanh\OneDrive\Máy tính\New folder\QuanLyThuVienNhapMonCongNghePhanMem\QuanLyThuVien_16520584\GUI\obj\Debug\GUI.pdb

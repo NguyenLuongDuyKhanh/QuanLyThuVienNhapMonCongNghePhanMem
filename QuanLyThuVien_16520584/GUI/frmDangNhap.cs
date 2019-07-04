@@ -36,9 +36,11 @@ namespace GUI
             txtNhanVien.DataBindings.Clear();
             txtNhanVien.DataBindings.Add("Text", xldl.NhanVien_PQ(dl), "Trang_NhanVien");
         }
+
         // Biến phân quyền
         public static Boolean PQ_QuanLy;
         public static Boolean PQ_NhanVien;
+
         public void DangNhap()
         {
             dl.TaiKhoan = cbTaiKhoan.Text;

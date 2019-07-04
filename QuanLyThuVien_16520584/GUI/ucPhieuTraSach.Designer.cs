@@ -31,13 +31,6 @@
             this.BTHoanTat = new System.Windows.Forms.Button();
             this.btKiemTra = new System.Windows.Forms.Button();
             this.dtgPhieuTra = new System.Windows.Forms.DataGridView();
-            this.dtpNgayTra = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cboSachtra = new System.Windows.Forms.ComboBox();
-            this.cboDocgia = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.ID_PhieuMuonSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID_TheDocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID_Sach = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,6 +39,13 @@
             this.Sl_SachMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TrangThai_PhieuMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtpNgayTra = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cboSachtra = new System.Windows.Forms.ComboBox();
+            this.cboDocgia = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtgPhieuTra)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,10 +80,58 @@
             this.GhiChu,
             this.TrangThai_PhieuMuon});
             this.dtgPhieuTra.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dtgPhieuTra.Location = new System.Drawing.Point(0, 314);
+            this.dtgPhieuTra.Location = new System.Drawing.Point(0, 243);
             this.dtgPhieuTra.Name = "dtgPhieuTra";
-            this.dtgPhieuTra.Size = new System.Drawing.Size(666, 133);
+            this.dtgPhieuTra.Size = new System.Drawing.Size(666, 204);
             this.dtgPhieuTra.TabIndex = 15;
+            // 
+            // ID_PhieuMuonSach
+            // 
+            this.ID_PhieuMuonSach.DataPropertyName = "ID_PhieuMuonSach";
+            this.ID_PhieuMuonSach.HeaderText = "ID_PhieuMuonSach";
+            this.ID_PhieuMuonSach.Name = "ID_PhieuMuonSach";
+            // 
+            // ID_TheDocGia
+            // 
+            this.ID_TheDocGia.DataPropertyName = "ID_TheDocGia";
+            this.ID_TheDocGia.HeaderText = "ID_TheDocGia";
+            this.ID_TheDocGia.Name = "ID_TheDocGia";
+            // 
+            // ID_Sach
+            // 
+            this.ID_Sach.DataPropertyName = "ID_Sach";
+            this.ID_Sach.HeaderText = "ID_Sach";
+            this.ID_Sach.Name = "ID_Sach";
+            // 
+            // Ten_NguoiMuon
+            // 
+            this.Ten_NguoiMuon.DataPropertyName = "Ten_NguoiMuon";
+            this.Ten_NguoiMuon.HeaderText = "Ten_NguoiMuon";
+            this.Ten_NguoiMuon.Name = "Ten_NguoiMuon";
+            // 
+            // NgayMuon
+            // 
+            this.NgayMuon.DataPropertyName = "NgayMuon";
+            this.NgayMuon.HeaderText = "NgayMuon";
+            this.NgayMuon.Name = "NgayMuon";
+            // 
+            // Sl_SachMuon
+            // 
+            this.Sl_SachMuon.DataPropertyName = "Sl_SachMuon";
+            this.Sl_SachMuon.HeaderText = "Sl_SachMuon";
+            this.Sl_SachMuon.Name = "Sl_SachMuon";
+            // 
+            // GhiChu
+            // 
+            this.GhiChu.DataPropertyName = "GhiChu";
+            this.GhiChu.HeaderText = "GhiChu";
+            this.GhiChu.Name = "GhiChu";
+            // 
+            // TrangThai_PhieuMuon
+            // 
+            this.TrangThai_PhieuMuon.DataPropertyName = "TrangThai_PhieuMuon";
+            this.TrangThai_PhieuMuon.HeaderText = "TrangThai_PhieuMuon";
+            this.TrangThai_PhieuMuon.Name = "TrangThai_PhieuMuon";
             // 
             // dtpNgayTra
             // 
@@ -150,54 +198,6 @@
             this.label4.Size = new System.Drawing.Size(215, 33);
             this.label4.TabIndex = 18;
             this.label4.Text = "Phiếu trả sách";
-            // 
-            // ID_PhieuMuonSach
-            // 
-            this.ID_PhieuMuonSach.DataPropertyName = "ID_PhieuMuonSach";
-            this.ID_PhieuMuonSach.HeaderText = "ID_PhieuMuonSach";
-            this.ID_PhieuMuonSach.Name = "ID_PhieuMuonSach";
-            // 
-            // ID_TheDocGia
-            // 
-            this.ID_TheDocGia.DataPropertyName = "ID_TheDocGia";
-            this.ID_TheDocGia.HeaderText = "ID_TheDocGia";
-            this.ID_TheDocGia.Name = "ID_TheDocGia";
-            // 
-            // ID_Sach
-            // 
-            this.ID_Sach.DataPropertyName = "ID_Sach";
-            this.ID_Sach.HeaderText = "ID_Sach";
-            this.ID_Sach.Name = "ID_Sach";
-            // 
-            // Ten_NguoiMuon
-            // 
-            this.Ten_NguoiMuon.DataPropertyName = "Ten_NguoiMuon";
-            this.Ten_NguoiMuon.HeaderText = "Ten_NguoiMuon";
-            this.Ten_NguoiMuon.Name = "Ten_NguoiMuon";
-            // 
-            // NgayMuon
-            // 
-            this.NgayMuon.DataPropertyName = "NgayMuon";
-            this.NgayMuon.HeaderText = "NgayMuon";
-            this.NgayMuon.Name = "NgayMuon";
-            // 
-            // Sl_SachMuon
-            // 
-            this.Sl_SachMuon.DataPropertyName = "Sl_SachMuon";
-            this.Sl_SachMuon.HeaderText = "Sl_SachMuon";
-            this.Sl_SachMuon.Name = "Sl_SachMuon";
-            // 
-            // GhiChu
-            // 
-            this.GhiChu.DataPropertyName = "GhiChu";
-            this.GhiChu.HeaderText = "GhiChu";
-            this.GhiChu.Name = "GhiChu";
-            // 
-            // TrangThai_PhieuMuon
-            // 
-            this.TrangThai_PhieuMuon.DataPropertyName = "TrangThai_PhieuMuon";
-            this.TrangThai_PhieuMuon.HeaderText = "TrangThai_PhieuMuon";
-            this.TrangThai_PhieuMuon.Name = "TrangThai_PhieuMuon";
             // 
             // ucPhieuTraSach
             // 

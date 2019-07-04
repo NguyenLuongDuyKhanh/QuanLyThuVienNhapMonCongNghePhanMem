@@ -40,7 +40,7 @@ namespace GUI
             ucTraCuuSach1.Hide();
             ucThongKeMuonSach1.Hide();
             ucThongKeTraSachTre1.Hide();
-
+            ucTimSach1.Hide();
             ucTiepNhanSachMoi1.Show();
 
            
@@ -58,7 +58,7 @@ namespace GUI
             ucTraCuuSach1.Hide();
             ucThongKeMuonSach1.Hide();
             ucThongKeTraSachTre1.Hide();
-
+            ucTimSach1.Hide();
             ucLapTheDocGia1.Show();
         }
 
@@ -74,7 +74,7 @@ namespace GUI
             ucThongKeMuonSach1.Hide();
             ucThongKeTraSachTre1.Hide();
             ucLapTheDocGia1.Hide();
-
+            ucTimSach1.Hide();
             ucPhieuTraSach1.Show();
         }
 
@@ -90,7 +90,7 @@ namespace GUI
             ucThongKeMuonSach1.Hide();
             ucPhieuTraSach1.Hide();
             ucLapTheDocGia1.Hide();
-
+            ucTimSach1.Hide();
             ucThongKeTraSachTre1.Show();
         }
 
@@ -106,7 +106,7 @@ namespace GUI
             ucThongKeTraSachTre1.Hide();
             ucPhieuTraSach1.Hide();
             ucLapTheDocGia1.Hide();
-
+            ucTimSach1.Hide();
             ucThongKeMuonSach1.Show();
         }
 
@@ -124,7 +124,7 @@ namespace GUI
             ucThongKeTraSachTre1.Hide();
             ucPhieuTraSach1.Hide();
             ucThongKeMuonSach1.Hide();
-
+            ucTimSach1.Hide();
             ucLapTheDocGia1.Show();
         }
 
@@ -174,6 +174,7 @@ namespace GUI
             ucTraCuuSach1.Hide();
             ucThongKeMuonSach1.Hide();
             ucThongKeTraSachTre1.Hide();
+            ucTimSach1.Hide();
 
             ucPhieuMuonSach1.Show();
         }
@@ -182,7 +183,7 @@ namespace GUI
         {
             pnSlide_L.Height = btLapPhieuPhat.Height; pnSlide_R.Height = btLapPhieuPhat.Height;
             pnSlide_L.Top = btLapPhieuPhat.Top; pnSlide_R.Top = btLapPhieuPhat.Top;
-
+            ucTimSach1.Hide();
             ucLapTheDocGia1.Hide();
             ucTiepNhanSachMoi1.Hide();
             ucPhieuMuonSach1.Hide();
