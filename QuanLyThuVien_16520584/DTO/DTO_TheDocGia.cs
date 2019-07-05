@@ -39,5 +39,6 @@ namespace DTO
         public DateTime NgayLapThe { get; set; }
         public DateTime NgayHetHan { get; set; }
         public String TrangThai_TheDocGia { get; set; }
+        public int LayTuoiToiThieu { get; set; }
     }
 }

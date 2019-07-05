@@ -15,5 +15,13 @@ namespace DTO
         public int NamXuatBan { get; set; }
         public int SoSachMuonToiDa { get; set; }
         public int SoNgayMuonToiDa { get; set; }
+        public int TuoiToiThieuThayDoi { get; set; }
+        public int TuoiToiDaThayDoi { get; set; }
+        public int ThoiHanTheThayDoi { get; set; }
+        public int NamXuatBanThayDoi { get; set; }
+        public int SoSachMuonToiDaThayDoi { get; set; }
+        public int SoNgayMuonToiDaThayDoi { get; set; }
+        public String TheLoaiThayDoi { get; set; }
+        
     }
 }

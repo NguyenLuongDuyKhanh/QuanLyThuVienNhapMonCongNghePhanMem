@@ -16,6 +16,19 @@ create table PhanQuyen
 insert into PhanQuyen Values (N'Quản Lý', N'ql','true','true')
 insert into PhanQuyen Values (N'Nhân Viên',N'nv','false','true')
 
+create table QuyDinh
+(
+	ID_QuyDinh				int identity(1,1) primary key,
+	TuoiToiThieu			int,
+	TuoiToiDa				int,
+	ThoiHanThe				int,
+	NamXuatBan				int,
+	SoSachMuonToiDa			int,
+	SoNgayMuonToiDa			int
+)
+
+
+select * from QuyDinh
 
 
 create table TheLoaiSach
@@ -294,6 +307,7 @@ Insert into TheDocGia Values (1,N'Trần Thị K','23/10/1998',N'123/abc đườ
 Insert into TheDocGia Values (2,N'Trần Thị L','23/10/1998',N'123/abc đường xyz',N'abc@xyz.com','','','')
 select * from TheDocGia
 
+insert into QuyDinh values (18,55,6,8,5,4)
 
 set dateformat dmy
 Insert into TheDocGia Values (1,N'Khánh','02/11/1997','22/4//2','a@cdd','01/07/2019','1/11/2019','')
@@ -382,3 +396,16 @@ select Ten_TheLoaiSach,Ten_TacGia,Ten_NXB,Ten_Sach,Gia,NamXuatBan,CONVERT(varcha
  and Ten_NXB like  N'%test%'
 
 
+ set dateformat dmy  SELECT CONVERT(varchar(20),DATEADD(month,6,'02/07/2019'),103) as NgayHetHan
+ UPDATE QuyDinh SET TuoiToiDa = '1', TuoiToiThieu = '12' WHERE ID_QuyDinh = 1;
+ select * from QuyDinh
+
+ insert into TheLoaiSach values('khanh','')
+ select * from TheDocGia
+
+
+ select * from QuyDinh
+
+SELECT convert(varchar(20),GETDATE(),103)
+SELECT CONVERT(varchar(20),DATEADD(month,6,getdate()),103) as NgayHetHan
+select TuoiToiThieu from QuyDinh where ID_QuyDinh=1

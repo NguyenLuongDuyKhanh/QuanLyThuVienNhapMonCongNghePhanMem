@@ -49,13 +49,21 @@ namespace BUS
         }
         public DataTable NgayHetHan_Select(DTO_TheDocGia dl)
         {
-            return xl.table_Select("set dateformat dmy  SELECT CONVERT(varchar(20),DATEADD(month,6,'02/07/2019'),103) as NgayHetHan");
+            //return xl.table_Select("set dateformat dmy  SELECT CONVERT(varchar(20),DATEADD(month,6,'02/07/2019'),103) as NgayHetHan");
+            return xl.table_Select("set dateformat dmy  SELECT CONVERT(varchar(20),DATEADD(month,6,'"+dl.NgayLapThe+"'),103) as NgayHetHan");
         }
         public DataTable TheDocGia_Select(DTO_TheDocGia dl)
         {
             return xl.table_Select(" select ID_TheDocGia,Ten_LoaiDocGia,HoTen_DocGia,NgaySinh_DocGia,DiaChi_DocGia,Email_DocGia,NgayLapThe,NgayHetHan,TrangThai_TheDocGia from TheDocGia, LoaiDocGia where TheDocGia.ID_LoaiDocGia = LoaiDocGia.ID_LoaiDocGia  order by ID_TheDocGia desc");
         }
-
+        public DataTable LayTuoiToiThieu_Select(DTO_TheDocGia dl)
+        {
+            return xl.table_Select(" select TuoiToiThieu from QuyDinh where ID_QuyDinh=1");
+        }
+        public DataTable LayTuoiToiDa_Select(DTO_TheDocGia dl)
+        {
+            return xl.table_Select(" select TuoiToiDa from QuyDinh where ID_QuyDinh=1");
+        }
 
     }
 }

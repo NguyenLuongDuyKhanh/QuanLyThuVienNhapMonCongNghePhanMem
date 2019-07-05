@@ -47,11 +47,18 @@ namespace GUI
 
         private void BtLuu_Click(object sender, EventArgs e)
         {
+            //Convert.ToInt32(((DataRowView)ddlCategory.SelectedValue)["ProductCatId"]);
+            int x = Convert.ToInt32((DataRowView)xldl.LayTuoiToiThieu_Select(dl).SelectedValue["TuoiToiThieu"]);
+            //dl.LayTuoiToiThieu= Convert.ToInt32();
+            DateTime now = DateTime.Today;
+            int age = now.Year - Convert.ToDateTime(dtpNgaySinhDocGia.Text).Year;
             if (txtHoVaTen.Text == "" || txtDiaChi.Text == "" || txtEmail.Text == "" || txtNgayHetHan.Text == "")
             {
                 MessageBox.Show("Chưa nhập đủ dữ liệu !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
+            }else if( age < dl.LayTuoiToiThieu)
+            {
+                MessageBox.Show("Nhỏ tuổi quá!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }else
             {
                 dl.ID_LoaiDocGia = Convert.ToInt32(cboLoaiDocGia.SelectedValue.ToString());
                 dl.HoTen_DocGia = txtHoVaTen.Text;

@@ -51,6 +51,13 @@
             this.txtSoSachMuonToiDaThayDoi = new System.Windows.Forms.TextBox();
             this.txtSoNgayMuonToiDaThayDoi = new System.Windows.Forms.TextBox();
             this.btLuu = new System.Windows.Forms.Button();
+            this.btThemTheLoai = new System.Windows.Forms.Button();
+            this.dtgTheLoai = new System.Windows.Forms.DataGridView();
+            this.ID_TheLoaiSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ten_TheLoaiSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtThemTheLoai = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgTheLoai)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -250,10 +257,65 @@
             this.btLuu.UseVisualStyleBackColor = true;
             this.btLuu.Click += new System.EventHandler(this.BtLuu_Click);
             // 
+            // btThemTheLoai
+            // 
+            this.btThemTheLoai.Location = new System.Drawing.Point(532, 305);
+            this.btThemTheLoai.Name = "btThemTheLoai";
+            this.btThemTheLoai.Size = new System.Drawing.Size(85, 23);
+            this.btThemTheLoai.TabIndex = 25;
+            this.btThemTheLoai.Text = "Thêm thể loại";
+            this.btThemTheLoai.UseVisualStyleBackColor = true;
+            this.btThemTheLoai.Click += new System.EventHandler(this.BtThemTheLoai_Click_1);
+            // 
+            // dtgTheLoai
+            // 
+            this.dtgTheLoai.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgTheLoai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgTheLoai.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID_TheLoaiSach,
+            this.Ten_TheLoaiSach});
+            this.dtgTheLoai.Location = new System.Drawing.Point(541, 123);
+            this.dtgTheLoai.Name = "dtgTheLoai";
+            this.dtgTheLoai.Size = new System.Drawing.Size(247, 127);
+            this.dtgTheLoai.TabIndex = 27;
+            this.dtgTheLoai.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtgTheLoai_CellContentClick);
+            // 
+            // ID_TheLoaiSach
+            // 
+            this.ID_TheLoaiSach.DataPropertyName = "ID_TheLoaiSach";
+            this.ID_TheLoaiSach.HeaderText = "Mã thể loại";
+            this.ID_TheLoaiSach.Name = "ID_TheLoaiSach";
+            // 
+            // Ten_TheLoaiSach
+            // 
+            this.Ten_TheLoaiSach.DataPropertyName = "Ten_TheLoaiSach";
+            this.Ten_TheLoaiSach.HeaderText = "Tên thể loại";
+            this.Ten_TheLoaiSach.Name = "Ten_TheLoaiSach";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(538, 100);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(97, 13);
+            this.label12.TabIndex = 29;
+            this.label12.Text = "Thêm thể loại sách";
+            // 
+            // txtThemTheLoai
+            // 
+            this.txtThemTheLoai.Location = new System.Drawing.Point(654, 97);
+            this.txtThemTheLoai.Name = "txtThemTheLoai";
+            this.txtThemTheLoai.Size = new System.Drawing.Size(100, 20);
+            this.txtThemTheLoai.TabIndex = 30;
+            // 
             // ucChinhSuaQuyDinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txtThemTheLoai);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.dtgTheLoai);
+            this.Controls.Add(this.btThemTheLoai);
             this.Controls.Add(this.btLuu);
             this.Controls.Add(this.txtSoNgayMuonToiDaThayDoi);
             this.Controls.Add(this.txtSoSachMuonToiDaThayDoi);
@@ -280,6 +342,7 @@
             this.Name = "ucChinhSuaQuyDinh";
             this.Size = new System.Drawing.Size(1161, 528);
             this.Load += new System.EventHandler(this.UcChinhSuaQuyDinh_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgTheLoai)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,5 +373,11 @@
         private System.Windows.Forms.TextBox txtSoSachMuonToiDaThayDoi;
         private System.Windows.Forms.TextBox txtSoNgayMuonToiDaThayDoi;
         private System.Windows.Forms.Button btLuu;
+        private System.Windows.Forms.Button btThemTheLoai;
+        private System.Windows.Forms.DataGridView dtgTheLoai;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtThemTheLoai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID_TheLoaiSach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ten_TheLoaiSach;
     }
 }
