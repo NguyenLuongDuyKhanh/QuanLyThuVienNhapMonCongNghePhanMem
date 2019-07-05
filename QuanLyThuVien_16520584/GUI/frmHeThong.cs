@@ -42,8 +42,9 @@ namespace GUI
             ucThongKeTraSachTre1.Hide();
             ucTimSach1.Hide();
             ucTiepNhanSachMoi1.Show();
+            ucChinhSuaQuyDinh1.Hide();
 
-           
+
         }
 
         private void BtLapThe_Click(object sender, EventArgs e)
@@ -60,6 +61,7 @@ namespace GUI
             ucThongKeTraSachTre1.Hide();
             ucTimSach1.Hide();
             ucLapTheDocGia1.Show();
+            ucChinhSuaQuyDinh1.Hide();
         }
 
         private void BtNhanTraSach_Click(object sender, EventArgs e)
@@ -76,6 +78,7 @@ namespace GUI
             ucLapTheDocGia1.Hide();
             ucTimSach1.Hide();
             ucPhieuTraSach1.Show();
+            ucChinhSuaQuyDinh1.Hide();
         }
 
         private void BtThongKeSachTre_Click(object sender, EventArgs e)
@@ -92,6 +95,7 @@ namespace GUI
             ucLapTheDocGia1.Hide();
             ucTimSach1.Hide();
             ucThongKeTraSachTre1.Show();
+            ucChinhSuaQuyDinh1.Hide();
         }
 
         private void BtThongKeSachMuon_Click(object sender, EventArgs e)
@@ -108,6 +112,7 @@ namespace GUI
             ucLapTheDocGia1.Hide();
             ucTimSach1.Hide();
             ucThongKeMuonSach1.Show();
+            ucChinhSuaQuyDinh1.Hide();
         }
 
         private void BtLapTheDocGia_Click(object sender, EventArgs e)
@@ -126,6 +131,7 @@ namespace GUI
             ucThongKeMuonSach1.Hide();
             ucTimSach1.Hide();
             ucLapTheDocGia1.Show();
+            ucChinhSuaQuyDinh1.Hide();
         }
 
         private void BtTrangChu_Click(object sender, EventArgs e)
@@ -142,6 +148,7 @@ namespace GUI
             ucThongKeMuonSach1.Hide();
             ucThongKeTraSachTre1.Hide();
             ucTimSach1.Hide();
+            ucChinhSuaQuyDinh1.Hide();
         }
 
         private void BtTraCuuSach_Click(object sender, EventArgs e)
@@ -156,6 +163,7 @@ namespace GUI
             ucPhieuPhat1.Hide();
             ucThongKeMuonSach1.Hide();
             ucThongKeTraSachTre1.Hide();
+            ucChinhSuaQuyDinh1.Hide();
 
             //ucTraCuuSach1.Show();
             ucTimSach1.Show();
@@ -175,6 +183,7 @@ namespace GUI
             ucThongKeMuonSach1.Hide();
             ucThongKeTraSachTre1.Hide();
             ucTimSach1.Hide();
+            ucChinhSuaQuyDinh1.Hide();
 
             ucPhieuMuonSach1.Show();
         }
@@ -191,6 +200,7 @@ namespace GUI
             ucTraCuuSach1.Hide();
             ucThongKeMuonSach1.Hide();
             ucThongKeTraSachTre1.Hide();
+            ucChinhSuaQuyDinh1.Hide();
 
             ucPhieuPhat1.Show();
         }
@@ -206,6 +216,7 @@ namespace GUI
             ucThongKeMuonSach1.Hide();
             ucThongKeTraSachTre1.Hide();
             ucTimSach1.Hide();
+            ucChinhSuaQuyDinh1.Hide();
             btChinhSua.Visible = frmDangNhap.PQ_QuanLy;
            
 
@@ -232,6 +243,25 @@ namespace GUI
             frmDangNhap dangnhap = new frmDangNhap();
             dangnhap.Show();
             this.Hide();
+        }
+
+        private void BtChinhSua_Click(object sender, EventArgs e)
+        {
+            pnSlide_L.Height = btChinhSua.Height; pnSlide_R.Height = btChinhSua.Height;
+            pnSlide_L.Top = btChinhSua.Top; pnSlide_R.Top = btChinhSua.Top;
+            ucTimSach1.Hide();
+            ucLapTheDocGia1.Hide();
+            ucTiepNhanSachMoi1.Hide();
+            ucPhieuMuonSach1.Hide();
+            ucPhieuTraSach1.Hide();
+            ucTraCuuSach1.Hide();
+            ucThongKeMuonSach1.Hide();
+            ucThongKeTraSachTre1.Hide();
+            ucPhieuPhat1.Hide();
+
+            ucChinhSuaQuyDinh1.Show();
+
+            //ucChinhSuaQuyDinh1.Show();
         }
     }
 }

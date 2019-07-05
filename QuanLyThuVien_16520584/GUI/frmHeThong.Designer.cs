@@ -61,6 +61,7 @@
             this.ucTraCuuSach1 = new GUI.ucTraCuuSach();
             this.ucThongKeTraSachTre1 = new GUI.ucThongKeTraSachTre();
             this.ucTimSach1 = new GUI.ucTimSach();
+            this.ucChinhSuaQuyDinh1 = new GUI.ucChinhSuaQuyDinh();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnBangDieuKhien_Show.SuspendLayout();
@@ -301,6 +302,7 @@
             this.btChinhSua.TabIndex = 69;
             this.btChinhSua.Text = "Chỉnh sửa";
             this.btChinhSua.UseVisualStyleBackColor = false;
+            this.btChinhSua.Click += new System.EventHandler(this.BtChinhSua_Click);
             // 
             // btThongKeSachMuon
             // 
@@ -491,11 +493,19 @@
             this.ucTimSach1.Size = new System.Drawing.Size(1053, 719);
             this.ucTimSach1.TabIndex = 76;
             // 
+            // ucChinhSuaQuyDinh1
+            // 
+            this.ucChinhSuaQuyDinh1.Location = new System.Drawing.Point(173, 54);
+            this.ucChinhSuaQuyDinh1.Name = "ucChinhSuaQuyDinh1";
+            this.ucChinhSuaQuyDinh1.Size = new System.Drawing.Size(1057, 677);
+            this.ucChinhSuaQuyDinh1.TabIndex = 77;
+            // 
             // frmHeThong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1230, 732);
+            this.Controls.Add(this.ucChinhSuaQuyDinh1);
             this.Controls.Add(this.ucTimSach1);
             this.Controls.Add(this.ucThongKeTraSachTre1);
             this.Controls.Add(this.ucTraCuuSach1);
@@ -558,5 +568,6 @@
         private ucThongKeTraSachTre ucThongKeTraSachTre1;
         private System.Windows.Forms.Button btChinhSua;
         private ucTimSach ucTimSach1;
+        private ucChinhSuaQuyDinh ucChinhSuaQuyDinh1;
     }
 }

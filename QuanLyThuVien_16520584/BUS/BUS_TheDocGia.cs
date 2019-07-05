@@ -26,6 +26,10 @@ using System.Threading.Tasks;
 using DAO;
 using DTO;
 
+/******************************************************************************/
+/*                                  BUS Layer                                 */
+/******************************************************************************/
+
 namespace BUS
 {
     public class BUS_TheDocGia
