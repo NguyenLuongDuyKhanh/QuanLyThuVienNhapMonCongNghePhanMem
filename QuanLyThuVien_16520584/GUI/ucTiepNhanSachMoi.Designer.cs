@@ -31,8 +31,6 @@
             this.btHoanTat = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.txtMoTa = new System.Windows.Forms.TextBox();
-            this.txtSoLuong = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.txtTriGia = new System.Windows.Forms.TextBox();
             this.dtpNgayNhap = new System.Windows.Forms.DateTimePicker();
             this.txtNhaXuatBan = new System.Windows.Forms.TextBox();
@@ -49,13 +47,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.dtgSach = new System.Windows.Forms.DataGridView();
+            this.txtGioiHanXuatBan = new System.Windows.Forms.TextBox();
             this.ID_Sach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ten_TheLoaiSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ten_TacGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ten_NXB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ten_Sach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sl_Nhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NamXuatBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgSach)).BeginInit();
             this.SuspendLayout();
@@ -63,7 +61,7 @@
             // btHoanTat
             // 
             this.btHoanTat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btHoanTat.Location = new System.Drawing.Point(138, 460);
+            this.btHoanTat.Location = new System.Drawing.Point(382, 268);
             this.btHoanTat.Name = "btHoanTat";
             this.btHoanTat.Size = new System.Drawing.Size(113, 45);
             this.btHoanTat.TabIndex = 37;
@@ -90,28 +88,10 @@
             this.txtMoTa.TabIndex = 35;
             this.txtMoTa.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
-            // txtSoLuong
-            // 
-            this.txtSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoLuong.Location = new System.Drawing.Point(195, 403);
-            this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Size = new System.Drawing.Size(263, 29);
-            this.txtSoLuong.TabIndex = 34;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(32, 402);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(134, 24);
-            this.label8.TabIndex = 33;
-            this.label8.Text = "Số lượng nhập";
-            // 
             // txtTriGia
             // 
             this.txtTriGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTriGia.Location = new System.Drawing.Point(195, 368);
+            this.txtTriGia.Location = new System.Drawing.Point(644, 215);
             this.txtTriGia.Name = "txtTriGia";
             this.txtTriGia.Size = new System.Drawing.Size(263, 29);
             this.txtTriGia.TabIndex = 32;
@@ -119,7 +99,7 @@
             // dtpNgayNhap
             // 
             this.dtpNgayNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNgayNhap.Location = new System.Drawing.Point(195, 331);
+            this.dtpNgayNhap.Location = new System.Drawing.Point(644, 178);
             this.dtpNgayNhap.Name = "dtpNgayNhap";
             this.dtpNgayNhap.Size = new System.Drawing.Size(263, 29);
             this.dtpNgayNhap.TabIndex = 31;
@@ -127,7 +107,7 @@
             // txtNhaXuatBan
             // 
             this.txtNhaXuatBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNhaXuatBan.Location = new System.Drawing.Point(195, 289);
+            this.txtNhaXuatBan.Location = new System.Drawing.Point(644, 136);
             this.txtNhaXuatBan.Name = "txtNhaXuatBan";
             this.txtNhaXuatBan.Size = new System.Drawing.Size(263, 29);
             this.txtNhaXuatBan.TabIndex = 30;
@@ -135,7 +115,7 @@
             // txtNamXuatBan
             // 
             this.txtNamXuatBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNamXuatBan.Location = new System.Drawing.Point(195, 249);
+            this.txtNamXuatBan.Location = new System.Drawing.Point(644, 96);
             this.txtNamXuatBan.Name = "txtNamXuatBan";
             this.txtNamXuatBan.Size = new System.Drawing.Size(263, 29);
             this.txtNamXuatBan.TabIndex = 29;
@@ -162,7 +142,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(104, 371);
+            this.label7.Location = new System.Drawing.Point(553, 218);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(62, 24);
             this.label7.TabIndex = 26;
@@ -172,7 +152,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(58, 331);
+            this.label6.Location = new System.Drawing.Point(507, 178);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(102, 24);
             this.label6.TabIndex = 25;
@@ -182,7 +162,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(44, 289);
+            this.label5.Location = new System.Drawing.Point(493, 136);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(122, 24);
             this.label5.TabIndex = 24;
@@ -192,7 +172,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(33, 249);
+            this.label4.Location = new System.Drawing.Point(482, 96);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(127, 24);
             this.label4.TabIndex = 23;
@@ -257,61 +237,62 @@
             this.Ten_NXB,
             this.Ten_Sach,
             this.Gia,
-            this.Sl_Nhap,
             this.NamXuatBan});
             this.dtgSach.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dtgSach.Location = new System.Drawing.Point(0, 556);
+            this.dtgSach.Location = new System.Drawing.Point(0, 370);
             this.dtgSach.Name = "dtgSach";
-            this.dtgSach.Size = new System.Drawing.Size(1503, 119);
+            this.dtgSach.Size = new System.Drawing.Size(1503, 305);
             this.dtgSach.TabIndex = 39;
             this.dtgSach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtgSach_CellContentClick);
+            // 
+            // txtGioiHanXuatBan
+            // 
+            this.txtGioiHanXuatBan.Location = new System.Drawing.Point(767, 316);
+            this.txtGioiHanXuatBan.Name = "txtGioiHanXuatBan";
+            this.txtGioiHanXuatBan.ReadOnly = true;
+            this.txtGioiHanXuatBan.Size = new System.Drawing.Size(100, 20);
+            this.txtGioiHanXuatBan.TabIndex = 40;
             // 
             // ID_Sach
             // 
             this.ID_Sach.DataPropertyName = "ID_Sach";
-            this.ID_Sach.HeaderText = "ID_Sach";
+            this.ID_Sach.HeaderText = "Mã sách";
             this.ID_Sach.Name = "ID_Sach";
             // 
             // Ten_TheLoaiSach
             // 
             this.Ten_TheLoaiSach.DataPropertyName = "Ten_TheLoaiSach";
-            this.Ten_TheLoaiSach.HeaderText = "Ten_TheLoaiSach";
+            this.Ten_TheLoaiSach.HeaderText = "Thể loại";
             this.Ten_TheLoaiSach.Name = "Ten_TheLoaiSach";
             // 
             // Ten_TacGia
             // 
             this.Ten_TacGia.DataPropertyName = "Ten_TacGia";
-            this.Ten_TacGia.HeaderText = "Ten_TacGia";
+            this.Ten_TacGia.HeaderText = "Tác giả";
             this.Ten_TacGia.Name = "Ten_TacGia";
             // 
             // Ten_NXB
             // 
             this.Ten_NXB.DataPropertyName = "Ten_NXB";
-            this.Ten_NXB.HeaderText = "Ten_NXB";
+            this.Ten_NXB.HeaderText = "Nhà xuất bản";
             this.Ten_NXB.Name = "Ten_NXB";
             // 
             // Ten_Sach
             // 
             this.Ten_Sach.DataPropertyName = "Ten_Sach";
-            this.Ten_Sach.HeaderText = "Ten_Sach";
+            this.Ten_Sach.HeaderText = "Tên sách";
             this.Ten_Sach.Name = "Ten_Sach";
             // 
             // Gia
             // 
             this.Gia.DataPropertyName = "Gia";
-            this.Gia.HeaderText = "Gia";
+            this.Gia.HeaderText = "Giá";
             this.Gia.Name = "Gia";
-            // 
-            // Sl_Nhap
-            // 
-            this.Sl_Nhap.DataPropertyName = "Sl_Nhap";
-            this.Sl_Nhap.HeaderText = "Sl_Nhap";
-            this.Sl_Nhap.Name = "Sl_Nhap";
             // 
             // NamXuatBan
             // 
             this.NamXuatBan.DataPropertyName = "NamXuatBan";
-            this.NamXuatBan.HeaderText = "NamXuatBan";
+            this.NamXuatBan.HeaderText = "Năm xuất bản";
             this.NamXuatBan.Name = "NamXuatBan";
             // 
             // ucTiepNhanSachMoi
@@ -319,13 +300,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Controls.Add(this.txtGioiHanXuatBan);
             this.Controls.Add(this.dtgSach);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.btHoanTat);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtMoTa);
-            this.Controls.Add(this.txtSoLuong);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.txtTriGia);
             this.Controls.Add(this.dtpNgayNhap);
             this.Controls.Add(this.txtNhaXuatBan);
@@ -354,8 +334,6 @@
         private System.Windows.Forms.Button btHoanTat;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtMoTa;
-        private System.Windows.Forms.TextBox txtSoLuong;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtTriGia;
         private System.Windows.Forms.DateTimePicker dtpNgayNhap;
         private System.Windows.Forms.TextBox txtNhaXuatBan;
@@ -372,13 +350,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView dtgSach;
+        private System.Windows.Forms.TextBox txtGioiHanXuatBan;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID_Sach;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ten_TheLoaiSach;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ten_TacGia;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ten_NXB;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ten_Sach;
         private System.Windows.Forms.DataGridViewTextBoxColumn Gia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Sl_Nhap;
         private System.Windows.Forms.DataGridViewTextBoxColumn NamXuatBan;
     }
 }

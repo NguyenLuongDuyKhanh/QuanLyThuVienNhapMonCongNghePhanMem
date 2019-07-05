@@ -20,14 +20,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUS;
+using DTO;
 
 namespace GUI
 {
     public partial class ucThongKeTraSachTre : UserControl
     {
+        BUS_PhieuMuon xldl = new BUS_PhieuMuon();
+        DTO_PhieuMuon dl = new DTO_PhieuMuon();
         public ucThongKeTraSachTre()
         {
             InitializeComponent();
+        }
+
+        private void UcThongKeTraSachTre_Load(object sender, EventArgs e)
+        {
+            dtgThongKeSachTre.DataSource = xldl.LoadPhieuMuonTre_Select(dl);
         }
     }
 }

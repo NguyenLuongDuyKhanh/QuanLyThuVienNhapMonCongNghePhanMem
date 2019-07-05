@@ -47,6 +47,10 @@ namespace GUI
             cboTheLoaiSach.DisplayMember = "Ten_TheLoaiSach";
             cboTheLoaiSach.ValueMember = "ID_TheLoaiSach";
 
+            txtGioiHanXuatBan.DataBindings.Clear();
+
+            txtGioiHanXuatBan.DataBindings.Add("Text", xldl.LayGioiHanXuatBan_Select(dl), "NamXuatBan");
+
             cboTacGia.DataSource = xldl.ChonTacGiaSach_Select(dl);
             cboTacGia.DisplayMember = "Ten_TacGia";
             cboTacGia.ValueMember = "ID_TacGia";
@@ -56,19 +60,29 @@ namespace GUI
 
         private void BtHoanTat_Click(object sender, EventArgs e)
         {
-            dl.ID_TheLoaiSach = Convert.ToInt32(cboTheLoaiSach.SelectedValue.ToString());
-            dl.ID_TacGia= Convert.ToInt32(cboTacGia.SelectedValue.ToString());
-            //dl.ID_NXB = txtNhaXuatBan;
-            dl.Ten_Sach = txtTenSach.Text;
-            dl.Gia = Convert.ToInt32(txtTriGia.Text);
-            dl.Sl_Nhap = Convert.ToInt32(txtSoLuong.Text);
-            dl.MoTa = txtMoTa.Text;
-            dl.NamXuatBan = Convert.ToInt32(txtNamXuatBan.Text);
-            dl.NgayNhap = Convert.ToDateTime(dtpNgayNhap.Text);
-            dl.TrangThai_Sach = "";
-            dl.TrangThai_MuonSach = "";
-            xldl.Sach_INSERT(dl);
-            dtgSach.DataSource = xldl.Sach_Select(dl);
+            DateTime now = DateTime.Today;
+            if (now.Year - Convert.ToInt32(txtNamXuatBan.Text)> Convert.ToInt32(txtGioiHanXuatBan.Text))
+            {
+                MessageBox.Show("Sách quá cũ!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }else
+            {
+                dl.LayGioiHanXuatBan = Convert.ToInt32(txtGioiHanXuatBan.Text);
+
+                dl.ID_TheLoaiSach = Convert.ToInt32(cboTheLoaiSach.SelectedValue.ToString());
+                dl.ID_TacGia = Convert.ToInt32(cboTacGia.SelectedValue.ToString());
+                //dl.ID_NXB = txtNhaXuatBan;
+                dl.Ten_Sach = txtTenSach.Text;
+                dl.Gia = Convert.ToInt32(txtTriGia.Text);
+                dl.Sl_Nhap = 0;
+                dl.MoTa = txtMoTa.Text;
+                dl.NamXuatBan = Convert.ToInt32(txtNamXuatBan.Text);
+                dl.NgayNhap = Convert.ToDateTime(dtpNgayNhap.Text);
+                dl.TrangThai_Sach = "";
+                dl.TrangThai_MuonSach = "";
+                xldl.Sach_INSERT(dl);
+                dtgSach.DataSource = xldl.Sach_Select(dl);
+            }
+
         }
 
         private void DtgSach_CellContentClick(object sender, DataGridViewCellEventArgs e)

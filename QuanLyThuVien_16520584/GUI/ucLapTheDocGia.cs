@@ -41,23 +41,30 @@ namespace GUI
             cboLoaiDocGia.DataSource = xldl.ChonLoaiDocGia_Select(dl);
             cboLoaiDocGia.DisplayMember = "Ten_LoaiDocGia";
             cboLoaiDocGia.ValueMember = "ID_LoaiDocGia";
+            txtTuoiToiThieu.DataBindings.Clear();
+            txtTuoiToiDa.DataBindings.Clear();
+            txtThoiHanThe.DataBindings.Clear();
 
+            txtTuoiToiThieu.DataBindings.Add("Text", xldl.LayTuoiToiThieu_Select(dl), "TuoiToiThieu");
+            txtTuoiToiDa.DataBindings.Add("Text", xldl.LayTuoiToiThieu_Select(dl), "TuoiToiDa");
+            txtThoiHanThe.DataBindings.Add("Text", xldl.LayTuoiToiThieu_Select(dl), "ThoiHanThe");
             dtgTheDocGia.DataSource = xldl.TheDocGia_Select(dl);
         }
 
         private void BtLuu_Click(object sender, EventArgs e)
         {
-            //Convert.ToInt32(((DataRowView)ddlCategory.SelectedValue)["ProductCatId"]);
-            int x = Convert.ToInt32((DataRowView)xldl.LayTuoiToiThieu_Select(dl).SelectedValue["TuoiToiThieu"]);
-            //dl.LayTuoiToiThieu= Convert.ToInt32();
+            dl.LayThoiHanThe = Convert.ToInt32(txtThoiHanThe.Text);
             DateTime now = DateTime.Today;
             int age = now.Year - Convert.ToDateTime(dtpNgaySinhDocGia.Text).Year;
             if (txtHoVaTen.Text == "" || txtDiaChi.Text == "" || txtEmail.Text == "" || txtNgayHetHan.Text == "")
             {
                 MessageBox.Show("Chưa nhập đủ dữ liệu !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }else if( age < dl.LayTuoiToiThieu)
+            }else if( age < Convert.ToInt32(txtTuoiToiThieu.Text))
             {
                 MessageBox.Show("Nhỏ tuổi quá!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }else if (age > Convert.ToInt32(txtTuoiToiDa.Text))
+            {
+                MessageBox.Show("Lớn tuổi quá!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }else
             {
                 dl.ID_LoaiDocGia = Convert.ToInt32(cboLoaiDocGia.SelectedValue.ToString());
@@ -78,7 +85,7 @@ namespace GUI
 
         private void DtpNgayLapThe_ValueChanged(object sender, EventArgs e)
         {
-
+            dl.LayThoiHanThe = Convert.ToInt32(txtThoiHanThe.Text);
             txtNgayHetHan.DataBindings.Clear();
             dl.NgayLapThe = Convert.ToDateTime(dtpNgayLapThe.Text);
             txtNgayHetHan.DataBindings.Add("Text", xldl.NgayHetHan_Select(dl), "NgayHetHan");

@@ -60,6 +60,21 @@ namespace GUI
                 dl.TuKhoa = txtTimTuKhoa.Text;
                 dtgThongTinSach.DataSource = xldl.Sach_TenSach_Select(dl);
             }
+            else if (cbTimTheo.SelectedItem.ToString() == "Thể loại sách")
+            {
+                dl.TuKhoa = txtTimTuKhoa.Text;
+                dtgThongTinSach.DataSource = xldl.Sach_TenTheLoai_Select(dl);
+            }else
+            if (cbTimTheo.SelectedItem.ToString() == "Tác giả")
+            {
+                dl.TuKhoa = txtTimTuKhoa.Text;
+                dtgThongTinSach.DataSource = xldl.Sach_TenTacGia_Select(dl);
+            }else
+            if (cbTimTheo.SelectedItem.ToString() == "Nhà xuất bản")
+            {
+                dl.TuKhoa = txtTimTuKhoa.Text;
+                dtgThongTinSach.DataSource = xldl.Sach_TenNhaXuatBan_Select(dl);
+            }
         }
     }
 }

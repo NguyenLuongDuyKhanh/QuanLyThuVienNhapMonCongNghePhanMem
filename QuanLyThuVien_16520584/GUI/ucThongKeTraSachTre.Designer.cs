@@ -28,20 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgThongKeSachTre = new System.Windows.Forms.DataGridView();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.ID_PhieuMuonSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoTen_DocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ten_Sach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ten_TheLoaiSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TrangThai_PhieuMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgThongKeSachTre)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dtgThongKeSachTre
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 206);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(615, 311);
-            this.dataGridView1.TabIndex = 7;
+            this.dtgThongKeSachTre.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgThongKeSachTre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgThongKeSachTre.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID_PhieuMuonSach,
+            this.HoTen_DocGia,
+            this.Ten_Sach,
+            this.Ten_TheLoaiSach,
+            this.NgayMuon,
+            this.GhiChu,
+            this.TrangThai_PhieuMuon});
+            this.dtgThongKeSachTre.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dtgThongKeSachTre.Location = new System.Drawing.Point(0, 206);
+            this.dtgThongKeSachTre.Name = "dtgThongKeSachTre";
+            this.dtgThongKeSachTre.Size = new System.Drawing.Size(615, 311);
+            this.dtgThongKeSachTre.TabIndex = 7;
             // 
             // dateTimePicker1
             // 
@@ -71,17 +88,60 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Ngày";
             // 
+            // ID_PhieuMuonSach
+            // 
+            this.ID_PhieuMuonSach.DataPropertyName = "ID_PhieuMuonSach";
+            this.ID_PhieuMuonSach.HeaderText = "Mã phiếu mượn";
+            this.ID_PhieuMuonSach.Name = "ID_PhieuMuonSach";
+            // 
+            // HoTen_DocGia
+            // 
+            this.HoTen_DocGia.DataPropertyName = "HoTen_DocGia";
+            this.HoTen_DocGia.HeaderText = "Độc giả";
+            this.HoTen_DocGia.Name = "HoTen_DocGia";
+            // 
+            // Ten_Sach
+            // 
+            this.Ten_Sach.DataPropertyName = "Ten_Sach";
+            this.Ten_Sach.HeaderText = "Tên sách";
+            this.Ten_Sach.Name = "Ten_Sach";
+            // 
+            // Ten_TheLoaiSach
+            // 
+            this.Ten_TheLoaiSach.DataPropertyName = "Ten_TheLoaiSach";
+            this.Ten_TheLoaiSach.HeaderText = "Thể loại sách";
+            this.Ten_TheLoaiSach.Name = "Ten_TheLoaiSach";
+            // 
+            // NgayMuon
+            // 
+            this.NgayMuon.DataPropertyName = "NgayMuon";
+            this.NgayMuon.HeaderText = "Ngày mượn";
+            this.NgayMuon.Name = "NgayMuon";
+            // 
+            // GhiChu
+            // 
+            this.GhiChu.DataPropertyName = "GhiChu";
+            this.GhiChu.HeaderText = "Ghi chú";
+            this.GhiChu.Name = "GhiChu";
+            // 
+            // TrangThai_PhieuMuon
+            // 
+            this.TrangThai_PhieuMuon.DataPropertyName = "TrangThai_PhieuMuon";
+            this.TrangThai_PhieuMuon.HeaderText = "Trạng thái";
+            this.TrangThai_PhieuMuon.Name = "TrangThai_PhieuMuon";
+            // 
             // ucThongKeTraSachTre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgThongKeSachTre);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ucThongKeTraSachTre";
             this.Size = new System.Drawing.Size(615, 517);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.UcThongKeTraSachTre_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgThongKeSachTre)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -89,9 +149,16 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgThongKeSachTre;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID_PhieuMuonSach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HoTen_DocGia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ten_Sach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ten_TheLoaiSach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayMuon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai_PhieuMuon;
     }
 }

@@ -44,6 +44,10 @@
             this.txtNgayHetHan = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.dtgTheDocGia = new System.Windows.Forms.DataGridView();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtTuoiToiThieu = new System.Windows.Forms.TextBox();
+            this.txtTuoiToiDa = new System.Windows.Forms.TextBox();
+            this.txtThoiHanThe = new System.Windows.Forms.TextBox();
             this.ID_TheDocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ten_LoaiDocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoTen_DocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,7 +57,6 @@
             this.NgayLapThe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayHetHan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TrangThai_TheDocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtgTheDocGia)).BeginInit();
             this.SuspendLayout();
             // 
@@ -226,71 +229,6 @@
             this.dtgTheDocGia.Size = new System.Drawing.Size(1073, 364);
             this.dtgTheDocGia.TabIndex = 31;
             // 
-            // ID_TheDocGia
-            // 
-            this.ID_TheDocGia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.ID_TheDocGia.DataPropertyName = "ID_TheDocGia";
-            this.ID_TheDocGia.HeaderText = "ID_TheDocGia";
-            this.ID_TheDocGia.Name = "ID_TheDocGia";
-            this.ID_TheDocGia.ReadOnly = true;
-            this.ID_TheDocGia.Width = 50;
-            // 
-            // Ten_LoaiDocGia
-            // 
-            this.Ten_LoaiDocGia.DataPropertyName = "Ten_LoaiDocGia";
-            this.Ten_LoaiDocGia.HeaderText = "Ten_LoaiDocGia";
-            this.Ten_LoaiDocGia.Name = "Ten_LoaiDocGia";
-            this.Ten_LoaiDocGia.ReadOnly = true;
-            // 
-            // HoTen_DocGia
-            // 
-            this.HoTen_DocGia.DataPropertyName = "HoTen_DocGia";
-            this.HoTen_DocGia.HeaderText = "HoTen_DocGia";
-            this.HoTen_DocGia.Name = "HoTen_DocGia";
-            this.HoTen_DocGia.ReadOnly = true;
-            // 
-            // NgaySinh_DocGia
-            // 
-            this.NgaySinh_DocGia.DataPropertyName = "NgaySinh_DocGia";
-            this.NgaySinh_DocGia.HeaderText = "NgaySinh_DocGia";
-            this.NgaySinh_DocGia.Name = "NgaySinh_DocGia";
-            this.NgaySinh_DocGia.ReadOnly = true;
-            // 
-            // DiaChi_DocGia
-            // 
-            this.DiaChi_DocGia.DataPropertyName = "DiaChi_DocGia";
-            this.DiaChi_DocGia.HeaderText = "DiaChi_DocGia";
-            this.DiaChi_DocGia.Name = "DiaChi_DocGia";
-            this.DiaChi_DocGia.ReadOnly = true;
-            // 
-            // Email_DocGia
-            // 
-            this.Email_DocGia.DataPropertyName = "Email_DocGia";
-            this.Email_DocGia.HeaderText = "Email_DocGia";
-            this.Email_DocGia.Name = "Email_DocGia";
-            this.Email_DocGia.ReadOnly = true;
-            // 
-            // NgayLapThe
-            // 
-            this.NgayLapThe.DataPropertyName = "NgayLapThe";
-            this.NgayLapThe.HeaderText = "NgayLapThe";
-            this.NgayLapThe.Name = "NgayLapThe";
-            this.NgayLapThe.ReadOnly = true;
-            // 
-            // NgayHetHan
-            // 
-            this.NgayHetHan.DataPropertyName = "NgayHetHan";
-            this.NgayHetHan.HeaderText = "NgayHetHan";
-            this.NgayHetHan.Name = "NgayHetHan";
-            this.NgayHetHan.ReadOnly = true;
-            // 
-            // TrangThai_TheDocGia
-            // 
-            this.TrangThai_TheDocGia.DataPropertyName = "TrangThai_TheDocGia";
-            this.TrangThai_TheDocGia.HeaderText = "TrangThai_TheDocGia";
-            this.TrangThai_TheDocGia.Name = "TrangThai_TheDocGia";
-            this.TrangThai_TheDocGia.ReadOnly = true;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -301,10 +239,102 @@
             this.label8.TabIndex = 32;
             this.label8.Text = "Lập thẻ độc giả";
             // 
+            // txtTuoiToiThieu
+            // 
+            this.txtTuoiToiThieu.Location = new System.Drawing.Point(408, 250);
+            this.txtTuoiToiThieu.Name = "txtTuoiToiThieu";
+            this.txtTuoiToiThieu.ReadOnly = true;
+            this.txtTuoiToiThieu.Size = new System.Drawing.Size(100, 20);
+            this.txtTuoiToiThieu.TabIndex = 33;
+            // 
+            // txtTuoiToiDa
+            // 
+            this.txtTuoiToiDa.Location = new System.Drawing.Point(525, 250);
+            this.txtTuoiToiDa.Name = "txtTuoiToiDa";
+            this.txtTuoiToiDa.ReadOnly = true;
+            this.txtTuoiToiDa.Size = new System.Drawing.Size(100, 20);
+            this.txtTuoiToiDa.TabIndex = 34;
+            // 
+            // txtThoiHanThe
+            // 
+            this.txtThoiHanThe.Location = new System.Drawing.Point(640, 250);
+            this.txtThoiHanThe.Name = "txtThoiHanThe";
+            this.txtThoiHanThe.ReadOnly = true;
+            this.txtThoiHanThe.Size = new System.Drawing.Size(100, 20);
+            this.txtThoiHanThe.TabIndex = 35;
+            // 
+            // ID_TheDocGia
+            // 
+            this.ID_TheDocGia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.ID_TheDocGia.DataPropertyName = "ID_TheDocGia";
+            this.ID_TheDocGia.HeaderText = "Mã thẻ";
+            this.ID_TheDocGia.Name = "ID_TheDocGia";
+            this.ID_TheDocGia.ReadOnly = true;
+            this.ID_TheDocGia.Width = 50;
+            // 
+            // Ten_LoaiDocGia
+            // 
+            this.Ten_LoaiDocGia.DataPropertyName = "Ten_LoaiDocGia";
+            this.Ten_LoaiDocGia.HeaderText = "Loại độc giả";
+            this.Ten_LoaiDocGia.Name = "Ten_LoaiDocGia";
+            this.Ten_LoaiDocGia.ReadOnly = true;
+            // 
+            // HoTen_DocGia
+            // 
+            this.HoTen_DocGia.DataPropertyName = "HoTen_DocGia";
+            this.HoTen_DocGia.HeaderText = "Họ tên";
+            this.HoTen_DocGia.Name = "HoTen_DocGia";
+            this.HoTen_DocGia.ReadOnly = true;
+            // 
+            // NgaySinh_DocGia
+            // 
+            this.NgaySinh_DocGia.DataPropertyName = "NgaySinh_DocGia";
+            this.NgaySinh_DocGia.HeaderText = "Ngày sinh";
+            this.NgaySinh_DocGia.Name = "NgaySinh_DocGia";
+            this.NgaySinh_DocGia.ReadOnly = true;
+            // 
+            // DiaChi_DocGia
+            // 
+            this.DiaChi_DocGia.DataPropertyName = "DiaChi_DocGia";
+            this.DiaChi_DocGia.HeaderText = "Địa chỉ độc giả";
+            this.DiaChi_DocGia.Name = "DiaChi_DocGia";
+            this.DiaChi_DocGia.ReadOnly = true;
+            // 
+            // Email_DocGia
+            // 
+            this.Email_DocGia.DataPropertyName = "Email_DocGia";
+            this.Email_DocGia.HeaderText = "Email";
+            this.Email_DocGia.Name = "Email_DocGia";
+            this.Email_DocGia.ReadOnly = true;
+            // 
+            // NgayLapThe
+            // 
+            this.NgayLapThe.DataPropertyName = "NgayLapThe";
+            this.NgayLapThe.HeaderText = "Ngày lập thẻ";
+            this.NgayLapThe.Name = "NgayLapThe";
+            this.NgayLapThe.ReadOnly = true;
+            // 
+            // NgayHetHan
+            // 
+            this.NgayHetHan.DataPropertyName = "NgayHetHan";
+            this.NgayHetHan.HeaderText = "Ngày hết hạn";
+            this.NgayHetHan.Name = "NgayHetHan";
+            this.NgayHetHan.ReadOnly = true;
+            // 
+            // TrangThai_TheDocGia
+            // 
+            this.TrangThai_TheDocGia.DataPropertyName = "TrangThai_TheDocGia";
+            this.TrangThai_TheDocGia.HeaderText = "Trạng thái";
+            this.TrangThai_TheDocGia.Name = "TrangThai_TheDocGia";
+            this.TrangThai_TheDocGia.ReadOnly = true;
+            // 
             // ucLapTheDocGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txtThoiHanThe);
+            this.Controls.Add(this.txtTuoiToiDa);
+            this.Controls.Add(this.txtTuoiToiThieu);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.dtgTheDocGia);
             this.Controls.Add(this.label7);
@@ -349,6 +379,10 @@
         private System.Windows.Forms.TextBox txtNgayHetHan;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dtgTheDocGia;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtTuoiToiThieu;
+        private System.Windows.Forms.TextBox txtTuoiToiDa;
+        private System.Windows.Forms.TextBox txtThoiHanThe;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID_TheDocGia;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ten_LoaiDocGia;
         private System.Windows.Forms.DataGridViewTextBoxColumn HoTen_DocGia;
@@ -358,6 +392,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayLapThe;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayHetHan;
         private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai_TheDocGia;
-        private System.Windows.Forms.Label label8;
     }
 }

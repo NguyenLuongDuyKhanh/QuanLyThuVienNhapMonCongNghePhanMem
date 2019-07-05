@@ -44,7 +44,7 @@ namespace BUS
 
         public DataTable ChonSachMuon_Select(DTO_PhieuMuon dl)
         {
-            return xl.table_Select("Select 	ID_PhieuMuonSach,ID_TheDocGia,ID_Sach,Ten_NguoiMuon,NgayMuon,NgayHenTra,Sl_SachMuon,GhiChu,TrangThai_PhieuMuon from PhieuMuonSach  order by ID_PhieuMuonSach desc");
+            return xl.table_Select("Select 	ID_PhieuMuonSach,ID_TheDocGia,ID_Sach,NgayMuon,NgayHenTra,GhiChu,TrangThai_PhieuMuon from PhieuMuonSach  order by ID_PhieuMuonSach desc");
         }
 
         public DataTable NguoiMuon_Select(DTO_PhieuMuon dl)
@@ -57,6 +57,20 @@ namespace BUS
             xl.table_Command("set dateformat dmy Insert into PhieuMuonSach Values ('" + dl.ID_TheDocGia + "',N'" + dl.ID_Sach + "','" + dl.Ten_NguoiMuon + "','" + dl.NgayMuon + "','" + dl.NgayHenTra + "','" + dl.Sl_SachMuon + "','" + dl.GhiChu + "','" + dl.TrangThai_PhieuMuon + "')");
 
 
+        }
+
+        public DataTable LoadPhieuMuon_Select(DTO_PhieuMuon dl)
+        {
+            return xl.table_Select("select ID_PhieuMuonSach, HoTen_DocGia,Ten_Sach,Ten_TheLoaiSach,CONVERT(varchar(20),NgayMuon,103) as NgayMuon,GhiChu,TrangThai_PhieuMuon from PhieuMuonSach,TheDocGia,Sach,TheLoaiSach where PhieuMuonSach.ID_TheDocGia=TheDocGia.ID_TheDocGia and Sach.ID_Sach = PhieuMuonSach.ID_Sach and Sach.ID_TheLoaiSach = TheLoaiSach.ID_TheLoaiSach ");
+        }
+        public DataTable LoadPhieuMuonTre_Select(DTO_PhieuMuon dl)
+        {
+            return xl.table_Select("select ID_PhieuMuonSach, HoTen_DocGia, Ten_Sach, Ten_TheLoaiSach, CONVERT(varchar(20), NgayMuon, 103) as NgayMuon,GhiChu,TrangThai_PhieuMuon from PhieuMuonSach,TheDocGia,Sach,TheLoaiSach where PhieuMuonSach.ID_TheDocGia = TheDocGia.ID_TheDocGia and Sach.ID_Sach = PhieuMuonSach.ID_Sach and Sach.ID_TheLoaiSach = TheLoaiSach.ID_TheLoaiSach and TrangThai_PhieuMuon = N'Quá hạn'");
+        }
+
+        public DataTable ChonTheLoaiSach_Select(DTO_PhieuMuon dl)
+        {
+            return xl.table_Select("select ID_TheLoaiSach,Ten_TheLoaiSach from TheLoaiSach");
         }
 
     }
