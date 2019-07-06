@@ -36,5 +36,8 @@ namespace DTO
         public int Sl_SachMuon { get; set; }
         public String GhiChu { get; set; }
         public String TrangThai_PhieuMuon { get; set; }
-}
+        public String LayTheLoaiThongKe { get; set; }
+        public int LayNgayMuon { get; set; }
+        public DateTime LayNgayThongKe { get; set; }
+    }
 }

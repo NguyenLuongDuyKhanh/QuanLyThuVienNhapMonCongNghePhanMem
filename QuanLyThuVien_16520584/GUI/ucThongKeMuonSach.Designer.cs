@@ -30,7 +30,7 @@
         {
             this.label3 = new System.Windows.Forms.Label();
             this.dtgPhieuMuon = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboThang = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.ID_PhieuMuonSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,6 +42,7 @@
             this.TrangThai_PhieuMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
             this.cboTheLoai = new System.Windows.Forms.ComboBox();
+            this.txtKetQua = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgPhieuMuon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,14 +73,28 @@
             this.dtgPhieuMuon.Size = new System.Drawing.Size(878, 353);
             this.dtgPhieuMuon.TabIndex = 8;
             // 
-            // comboBox1
+            // cboThang
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(166, 121);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 32);
-            this.comboBox1.TabIndex = 7;
+            this.cboThang.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboThang.FormattingEnabled = true;
+            this.cboThang.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"});
+            this.cboThang.Location = new System.Drawing.Point(166, 121);
+            this.cboThang.Name = "cboThang";
+            this.cboThang.Size = new System.Drawing.Size(121, 32);
+            this.cboThang.TabIndex = 7;
+            this.cboThang.SelectedIndexChanged += new System.EventHandler(this.CboThang_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -161,16 +176,26 @@
             this.cboTheLoai.Name = "cboTheLoai";
             this.cboTheLoai.Size = new System.Drawing.Size(121, 21);
             this.cboTheLoai.TabIndex = 11;
+            this.cboTheLoai.SelectedIndexChanged += new System.EventHandler(this.CboTheLoai_SelectedIndexChanged);
+            // 
+            // txtKetQua
+            // 
+            this.txtKetQua.Location = new System.Drawing.Point(264, 237);
+            this.txtKetQua.Name = "txtKetQua";
+            this.txtKetQua.ReadOnly = true;
+            this.txtKetQua.Size = new System.Drawing.Size(39, 20);
+            this.txtKetQua.TabIndex = 12;
             // 
             // ucThongKeMuonSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txtKetQua);
             this.Controls.Add(this.cboTheLoai);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dtgPhieuMuon);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cboThang);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ucThongKeMuonSach";
@@ -186,7 +211,7 @@
 
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dtgPhieuMuon;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboThang;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID_PhieuMuonSach;
@@ -198,5 +223,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai_PhieuMuon;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cboTheLoai;
+        private System.Windows.Forms.TextBox txtKetQua;
     }
 }

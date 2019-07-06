@@ -91,5 +91,10 @@ namespace GUI
             txtNgayHetHan.DataBindings.Add("Text", xldl.NgayHetHan_Select(dl), "NgayHetHan");
      
         }
+
+        private void TxtNgayHetHan_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

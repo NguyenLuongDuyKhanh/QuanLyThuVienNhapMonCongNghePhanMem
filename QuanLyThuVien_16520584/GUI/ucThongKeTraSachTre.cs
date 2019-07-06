@@ -36,7 +36,16 @@ namespace GUI
 
         private void UcThongKeTraSachTre_Load(object sender, EventArgs e)
         {
+            dl.LayNgayThongKe = Convert.ToDateTime(dateTimePicker1.Text);
             dtgThongKeSachTre.DataSource = xldl.LoadPhieuMuonTre_Select(dl);
+        }
+
+        private void DateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            //dl.LayNgayThongKe=Convert.ToString()
+            dl.LayNgayThongKe = Convert.ToDateTime(dateTimePicker1.Text);
+            dtgThongKeSachTre.DataSource = xldl.LoadPhieuMuonTre_Select(dl);
+            //txtNgayHetHan.DataBindings.Add("Text", xldl.NgayHetHan_Select(dl), "NgayHetHan");
         }
     }
 }

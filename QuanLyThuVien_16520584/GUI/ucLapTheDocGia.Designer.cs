@@ -44,10 +44,6 @@
             this.txtNgayHetHan = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.dtgTheDocGia = new System.Windows.Forms.DataGridView();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtTuoiToiThieu = new System.Windows.Forms.TextBox();
-            this.txtTuoiToiDa = new System.Windows.Forms.TextBox();
-            this.txtThoiHanThe = new System.Windows.Forms.TextBox();
             this.ID_TheDocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ten_LoaiDocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoTen_DocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,6 +53,10 @@
             this.NgayLapThe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayHetHan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TrangThai_TheDocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtTuoiToiThieu = new System.Windows.Forms.TextBox();
+            this.txtTuoiToiDa = new System.Windows.Forms.TextBox();
+            this.txtThoiHanThe = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgTheDocGia)).BeginInit();
             this.SuspendLayout();
             // 
@@ -192,6 +192,7 @@
             this.txtNgayHetHan.ReadOnly = true;
             this.txtNgayHetHan.Size = new System.Drawing.Size(275, 29);
             this.txtNgayHetHan.TabIndex = 29;
+            this.txtNgayHetHan.TextChanged += new System.EventHandler(this.TxtNgayHetHan_TextChanged);
             // 
             // label7
             // 
@@ -228,40 +229,6 @@
             this.dtgTheDocGia.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgTheDocGia.Size = new System.Drawing.Size(1073, 364);
             this.dtgTheDocGia.TabIndex = 31;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(15, 13);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(228, 33);
-            this.label8.TabIndex = 32;
-            this.label8.Text = "Lập thẻ độc giả";
-            // 
-            // txtTuoiToiThieu
-            // 
-            this.txtTuoiToiThieu.Location = new System.Drawing.Point(408, 250);
-            this.txtTuoiToiThieu.Name = "txtTuoiToiThieu";
-            this.txtTuoiToiThieu.ReadOnly = true;
-            this.txtTuoiToiThieu.Size = new System.Drawing.Size(100, 20);
-            this.txtTuoiToiThieu.TabIndex = 33;
-            // 
-            // txtTuoiToiDa
-            // 
-            this.txtTuoiToiDa.Location = new System.Drawing.Point(525, 250);
-            this.txtTuoiToiDa.Name = "txtTuoiToiDa";
-            this.txtTuoiToiDa.ReadOnly = true;
-            this.txtTuoiToiDa.Size = new System.Drawing.Size(100, 20);
-            this.txtTuoiToiDa.TabIndex = 34;
-            // 
-            // txtThoiHanThe
-            // 
-            this.txtThoiHanThe.Location = new System.Drawing.Point(640, 250);
-            this.txtThoiHanThe.Name = "txtThoiHanThe";
-            this.txtThoiHanThe.ReadOnly = true;
-            this.txtThoiHanThe.Size = new System.Drawing.Size(100, 20);
-            this.txtThoiHanThe.TabIndex = 35;
             // 
             // ID_TheDocGia
             // 
@@ -328,10 +295,45 @@
             this.TrangThai_TheDocGia.Name = "TrangThai_TheDocGia";
             this.TrangThai_TheDocGia.ReadOnly = true;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(15, 13);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(228, 33);
+            this.label8.TabIndex = 32;
+            this.label8.Text = "Lập thẻ độc giả";
+            // 
+            // txtTuoiToiThieu
+            // 
+            this.txtTuoiToiThieu.Location = new System.Drawing.Point(628, 194);
+            this.txtTuoiToiThieu.Name = "txtTuoiToiThieu";
+            this.txtTuoiToiThieu.ReadOnly = true;
+            this.txtTuoiToiThieu.Size = new System.Drawing.Size(25, 20);
+            this.txtTuoiToiThieu.TabIndex = 33;
+            // 
+            // txtTuoiToiDa
+            // 
+            this.txtTuoiToiDa.Location = new System.Drawing.Point(600, 194);
+            this.txtTuoiToiDa.Name = "txtTuoiToiDa";
+            this.txtTuoiToiDa.ReadOnly = true;
+            this.txtTuoiToiDa.Size = new System.Drawing.Size(22, 20);
+            this.txtTuoiToiDa.TabIndex = 34;
+            // 
+            // txtThoiHanThe
+            // 
+            this.txtThoiHanThe.Location = new System.Drawing.Point(659, 194);
+            this.txtThoiHanThe.Name = "txtThoiHanThe";
+            this.txtThoiHanThe.ReadOnly = true;
+            this.txtThoiHanThe.Size = new System.Drawing.Size(21, 20);
+            this.txtThoiHanThe.TabIndex = 35;
+            // 
             // ucLapTheDocGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btLuu);
             this.Controls.Add(this.txtThoiHanThe);
             this.Controls.Add(this.txtTuoiToiDa);
             this.Controls.Add(this.txtTuoiToiThieu);
@@ -341,7 +343,6 @@
             this.Controls.Add(this.txtNgayHetHan);
             this.Controls.Add(this.dtpNgayLapThe);
             this.Controls.Add(this.txtDiaChi);
-            this.Controls.Add(this.btLuu);
             this.Controls.Add(this.dtpNgaySinhDocGia);
             this.Controls.Add(this.cboLoaiDocGia);
             this.Controls.Add(this.label6);

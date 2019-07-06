@@ -47,5 +47,26 @@ namespace GUI
         {
 
         }
+
+        private void CboTheLoai_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            dl.LayTheLoaiThongKe =  Convert.ToString (cboTheLoai.Text);
+            txtKetQua.DataBindings.Clear();
+            txtKetQua.DataBindings.Add("Text", xldl.ShowKetQua_Select(dl), "KetQua");
+            dtgPhieuMuon.DataSource = xldl.LoadPhieuMuon_Select(dl);
+        }
+
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void CboThang_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            dl.LayNgayMuon = Convert.ToInt32(cboThang.Text);
+            txtKetQua.DataBindings.Clear();
+            txtKetQua.DataBindings.Add("Text", xldl.ShowKetQua_Select(dl), "KetQua");         
+            dtgPhieuMuon.DataSource = xldl.LoadPhieuMuon_Select(dl);
+        }
     }
 }

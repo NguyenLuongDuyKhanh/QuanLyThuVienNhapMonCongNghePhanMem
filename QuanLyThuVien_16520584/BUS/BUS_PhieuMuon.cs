@@ -39,7 +39,7 @@ namespace BUS
 
         public DataTable Sach_Select(DTO_PhieuMuon dl)
         {
-            return xl.table_Select("select ID_Sach,Ten_Sach from Sach");
+            return xl.table_Select("select ID_Sach,Ten_Sach from Sach where TrangThai_MuonSach =N''");
         }
 
         public DataTable ChonSachMuon_Select(DTO_PhieuMuon dl)
@@ -61,16 +61,21 @@ namespace BUS
 
         public DataTable LoadPhieuMuon_Select(DTO_PhieuMuon dl)
         {
-            return xl.table_Select("select ID_PhieuMuonSach, HoTen_DocGia,Ten_Sach,Ten_TheLoaiSach,CONVERT(varchar(20),NgayMuon,103) as NgayMuon,GhiChu,TrangThai_PhieuMuon from PhieuMuonSach,TheDocGia,Sach,TheLoaiSach where PhieuMuonSach.ID_TheDocGia=TheDocGia.ID_TheDocGia and Sach.ID_Sach = PhieuMuonSach.ID_Sach and Sach.ID_TheLoaiSach = TheLoaiSach.ID_TheLoaiSach ");
+            return xl.table_Select("select ID_PhieuMuonSach, HoTen_DocGia,Ten_Sach,Ten_TheLoaiSach,CONVERT(varchar(20),NgayMuon,103) as NgayMuon,GhiChu,TrangThai_PhieuMuon from PhieuMuonSach,TheDocGia,Sach,TheLoaiSach where PhieuMuonSach.ID_TheDocGia=TheDocGia.ID_TheDocGia and Sach.ID_Sach = PhieuMuonSach.ID_Sach and Sach.ID_TheLoaiSach = TheLoaiSach.ID_TheLoaiSach and Ten_TheLoaiSach=N'"+ dl.LayTheLoaiThongKe + "' and DAY(NgayMuon) = "+dl.LayNgayMuon+"");
         }
         public DataTable LoadPhieuMuonTre_Select(DTO_PhieuMuon dl)
         {
-            return xl.table_Select("select ID_PhieuMuonSach, HoTen_DocGia, Ten_Sach, Ten_TheLoaiSach, CONVERT(varchar(20), NgayMuon, 103) as NgayMuon,GhiChu,TrangThai_PhieuMuon from PhieuMuonSach,TheDocGia,Sach,TheLoaiSach where PhieuMuonSach.ID_TheDocGia = TheDocGia.ID_TheDocGia and Sach.ID_Sach = PhieuMuonSach.ID_Sach and Sach.ID_TheLoaiSach = TheLoaiSach.ID_TheLoaiSach and TrangThai_PhieuMuon = N'Quá hạn'");
+            return xl.table_Select("select ID_PhieuMuonSach, HoTen_DocGia, Ten_Sach, Ten_TheLoaiSach, CONVERT(varchar(20), NgayMuon, 103) as NgayMuon,GhiChu,TrangThai_PhieuMuon from PhieuMuonSach,TheDocGia,Sach,TheLoaiSach where PhieuMuonSach.ID_TheDocGia = TheDocGia.ID_TheDocGia and Sach.ID_Sach = PhieuMuonSach.ID_Sach and Sach.ID_TheLoaiSach = TheLoaiSach.ID_TheLoaiSach and TrangThai_PhieuMuon = N'Quá hạn' and NgayMuon ='"+dl.LayNgayThongKe+"'");// and NgayMuon =N'03/07/2019'
         }
 
         public DataTable ChonTheLoaiSach_Select(DTO_PhieuMuon dl)
         {
             return xl.table_Select("select ID_TheLoaiSach,Ten_TheLoaiSach from TheLoaiSach");
+        }
+
+        public DataTable ShowKetQua_Select(DTO_PhieuMuon dl)
+        {
+            return xl.table_Select("select count(ID_PhieuMuonSach) as KetQua from PhieuMuonSach, TheDocGia, Sach, TheLoaiSach where PhieuMuonSach.ID_TheDocGia = TheDocGia.ID_TheDocGia and Sach.ID_Sach = PhieuMuonSach.ID_Sach and Sach.ID_TheLoaiSach = TheLoaiSach.ID_TheLoaiSach and Ten_TheLoaiSach=N'" + dl.LayTheLoaiThongKe + "' and DAY(NgayMuon) = " + dl.LayNgayMuon + "");
         }
 
     }

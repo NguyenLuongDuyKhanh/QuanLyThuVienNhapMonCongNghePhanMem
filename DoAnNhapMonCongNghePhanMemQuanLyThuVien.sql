@@ -15,6 +15,7 @@ create table PhanQuyen
 ------------------------------Tài Khoản, Mật Khẩu,QuanLy,NhanVien
 insert into PhanQuyen Values (N'Quản Lý', N'ql','true','true')
 insert into PhanQuyen Values (N'Nhân Viên',N'nv','false','true')
+set dateformat dmy
 
 create table QuyDinh
 (
@@ -309,103 +310,6 @@ select * from TheDocGia
 
 insert into QuyDinh values (18,55,6,8,5,4)
 
-set dateformat dmy
-Insert into TheDocGia Values (1,N'Khánh','02/11/1997','22/4//2','a@cdd','01/07/2019','1/11/2019','')
-select * from TheDocGia
-
-
-select ID_LoaiDocGia,Ten_LoaiDocGia from LoaiDocGia where  TrangThai_LoaiDocGia=N''
-
-
-set dateformat dmy
-Insert into TheDocGia Values (1,N'Khánh','02/11/1997','22/4//2','a@cdd','01/07/2019','1/11/2019','')
 
 
 
-select ID_LoaiDocGia,Ten_LoaiDocGia from LoaiDocGia where  TrangThai_LoaiDocGia=N''
-
-select * from TheDocGia
-
-set dateformat dmy
-SELECT  DATEADD(month,1,'02/07/2019') as NgayHetHan
-
- SELECT CONVERT(varchar(20),DATEADD(month,6,'02/07/2019'),103) as NgayHetHan
-
-
- ID_TheDocGia			int identity(1,1) primary key,
-	ID_LoaiDocGia			int,
-	HoTen_DocGia			nvarchar(100),
-	NgaySinh_DocGia			datetime,
-	DiaChi_DocGia			nvarchar(100),
-	Email_DocGia			nvarchar(100),
-	NgayLapThe				datetime,
-	NgayHetHan				datetime,
-	TrangThai_TheDocGia		nvarchar(100),
-
- select ID_TheDocGia,Ten_LoaiDocGia,HoTen_DocGia,NgaySinh_DocGia,DiaChi_DocGia,Email_DocGia,NgayLapThe,NgayHetHan,TrangThai_TheDocGia from TheDocGia, LoaiDocGia
- where TheDocGia.ID_LoaiDocGia = LoaiDocGia.ID_LoaiDocGia order by ID_TheDocGia desc
-
-insert into PhieuMuonSach values (1,1,N'Nguyen Luong Duy Khanh','02/07/2019','03/07/2019',1,'','')
-
-Select 	ID_PhieuMuonSach,ID_TheDocGia,ID_Sach,Ten_NguoiMuon,NgayMuon,NgayHenTra,Sl_SachMuon,GhiChu,TrangThai_PhieuMuon from PhieuMuonSach
-Select * from PhieuMuonSach
-
-Select 1
-
- Select * from PhieuTraSach
- Select * from PhieuPhat
-
-Select * from TheLoaiSach
-
-select ID_TheLoaiSach,Ten_TheLoaiSach from TheLoaiSach
-select ID_TacGia,Ten_TacGia from TacGia
-
- select ID_Sach,Ten_TheLoaiSach,Ten_TacGia,Ten_NXB,Ten_Sach,Gia,Sl_Nhap,MoTa,NamXuatBan from Sach,TacGia,TheLoaiSach,NhaXuatBan where Sach.ID_TacGia = TacGia.ID_TacGia and Sach.ID_TheLoaiSach=TheLoaiSach.ID_TheLoaiSach and Sach.ID_NXB = NhaXuatBan.ID_NXB order by ID_Sach desc
- 
- set dateformat dmy Insert into Sach Values ('" + dl.ID_TheLoaiSach + "',N'" + dl.ID_TacGia + "','','" + dl.Ten_Sach + "','" + dl.Gia + "','" + dl.Sl_Nhap + "','" + dl.MoTa + "','" + dl.NamXuatBan + "','" + dl.NgayNhap + "','" + dl.TrangThai_Sach + "','" + dl.TrangThai_MuonSach + "')
-
- select * from PhanQuyen
-
- select * from PhanQuyen where TaiKhoan=N'Quản lý' and MatKhau='ql'
-
- select distinct TaiKhoan from PhanQuyen
-
- select Ten_TheLoaiSach,Ten_TacGia,Ten_NXB,Ten_Sach,Gia,NamXuatBan,CONVERT(varchar(20),NgayNhap,103) as NgayNhap, TrangThai_MuonSach 
- from   TheLoaiSach,TacGia,NhaXuatBan,Sach
- where TheLoaiSach.ID_TheLoaiSach = Sach.ID_TheLoaiSach and TacGia.ID_TacGia = Sach.ID_TacGia and NhaXuatBan.ID_NXB = Sach.ID_NXB and TrangThai_Sach = N''
-
----------------------------------------------
-select Ten_TheLoaiSach,Ten_TacGia,Ten_NXB,Ten_Sach,Gia,NamXuatBan,CONVERT(varchar(20),NgayNhap,103) as NgayNhap, TrangThai_MuonSach 
- from   TheLoaiSach,TacGia,NhaXuatBan,Sach
- where TheLoaiSach.ID_TheLoaiSach = Sach.ID_TheLoaiSach and TacGia.ID_TacGia = Sach.ID_TacGia and NhaXuatBan.ID_NXB = Sach.ID_NXB and TrangThai_Sach = N''
- and Ten_TheLoaiSach like  N'%test%'
- -----------------------------------------------
- select Ten_TheLoaiSach,Ten_TacGia,Ten_NXB,Ten_Sach,Gia,NamXuatBan,CONVERT(varchar(20),NgayNhap,103) as NgayNhap, TrangThai_MuonSach 
- from   TheLoaiSach,TacGia,NhaXuatBan,Sach
- where TheLoaiSach.ID_TheLoaiSach = Sach.ID_TheLoaiSach and TacGia.ID_TacGia = Sach.ID_TacGia and NhaXuatBan.ID_NXB = Sach.ID_NXB and TrangThai_Sach = N''
- and Ten_Sach like  N'%test%'
-  -----------------------------------------------
-select Ten_TheLoaiSach,Ten_TacGia,Ten_NXB,Ten_Sach,Gia,NamXuatBan,CONVERT(varchar(20),NgayNhap,103) as NgayNhap, TrangThai_MuonSach 
- from   TheLoaiSach,TacGia,NhaXuatBan,Sach
- where TheLoaiSach.ID_TheLoaiSach = Sach.ID_TheLoaiSach and TacGia.ID_TacGia = Sach.ID_TacGia and NhaXuatBan.ID_NXB = Sach.ID_NXB and TrangThai_Sach = N''
- and Ten_TacGia like  N'%test%'
- -----------------------------------------------
-select Ten_TheLoaiSach,Ten_TacGia,Ten_NXB,Ten_Sach,Gia,NamXuatBan,CONVERT(varchar(20),NgayNhap,103) as NgayNhap, TrangThai_MuonSach 
- from   TheLoaiSach,TacGia,NhaXuatBan,Sach
- where TheLoaiSach.ID_TheLoaiSach = Sach.ID_TheLoaiSach and TacGia.ID_TacGia = Sach.ID_TacGia and NhaXuatBan.ID_NXB = Sach.ID_NXB and TrangThai_Sach = N''
- and Ten_NXB like  N'%test%'
-
-
- set dateformat dmy  SELECT CONVERT(varchar(20),DATEADD(month,6,'02/07/2019'),103) as NgayHetHan
- UPDATE QuyDinh SET TuoiToiDa = '1', TuoiToiThieu = '12' WHERE ID_QuyDinh = 1;
- select * from QuyDinh
-
- insert into TheLoaiSach values('khanh','')
- select * from TheDocGia
-
-
- select * from QuyDinh
-
-SELECT convert(varchar(20),GETDATE(),103)
-SELECT CONVERT(varchar(20),DATEADD(month,6,getdate()),103) as NgayHetHan
-select TuoiToiThieu from QuyDinh where ID_QuyDinh=1

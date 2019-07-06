@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.dtgThongKeSachTre = new System.Windows.Forms.DataGridView();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.ID_PhieuMuonSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoTen_DocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ten_Sach = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -39,6 +36,9 @@
             this.NgayMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TrangThai_PhieuMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtgThongKeSachTre)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,34 +59,6 @@
             this.dtgThongKeSachTre.Name = "dtgThongKeSachTre";
             this.dtgThongKeSachTre.Size = new System.Drawing.Size(615, 311);
             this.dtgThongKeSachTre.TabIndex = 7;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(109, 76);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 29);
-            this.dateTimePicker1.TabIndex = 6;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 19);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(354, 24);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Báo cáo thống kê tình hình trả sách trễ";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(49, 74);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 24);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Ngày";
             // 
             // ID_PhieuMuonSach
             // 
@@ -129,6 +101,35 @@
             this.TrangThai_PhieuMuon.DataPropertyName = "TrangThai_PhieuMuon";
             this.TrangThai_PhieuMuon.HeaderText = "Trạng thái";
             this.TrangThai_PhieuMuon.Name = "TrangThai_PhieuMuon";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(109, 76);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 29);
+            this.dateTimePicker1.TabIndex = 6;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.DateTimePicker1_ValueChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(16, 19);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(354, 24);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Báo cáo thống kê tình hình trả sách trễ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(49, 74);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 24);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Ngày";
             // 
             // ucThongKeTraSachTre
             // 
