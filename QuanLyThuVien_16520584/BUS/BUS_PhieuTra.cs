@@ -34,12 +34,12 @@ namespace BUS
         DTO_PhieuTra dl = new DTO_PhieuTra();
         public DataTable DocGia_Select(DTO_PhieuTra dl)
         {
-            return xl.table_Select("select ID_TheDocGia from PhieuMuonSach");
+            return xl.table_Select("select Distinct ID_TheDocGia from PhieuMuonSach");
         }
 
         public DataTable Sach_Select(DTO_PhieuTra dl)
         {
-            return xl.table_Select("select ID_Sach from PhieuMuonSach");
+            return xl.table_Select("select Distinct ID_Sach from PhieuMuonSach where ID_TheDocGia = "+dl.LayIDNguoiMuon +"");
         }
 
         public DataTable ChonSachMuon_Select(DTO_PhieuTra dl)

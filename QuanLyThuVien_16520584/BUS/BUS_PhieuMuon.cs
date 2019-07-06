@@ -34,7 +34,7 @@ namespace BUS
         DTO_PhieuMuon dl = new DTO_PhieuMuon();
         public DataTable DocGia_Select(DTO_PhieuMuon dl)
         {
-            return xl.table_Select("select ID_TheDocGia,HoTen_DocGia from TheDocGia");
+            return xl.table_Select("select ID_TheDocGia,HoTen_DocGia from TheDocGia where TrangThai_TheDocGia =''");
         }
 
         public DataTable Sach_Select(DTO_PhieuMuon dl)
@@ -78,5 +78,22 @@ namespace BUS
             return xl.table_Select("select count(ID_PhieuMuonSach) as KetQua from PhieuMuonSach, TheDocGia, Sach, TheLoaiSach where PhieuMuonSach.ID_TheDocGia = TheDocGia.ID_TheDocGia and Sach.ID_Sach = PhieuMuonSach.ID_Sach and Sach.ID_TheLoaiSach = TheLoaiSach.ID_TheLoaiSach and Ten_TheLoaiSach=N'" + dl.LayTheLoaiThongKe + "' and DAY(NgayMuon) = " + dl.LayNgayMuon + "");
         }
 
+        public DataTable CapNhatQuaHan_Select(DTO_PhieuMuon dl)
+        {
+            return xl.table_Select("select count(ID_PhieuMuonSach) as KetQua from PhieuMuonSach where ID_TheDocGia ="+dl.ID_TheDocGia+"");
+        }
+
+        public void CapNhatDocGia_INSERT(DTO_PhieuMuon dl)
+        {
+            xl.table_Command("UPDATE TheDocGia SET TrangThai_TheDocGia = N'Quá giới hạn' WHERE ID_TheDocGia = "+dl.ID_TheDocGia+"");
+
+
+        }
+        public void CapNhatSach_INSERT(DTO_PhieuMuon dl)
+        {
+            xl.table_Command("UPDATE Sach SET TrangThai_MuonSach = N'Đã được mượn' WHERE ID_Sach = " + dl.ID_Sach + "");
+
+
+        }
     }
 }

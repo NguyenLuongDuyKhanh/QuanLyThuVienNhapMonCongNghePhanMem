@@ -292,6 +292,8 @@ Insert into Sach Values (1,45,3,N'Sách giải trí',1000,10,N'Đây là sách n
 Insert into Sach Values (2,50,4,N'Sách tâm lý',1000,10,N'Đây là sách nhập ban đầu','2018','','','')
 Insert into Sach Values (3,56,5,N'Sách mua vui',1000,10,N'Đây là sách nhập ban đầu','2019','','','')
 Insert into Sach Values (1,21,6,N'Sách cuối list',1000,10,N'Đây là sách nhập ban đầu','2013','','','')
+Insert into Sach Values (1,21,6,N'Sách cuối list',1000,10,N'Đây là sách nhập ban đầu','2013','','',N'Đã được mượn')
+Insert into Sach Values (1,21,6,N'Đây là sách test quá hạn',1000,10,N'Đây là sách nhập ban đầu','2013','','',N'Đã được mượn')
 select * from Sach
 
 Insert into TheDocGia Values (1,N'Nguyễn Văn A','23/10/1998',N'123/abc đường xyz',N'abc@xyz.com','','','')
@@ -311,5 +313,17 @@ select * from TheDocGia
 insert into QuyDinh values (18,55,6,8,5,4)
 
 
+insert into PhieuMuonSach values (1,1,N'Nguyen Luong Duy Khanh','02/07/2019','03/07/2019',1,'','')
 
+set dateformat dmy
+select * from Sach
 
+UPDATE TheDocGia SET TrangThai_TheDocGia = N'Quá giới hạn' WHERE ID_TheDocGia = 1;
+
+select count(ID_PhieuMuonSach) as KetQua from PhieuMuonSach where ID_TheDocGia =2
+select * from PhieuMuonSach
+select ID_TheDocGia,HoTen_DocGia from TheDocGia where count(ID_TheDocGia) from PhieuMuonSach
+
+select count(ID_PhieuMuonSach) as KetQua from PhieuMuonSach where ID_TheDocGia =1
+
+select DISTINCT ID_TheDocGia from PhieuMuonSach

@@ -69,6 +69,7 @@
             // 
             // dtgPhieuTra
             // 
+            this.dtgPhieuTra.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgPhieuTra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgPhieuTra.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID_PhieuMuonSach,
@@ -168,6 +169,7 @@
             this.cboDocgia.Name = "cboDocgia";
             this.cboDocgia.Size = new System.Drawing.Size(121, 32);
             this.cboDocgia.TabIndex = 11;
+            this.cboDocgia.SelectedIndexChanged += new System.EventHandler(this.CboDocgia_SelectedIndexChanged);
             // 
             // label2
             // 

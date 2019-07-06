@@ -34,5 +34,6 @@ namespace DTO
         public int SachChuaTra { get; set; }
         public int TienPhat { get; set; }
         public String TrangThai_PhieuTraSach { get; set; }
+        public int LayIDNguoiMuon { get; set; }
     }
 }

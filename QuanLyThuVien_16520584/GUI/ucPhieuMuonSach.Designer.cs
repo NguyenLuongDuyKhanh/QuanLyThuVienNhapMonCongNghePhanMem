@@ -33,11 +33,6 @@
             this.cboMaSachMuon = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dtgPhieuMuonSach = new System.Windows.Forms.DataGridView();
-            this.cboMaDocGia = new System.Windows.Forms.ComboBox();
-            this.dpkNgayMuon = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.ID_PhieuMuonSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID_TheDocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID_Sach = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,6 +40,12 @@
             this.NgayHenTra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TrangThai_PhieuMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cboMaDocGia = new System.Windows.Forms.ComboBox();
+            this.dpkNgayMuon = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgPhieuMuonSach)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,6 +111,48 @@
             this.dtgPhieuMuonSach.Size = new System.Drawing.Size(850, 355);
             this.dtgPhieuMuonSach.TabIndex = 13;
             // 
+            // ID_PhieuMuonSach
+            // 
+            this.ID_PhieuMuonSach.DataPropertyName = "ID_PhieuMuonSach";
+            this.ID_PhieuMuonSach.HeaderText = "Mã phiếu mượn sách";
+            this.ID_PhieuMuonSach.Name = "ID_PhieuMuonSach";
+            // 
+            // ID_TheDocGia
+            // 
+            this.ID_TheDocGia.DataPropertyName = "ID_TheDocGia";
+            this.ID_TheDocGia.HeaderText = "Mã độc giả";
+            this.ID_TheDocGia.Name = "ID_TheDocGia";
+            // 
+            // ID_Sach
+            // 
+            this.ID_Sach.DataPropertyName = "ID_Sach";
+            this.ID_Sach.HeaderText = "Mã sách";
+            this.ID_Sach.Name = "ID_Sach";
+            // 
+            // NgayMuon
+            // 
+            this.NgayMuon.DataPropertyName = "NgayMuon";
+            this.NgayMuon.HeaderText = "Ngày mượn";
+            this.NgayMuon.Name = "NgayMuon";
+            // 
+            // NgayHenTra
+            // 
+            this.NgayHenTra.DataPropertyName = "NgayHenTra";
+            this.NgayHenTra.HeaderText = "Ngày hẹn trả";
+            this.NgayHenTra.Name = "NgayHenTra";
+            // 
+            // GhiChu
+            // 
+            this.GhiChu.DataPropertyName = "GhiChu";
+            this.GhiChu.HeaderText = "Ghi chú";
+            this.GhiChu.Name = "GhiChu";
+            // 
+            // TrangThai_PhieuMuon
+            // 
+            this.TrangThai_PhieuMuon.DataPropertyName = "TrangThai_PhieuMuon";
+            this.TrangThai_PhieuMuon.HeaderText = "Trạng thái";
+            this.TrangThai_PhieuMuon.Name = "TrangThai_PhieuMuon";
+            // 
             // cboMaDocGia
             // 
             this.cboMaDocGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -162,47 +205,12 @@
             this.label4.TabIndex = 18;
             this.label4.Text = "Phiếu mượn sách";
             // 
-            // ID_PhieuMuonSach
+            // textBox1
             // 
-            this.ID_PhieuMuonSach.DataPropertyName = "ID_PhieuMuonSach";
-            this.ID_PhieuMuonSach.HeaderText = "Mã phiếu mượn sách";
-            this.ID_PhieuMuonSach.Name = "ID_PhieuMuonSach";
-            // 
-            // ID_TheDocGia
-            // 
-            this.ID_TheDocGia.DataPropertyName = "ID_TheDocGia";
-            this.ID_TheDocGia.HeaderText = "Mã độc giả";
-            this.ID_TheDocGia.Name = "ID_TheDocGia";
-            // 
-            // ID_Sach
-            // 
-            this.ID_Sach.DataPropertyName = "ID_Sach";
-            this.ID_Sach.HeaderText = "Mã sách";
-            this.ID_Sach.Name = "ID_Sach";
-            // 
-            // NgayMuon
-            // 
-            this.NgayMuon.DataPropertyName = "NgayMuon";
-            this.NgayMuon.HeaderText = "Ngày mượn";
-            this.NgayMuon.Name = "NgayMuon";
-            // 
-            // NgayHenTra
-            // 
-            this.NgayHenTra.DataPropertyName = "NgayHenTra";
-            this.NgayHenTra.HeaderText = "Ngày hẹn trả";
-            this.NgayHenTra.Name = "NgayHenTra";
-            // 
-            // GhiChu
-            // 
-            this.GhiChu.DataPropertyName = "GhiChu";
-            this.GhiChu.HeaderText = "Ghi chú";
-            this.GhiChu.Name = "GhiChu";
-            // 
-            // TrangThai_PhieuMuon
-            // 
-            this.TrangThai_PhieuMuon.DataPropertyName = "TrangThai_PhieuMuon";
-            this.TrangThai_PhieuMuon.HeaderText = "Trạng thái";
-            this.TrangThai_PhieuMuon.Name = "TrangThai_PhieuMuon";
+            this.textBox1.Location = new System.Drawing.Point(512, 67);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 29);
+            this.textBox1.TabIndex = 19;
             // 
             // ucPhieuMuonSach
             // 
@@ -218,6 +226,7 @@
             this.Controls.Add(this.dpkNgayMuon);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "ucPhieuMuonSach";
@@ -248,5 +257,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayHenTra;
         private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
         private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai_PhieuMuon;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

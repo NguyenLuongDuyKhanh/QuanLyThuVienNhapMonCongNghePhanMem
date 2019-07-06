@@ -65,6 +65,14 @@ namespace GUI
             dl.GhiChu = Convert.ToString("hahaha");
             dl.TrangThai_PhieuMuon = "";
 
+            textBox1.DataBindings.Clear();
+            textBox1.DataBindings.Add("Text", xldl.CapNhatQuaHan_Select(dl), "KetQua");
+
+            if (Convert.ToInt32(textBox1.Text) >= 5)
+            {
+                xldl.CapNhatDocGia_INSERT(dl);
+            }
+            xldl.CapNhatSach_INSERT(dl);
             xldl.LapPhieuMuon_INSERT(dl);
             dtgPhieuMuonSach.DataSource = xldl.ChonSachMuon_Select(dl);
         }

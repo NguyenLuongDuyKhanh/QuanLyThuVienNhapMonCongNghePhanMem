@@ -39,5 +39,6 @@ namespace DTO
         public String LayTheLoaiThongKe { get; set; }
         public int LayNgayMuon { get; set; }
         public DateTime LayNgayThongKe { get; set; }
+       
     }
 }

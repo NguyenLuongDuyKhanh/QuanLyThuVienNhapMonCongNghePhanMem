@@ -47,7 +47,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.dtgSach = new System.Windows.Forms.DataGridView();
-            this.txtGioiHanXuatBan = new System.Windows.Forms.TextBox();
             this.ID_Sach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ten_TheLoaiSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ten_TacGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,6 +54,7 @@
             this.Ten_Sach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NamXuatBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtGioiHanXuatBan = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgSach)).BeginInit();
             this.SuspendLayout();
             // 
@@ -245,14 +245,6 @@
             this.dtgSach.TabIndex = 39;
             this.dtgSach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtgSach_CellContentClick);
             // 
-            // txtGioiHanXuatBan
-            // 
-            this.txtGioiHanXuatBan.Location = new System.Drawing.Point(767, 316);
-            this.txtGioiHanXuatBan.Name = "txtGioiHanXuatBan";
-            this.txtGioiHanXuatBan.ReadOnly = true;
-            this.txtGioiHanXuatBan.Size = new System.Drawing.Size(100, 20);
-            this.txtGioiHanXuatBan.TabIndex = 40;
-            // 
             // ID_Sach
             // 
             this.ID_Sach.DataPropertyName = "ID_Sach";
@@ -295,12 +287,19 @@
             this.NamXuatBan.HeaderText = "Năm xuất bản";
             this.NamXuatBan.Name = "NamXuatBan";
             // 
+            // txtGioiHanXuatBan
+            // 
+            this.txtGioiHanXuatBan.Location = new System.Drawing.Point(382, 283);
+            this.txtGioiHanXuatBan.Name = "txtGioiHanXuatBan";
+            this.txtGioiHanXuatBan.ReadOnly = true;
+            this.txtGioiHanXuatBan.Size = new System.Drawing.Size(100, 20);
+            this.txtGioiHanXuatBan.TabIndex = 40;
+            // 
             // ucTiepNhanSachMoi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.Controls.Add(this.txtGioiHanXuatBan);
             this.Controls.Add(this.dtgSach);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.btHoanTat);
@@ -320,6 +319,7 @@
             this.Controls.Add(this.txtTenSach);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtGioiHanXuatBan);
             this.Name = "ucTiepNhanSachMoi";
             this.Size = new System.Drawing.Size(1503, 675);
             this.Load += new System.EventHandler(this.ucTiepNhanSachMoi_Load);

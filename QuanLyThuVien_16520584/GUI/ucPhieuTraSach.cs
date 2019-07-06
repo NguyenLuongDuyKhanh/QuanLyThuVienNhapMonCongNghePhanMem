@@ -47,5 +47,10 @@ namespace GUI
 
             dtgPhieuTra.DataSource = xldl.ChonSachMuon_Select(dl);
         }
+
+        private void CboDocgia_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
